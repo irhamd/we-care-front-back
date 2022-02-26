@@ -1,0 +1,58 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//save-blanko-lab
+http://localhost:8000/api/lab/save-blanko-lab
+X-TOKEN: {{token}}
+
+{
+   "norec_bl":"",
+   "norec_apd" : "df54adf0-e38a-11eb-9a1c-e3840d14",
+   "idpegawai" : 1,
+   "statusprioritas": "TIDAK",
+   "saran": null,
+   "detail" : [
+       {
+            "norec_bld" : "",
+            "idproduk" : 622,
+            "jumlah" : 1,
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       },
+       {
+            "norec_bld" : "",
+            "idproduk" : 619,
+            "jumlah" : 1,
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       }
+   ]
+
+}
+
+###
+//get-blanko-lab-pasien
+GET http://localhost:8000/api/lab/get-blanko-lab?noregistrasi=2107000124
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114",
+}
+
+###
+//get-produk-blanko-lab
+GET http://localhost:8000/api/lab/get-produk-blanko-lab
+X-TOKEN: {{token}}
+
+{
+    "nama":"gula"
+}
+
+###
+//delete-item-blanko-lab
+POST http://localhost:8000/api/lab/delete-item-blanko-lab
+X-TOKEN: {{token}}
+
+{
+   "nerec_items_bld" : ["59ae5f50-ee85-11eb-a902-57db49ae", "59af24b0-ee85-11eb-bcba-cb1f58b4"]
+}

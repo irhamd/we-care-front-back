@@ -1,0 +1,99 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+###
+//get-pasien-pulang
+GET http://localhost:8000/api/kasir/get-daftar-pasien-pulang
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "nocm":"",
+    "noregistrasi":"",
+    "namapasien":"",
+    "idruangan":"",
+    "idinstalasi":""
+}
+
+###
+//get-combo-pasien-pulang
+GET http://localhost:8000/api/kasir/get-combo-pasien-pulang
+X-TOKEN: {{token}}
+
+###
+//get-detail-verif
+GET http://localhost:8000/api/kasir/get-detail-pelayanan-verif-bynoregistrasi?noregistrasi=2107000114
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114"
+}
+
+###
+//save-verifikasi
+POST http://localhost:8000/api/kasir/save-verifikasi-pelayanan
+X-TOKEN: {{token}}
+
+{
+   "norec_pd" : "df5350c0-e38a-11eb-b41a-eb36eb51",
+   "idpenjamin" : 2,
+   "totalverif": 10000,
+   "totalharusdibayar": 7000,
+   "totalklaim" : 3000,
+   "norec_item_pp" : ["1f318a30-f8b2-11eb-afb3-edf5d240"]
+}
+
+###
+//get-rincian-pelayanan
+GET http://localhost:8000/api/kasir/get-rincian-pelayanan-pasien?noregistrasi=2108000008
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114"
+}
+
+###
+//get-daftar-verifikasi-layanan
+GET http://localhost:8000/api/kasir/get-daftar-verifikasi-pelayanan?noregistrasi=2108000010
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114"
+}
+
+###
+//save-pembayaran-pasien
+POST http://localhost:8000/api/kasir/save-pembayaran-pasien
+X-TOKEN: {{token}}
+{
+   "norec_pd" : "df5350c0-e38a-11eb-b41a-eb36eb51",
+   "idcarabayar" : 1,
+   "totalharusdibayar": 7000,
+   "totalbayar": 7000,
+   "norec_item_sp" : ["7a51b9e0-fb11-11eb-9155-3b1e9bac"]
+}
+
+###
+//get-daftar-pembayaran-pasien
+GET http://localhost:8000/api/kasir/get-daftar-pasien-bayar
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "nocm":"",
+    "noregistrasi":"",
+    "namapasien":"",
+    "idruangan":"",
+    "idinstalasi":""
+}
+
+###
+//delete-pembayaran-pasien
+POST http://localhost:8000/api/kasir/delete-pembayaran-pasien
+X-TOKEN: {{token}}
+
+{
+   "norec_spem" : "66046fa0-ffbf-11eb-bc81-711b7ecd"
+}

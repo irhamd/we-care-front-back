@@ -1,0 +1,69 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//save-kirimbarang
+POST http://localhost:8000/api/kirimbarang/save-kirim-barang
+X-TOKEN: {{token}}
+
+{
+    "nokirim": "444",
+    "idkeperluan": 1,
+    "idpegawai": 1,
+    "keterangan": "33",
+    "idruanganasal": 18,
+    "idruangantujuan": 6,
+    "detail": [
+        {
+            "idproduk": "334",
+            "jumlah": 1,
+            "namaproduk": "Alat suntik sekali pakai 2,5 ml"
+        }
+    ]
+}
+
+###
+//get-kirimbarang
+GET http://localhost:8000/api/kirimbarang/get-daftar-kirim-barang
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-08-07 00:00:00",
+    "tglAkhir":"2021-08-07 23:59:59",
+    "idruanganasal":"",
+    "idruangantujuan":"",
+    "idproduk":""
+}
+
+###
+//get-kirimbarang
+GET http://localhost:8000/api/kirimbarang/get-detail-kirim-bynokirim?nokirim=TB2108000000003
+X-TOKEN: {{token}}
+
+{
+    "nokirim":"TB2108000000003"
+}
+
+###
+//get-kirimbarang
+GET http://localhost:8000/api/kirimbarang/get-combo-kirim-barang
+X-TOKEN: {{token}}
+
+###
+//get-kirimbarang
+GET http://localhost:8000/api/kirimbarang/get-produk-kirim-barang?nama=ak&idruanganasal=18
+X-TOKEN: {{token}}
+
+{
+    "nama":"a",
+    "idruanganasal": 18
+}
+
+###
+//batal-kirimbarang
+POST http://localhost:8000/api/kirimbarang/batal-kirim-barang
+X-TOKEN: {{token}}
+
+{
+    "keterangandelete":"batal ket",
+    "norec_item_kb": ["d4e4e770-f4f1-11eb-9131-2b7290f7"]
+}

@@ -1,0 +1,3251 @@
+[
+  {
+    "id": "0001",
+    "value": "Air raksa dental use",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0001\" name=\"check[]\">"
+  },
+  {
+    "id": "0002",
+    "value": "Alat suntik sekali pakai 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0002\" name=\"check[]\">"
+  },
+  {
+    "id": "0003",
+    "value": "Alat suntik sekali pakai 2,5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0003\" name=\"check[]\">"
+  },
+  {
+    "id": "0004",
+    "value": "Alat suntik sekali pakai 5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0004\" name=\"check[]\">"
+  },
+  {
+    "id": "0005",
+    "value": "Alkohol 70% 1000 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0005\" name=\"check[]\">"
+  },
+  {
+    "id": "0006",
+    "value": "Alkohol 70% 300 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0006\" name=\"check[]\">"
+  },
+  {
+    "id": "0007",
+    "value": "Alkohol 96% 1000 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0007\" name=\"check[]\">"
+  },
+  {
+    "id": "0008",
+    "value": "Allopurinol tablet 100 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0008\" name=\"check[]\">"
+  },
+  {
+    "id": "0009",
+    "value": "Allopurinol tablet 300 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0009\" name=\"check[]\">"
+  },
+  {
+    "id": "0010",
+    "value": "Ambroksol syrup 15 mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0010\" name=\"check[]\">"
+  },
+  {
+    "id": "0011",
+    "value": "Ambroksol tablet 30 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0011\" name=\"check[]\">"
+  },
+  {
+    "id": "0012",
+    "value": "Aminophyllin 200 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0012\" name=\"check[]\">"
+  },
+  {
+    "id": "0013",
+    "value": "Aminopilin tablet 200 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0013\" name=\"check[]\">"
+  },
+  {
+    "id": "0014",
+    "value": "Amitripilin HCl tablet salut 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0014\" name=\"check[]\">"
+  },
+  {
+    "id": "0015",
+    "value": "Amlodipine 5 mg ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0015\" name=\"check[]\">"
+  },
+  {
+    "id": "0016",
+    "value": "Amoksisilin kaplet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0016\" name=\"check[]\">"
+  },
+  {
+    "id": "0017",
+    "value": "Amoksisilin kapsul 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0017\" name=\"check[]\">"
+  },
+  {
+    "id": "0018",
+    "value": "Amoksisilin syrup kering 125 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0018\" name=\"check[]\">"
+  },
+  {
+    "id": "0019",
+    "value": "Ampisilin kaplet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0019\" name=\"check[]\">"
+  },
+  {
+    "id": "0020",
+    "value": "Ampisilin sirup kering 125mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0020\" name=\"check[]\">"
+  },
+  {
+    "id": "0021",
+    "value": "Antalgin Injeksi 250 mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0021\" name=\"check[]\">"
+  },
+  {
+    "id": "0022",
+    "value": "Antalgin Tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0022\" name=\"check[]\">"
+  },
+  {
+    "id": "0023",
+    "value": "Antasida DOEN I tablet kunyah, kombinasi Aluminium",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0023\" name=\"check[]\">"
+  },
+  {
+    "id": "0024",
+    "value": "Antasida DOEN II suspensi kombinasi : Al (OH) 200 ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0024\" name=\"check[]\">"
+  },
+  {
+    "id": "0025",
+    "value": "Anti Bakteri DOEN salep kombinasi : Basitrasin",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0025\" name=\"check[]\">"
+  },
+  {
+    "id": "0026",
+    "value": "Antifungi DOEN kombinasi : Asam benzoat 6% +",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pot",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0026\" name=\"check[]\">"
+  },
+  {
+    "id": "0027",
+    "value": "Antimigren ergotamin tatrat 1 mg  + kofein 50 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0027\" name=\"check[]\">"
+  },
+  {
+    "id": "0028",
+    "value": "Aqua Pro injeksi steril, bebas pirogen",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0028\" name=\"check[]\">"
+  },
+  {
+    "id": "0029",
+    "value": "Asam askorbat ( Vit. C ) tablet 50 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0029\" name=\"check[]\">"
+  },
+  {
+    "id": "0030",
+    "value": "Asam askorbat (vitamin C ) 250mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0030\" name=\"check[]\">"
+  },
+  {
+    "id": "0031",
+    "value": "Asam mefenamat kaplet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0031\" name=\"check[]\">"
+  },
+  {
+    "id": "0032",
+    "value": "Asiklovir krim 5%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0032\" name=\"check[]\">"
+  },
+  {
+    "id": "0033",
+    "value": "Asiklovir tablet 200 mg ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0033\" name=\"check[]\">"
+  },
+  {
+    "id": "0034",
+    "value": "Asiklovir tablet 400 mg ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0034\" name=\"check[]\">"
+  },
+  {
+    "id": "0035",
+    "value": "Atropin injeksi 0,25 mg/ml (sulfat)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0035\" name=\"check[]\">"
+  },
+  {
+    "id": "0036",
+    "value": "Atropin Sulfat Tablet 0,5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0036\" name=\"check[]\">"
+  },
+  {
+    "id": "0037",
+    "value": "Atropin Sulfat Tetes Mata 0,5 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0037\" name=\"check[]\">"
+  },
+  {
+    "id": "0038",
+    "value": "Betametason krim 0,1%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0038\" name=\"check[]\">"
+  },
+  {
+    "id": "0039",
+    "value": "Bisoprolol 5 mg ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0039\" name=\"check[]\">"
+  },
+  {
+    "id": "0040",
+    "value": "Cat Cut  2/0 - 3/0 CROMIK",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0040\" name=\"check[]\">"
+  },
+  {
+    "id": "0041",
+    "value": "Cat gut plain",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0041\" name=\"check[]\">"
+  },
+  {
+    "id": "0042",
+    "value": "Cefadroxil 125 mg sirup kering",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0042\" name=\"check[]\">"
+  },
+  {
+    "id": "0043",
+    "value": "Cefadroxil 500 mg kapsul",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0043\" name=\"check[]\">"
+  },
+  {
+    "id": "0044",
+    "value": "Cefotaxime injeksi 1 g",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0044\" name=\"check[]\">"
+  },
+  {
+    "id": "0045",
+    "value": "Cetirizine 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0045\" name=\"check[]\">"
+  },
+  {
+    "id": "0046",
+    "value": "Ciprofloksacin 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0046\" name=\"check[]\">"
+  },
+  {
+    "id": "0047",
+    "value": "Deksametason injeksi 5 mg/ml - 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0047\" name=\"check[]\">"
+  },
+  {
+    "id": "0048",
+    "value": "Deksametason tablet 0,5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0048\" name=\"check[]\">"
+  },
+  {
+    "id": "0049",
+    "value": "Dekstrometorphan sirup 10 mg/5ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0049\" name=\"check[]\">"
+  },
+  {
+    "id": "0050",
+    "value": "Dekstrometrophan tablet 15 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0050\" name=\"check[]\">"
+  },
+  {
+    "id": "0051",
+    "value": "Diazepam 2 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0051\" name=\"check[]\">"
+  },
+  {
+    "id": "0052",
+    "value": "Diazepam injeksi 5 mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0052\" name=\"check[]\">"
+  },
+  {
+    "id": "0053",
+    "value": "Diazepam tablet 2 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0053\" name=\"check[]\">"
+  },
+  {
+    "id": "0054",
+    "value": "Digoksin tablet 0,25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0054\" name=\"check[]\">"
+  },
+  {
+    "id": "0055",
+    "value": "Diphenhidramin HCl injeksi 10 mg/ml-1ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0055\" name=\"check[]\">"
+  },
+  {
+    "id": "0056",
+    "value": "Disposible syringe 0,05 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0056\" name=\"check[]\">"
+  },
+  {
+    "id": "0057",
+    "value": "Disposible syringe 0,5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0057\" name=\"check[]\">"
+  },
+  {
+    "id": "0058",
+    "value": "Disposible syringe 10 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0058\" name=\"check[]\">"
+  },
+  {
+    "id": "0059",
+    "value": "Disposible syringe 3 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0059\" name=\"check[]\">"
+  },
+  {
+    "id": "0060",
+    "value": "Disposible syringe 5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0060\" name=\"check[]\">"
+  },
+  {
+    "id": "0061",
+    "value": "Domperidon 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0061\" name=\"check[]\">"
+  },
+  {
+    "id": "0062",
+    "value": "Domperidon 5 mg/5ml sirup",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0062\" name=\"check[]\">"
+  },
+  {
+    "id": "0063",
+    "value": "Domperidon suspensi 5 mg / 5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0063\" name=\"check[]\">"
+  },
+  {
+    "id": "0064",
+    "value": "Efedrin HCl tablet 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0064\" name=\"check[]\">"
+  },
+  {
+    "id": "0065",
+    "value": "Ekstrak Belladon tablet 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0065\" name=\"check[]\">"
+  },
+  {
+    "id": "0066",
+    "value": "Eritromisin kaplet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0066\" name=\"check[]\">"
+  },
+  {
+    "id": "0067",
+    "value": "Eritromisin sirup 200 mg/5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0067\" name=\"check[]\">"
+  },
+  {
+    "id": "0068",
+    "value": "Etakridin (Rivanol) larutan 0,1 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0068\" name=\"check[]\">"
+  },
+  {
+    "id": "0069",
+    "value": "Etanol 70 % - 100 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0069\" name=\"check[]\">"
+  },
+  {
+    "id": "0070",
+    "value": "Etil Klorida",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0070\" name=\"check[]\">"
+  },
+  {
+    "id": "0071",
+    "value": "Eugenol cairan ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0071\" name=\"check[]\">"
+  },
+  {
+    "id": "0072",
+    "value": "Face musk (masker)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0072\" name=\"check[]\">"
+  },
+  {
+    "id": "0073",
+    "value": "Fenobarbital inj. 50 mg / ml - 2 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0073\" name=\"check[]\">"
+  },
+  {
+    "id": "0074",
+    "value": "Fenobarbital tablet 30 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0074\" name=\"check[]\">"
+  },
+  {
+    "id": "0075",
+    "value": "Fenoksimetil penisilin tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0075\" name=\"check[]\">"
+  },
+  {
+    "id": "0076",
+    "value": "Fitomenadion ( Vit.K1 ) injeksi 10 mg/ml - 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0076\" name=\"check[]\">"
+  },
+  {
+    "id": "0077",
+    "value": "Fitomenadion (Vit.K1) tab. Salut gula 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0077\" name=\"check[]\">"
+  },
+  {
+    "id": "0078",
+    "value": "Furosemid tablet 40 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0078\" name=\"check[]\">"
+  },
+  {
+    "id": "0079",
+    "value": "Gameksan Lotion 1 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0079\" name=\"check[]\">"
+  },
+  {
+    "id": "0080",
+    "value": "Garam Oralit untuk 200 ml air",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0080\" name=\"check[]\">"
+  },
+  {
+    "id": "0081",
+    "value": "Gea medical cat gut 3-0 chromic",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0081\" name=\"check[]\">"
+  },
+  {
+    "id": "0082",
+    "value": "Gentamycin 0,1 % krim",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0082\" name=\"check[]\">"
+  },
+  {
+    "id": "0083",
+    "value": "Gentian violet 1 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0083\" name=\"check[]\">"
+  },
+  {
+    "id": "0084",
+    "value": "Glibenklamide tablet 5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0084\" name=\"check[]\">"
+  },
+  {
+    "id": "0085",
+    "value": "Glimepiride 2 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0085\" name=\"check[]\">"
+  },
+  {
+    "id": "0086",
+    "value": "Glimepiride 4 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0086\" name=\"check[]\">"
+  },
+  {
+    "id": "0087",
+    "value": "Gliseril guaikolat 100 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0087\" name=\"check[]\">"
+  },
+  {
+    "id": "0088",
+    "value": "Gliseril guayakolat tablet 100 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0088\" name=\"check[]\">"
+  },
+  {
+    "id": "0089",
+    "value": "Glukosa larutan infus 5% steril",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0089\" name=\"check[]\">"
+  },
+  {
+    "id": "0090",
+    "value": "Griseofulvin tablet 125 mg, micronized",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0090\" name=\"check[]\">"
+  },
+  {
+    "id": "0091",
+    "value": "Grotavit Sirup",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0091\" name=\"check[]\">"
+  },
+  {
+    "id": "0092",
+    "value": "Hidroklorotiazida (HCT) tablet 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0092\" name=\"check[]\">"
+  },
+  {
+    "id": "0093",
+    "value": "Hidroklortiazid 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0093\" name=\"check[]\">"
+  },
+  {
+    "id": "0094",
+    "value": "Hidrokortison 2,5 % krim",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0094\" name=\"check[]\">"
+  },
+  {
+    "id": "0095",
+    "value": "Ibuprofen tablet  200 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0095\" name=\"check[]\">"
+  },
+  {
+    "id": "0096",
+    "value": "Ibuprofen tablet 400 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0096\" name=\"check[]\">"
+  },
+  {
+    "id": "0097",
+    "value": "Infusion Set Anak",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0097\" name=\"check[]\">"
+  },
+  {
+    "id": "0098",
+    "value": "Infusion Set Dewasa",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0098\" name=\"check[]\">"
+  },
+  {
+    "id": "0099",
+    "value": "Isorsorbit  Dinitrat Tablet  5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0099\" name=\"check[]\">"
+  },
+  {
+    "id": "0100",
+    "value": "IV Cateter No 18 G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0100\" name=\"check[]\">"
+  },
+  {
+    "id": "0101",
+    "value": "IV Cateter No 20 G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0101\" name=\"check[]\">"
+  },
+  {
+    "id": "0102",
+    "value": "IV Cateter No 22 G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0102\" name=\"check[]\">"
+  },
+  {
+    "id": "0103",
+    "value": "IV Cateter No 24 G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0103\" name=\"check[]\">"
+  },
+  {
+    "id": "0104",
+    "value": "Kalsium Laktat ( Kalk ) tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0104\" name=\"check[]\">"
+  },
+  {
+    "id": "0105",
+    "value": "Kapas 100 gram",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0105\" name=\"check[]\">"
+  },
+  {
+    "id": "0106",
+    "value": "Kapas 25 gram",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0106\" name=\"check[]\">"
+  },
+  {
+    "id": "0107",
+    "value": "Kapas 250 gram",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0107\" name=\"check[]\">"
+  },
+  {
+    "id": "0108",
+    "value": "Kapas 50 gram",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0108\" name=\"check[]\">"
+  },
+  {
+    "id": "0109",
+    "value": "Kapas pembalut / absorben 250 gram",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0109\" name=\"check[]\">"
+  },
+  {
+    "id": "0110",
+    "value": "Kaptopril tab. 12,5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0110\" name=\"check[]\">"
+  },
+  {
+    "id": "0111",
+    "value": "Kaptopril tab. 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0111\" name=\"check[]\">"
+  },
+  {
+    "id": "0112",
+    "value": "Karbamazepin tablet 200 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0112\" name=\"check[]\">"
+  },
+  {
+    "id": "0113",
+    "value": "Kasa Hidrofil 16 x 16 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0113\" name=\"check[]\">"
+  },
+  {
+    "id": "0114",
+    "value": "Kasa pembalut Hidrofil 4 m x 15 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0114\" name=\"check[]\">"
+  },
+  {
+    "id": "0115",
+    "value": "Kasa pembalut Hidrofil 4 m x 3 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0115\" name=\"check[]\">"
+  },
+  {
+    "id": "0116",
+    "value": "Ketamin Injeksi 10 mg/ ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0116\" name=\"check[]\">"
+  },
+  {
+    "id": "0117",
+    "value": "Ketoconazole cream 2 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0117\" name=\"check[]\">"
+  },
+  {
+    "id": "0118",
+    "value": "Ketorolac injeksi ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0118\" name=\"check[]\">"
+  },
+  {
+    "id": "0119",
+    "value": "Klindamicyn kapsul 150 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0119\" name=\"check[]\">"
+  },
+  {
+    "id": "0120",
+    "value": "Klindamicyn kapsul 300 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0120\" name=\"check[]\">"
+  },
+  {
+    "id": "0121",
+    "value": "Klofenol Kamfer Menthol ( CHKM )",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0121\" name=\"check[]\">"
+  },
+  {
+    "id": "0122",
+    "value": "Klorampenikol kapsul 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0122\" name=\"check[]\">"
+  },
+  {
+    "id": "0123",
+    "value": "Kloramphenicol salep mata 1 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0123\" name=\"check[]\">"
+  },
+  {
+    "id": "0124",
+    "value": "Kloramphenicol tetes mata 0,5 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0124\" name=\"check[]\">"
+  },
+  {
+    "id": "0125",
+    "value": "Kloramphenicol tetes telinga 3%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0125\" name=\"check[]\">"
+  },
+  {
+    "id": "0126",
+    "value": "Klorfeniramin Maleat (CTM) tablet 4 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0126\" name=\"check[]\">"
+  },
+  {
+    "id": "0127",
+    "value": "Klorokuin 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0127\" name=\"check[]\">"
+  },
+  {
+    "id": "0128",
+    "value": "Klorokuin tablet 150 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0128\" name=\"check[]\">"
+  },
+  {
+    "id": "0129",
+    "value": "Kodein tablet 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0129\" name=\"check[]\">"
+  },
+  {
+    "id": "0130",
+    "value": "Kombinasi Piretamin 25 mg + Sulfadoksin",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0130\" name=\"check[]\">"
+  },
+  {
+    "id": "0131",
+    "value": "Kotrimoksazol Suspensi komb: Sulfametoksazol 200 m",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0131\" name=\"check[]\">"
+  },
+  {
+    "id": "0132",
+    "value": "Kotrimoksazol tablet komb : 480 mg ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0132\" name=\"check[]\">"
+  },
+  {
+    "id": "0133",
+    "value": "Kotrimoksazole DOEN II (pediatrik) kombinas : sulf",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0133\" name=\"check[]\">"
+  },
+  {
+    "id": "0134",
+    "value": "Kotrimoxazole DOEN I (dewasa) kombinasi : sulfamet",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0134\" name=\"check[]\">"
+  },
+  {
+    "id": "0135",
+    "value": "Kotrimoxazole suspensi kombinasi: sulfametoksazol ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0135\" name=\"check[]\">"
+  },
+  {
+    "id": "0136",
+    "value": "Kuinina dihidrokhlorida inj. 25 % - 25 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0136\" name=\"check[]\">"
+  },
+  {
+    "id": "0137",
+    "value": "Lansoparazole 30 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0137\" name=\"check[]\">"
+  },
+  {
+    "id": "0138",
+    "value": "Leucoplast 1,25 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0138\" name=\"check[]\">"
+  },
+  {
+    "id": "0139",
+    "value": "Levofloksasin 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0139\" name=\"check[]\">"
+  },
+  {
+    "id": "0140",
+    "value": "Lidokain injeksi 2% (HCl)-2 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0140\" name=\"check[]\">"
+  },
+  {
+    "id": "0141",
+    "value": "Lidokain komp. Injeksi, Kombinasi :",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0141\" name=\"check[]\">"
+  },
+  {
+    "id": "0142",
+    "value": "Loratadin tablet 10  mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0142\" name=\"check[]\">"
+  },
+  {
+    "id": "0143",
+    "value": "Meloksikam tablet 15 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0143\" name=\"check[]\">"
+  },
+  {
+    "id": "0144",
+    "value": "Meloksikam tablet 7,5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0144\" name=\"check[]\">"
+  },
+  {
+    "id": "0145",
+    "value": "Metampiron Injeksi 250",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0145\" name=\"check[]\">"
+  },
+  {
+    "id": "0146",
+    "value": "Metampiron tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0146\" name=\"check[]\">"
+  },
+  {
+    "id": "0147",
+    "value": "Metformin 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0147\" name=\"check[]\">"
+  },
+  {
+    "id": "0148",
+    "value": "Metilergometrin Maleat inj. 0,200 mg - 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0148\" name=\"check[]\">"
+  },
+  {
+    "id": "0149",
+    "value": "Metilergometrin Maleat tablet 0,125 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0149\" name=\"check[]\">"
+  },
+  {
+    "id": "0150",
+    "value": "Metilprednisolone 4 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0150\" name=\"check[]\">"
+  },
+  {
+    "id": "0151",
+    "value": "Metoklopramide 10mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0151\" name=\"check[]\">"
+  },
+  {
+    "id": "0152",
+    "value": "Metronidazol tablet 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0152\" name=\"check[]\">"
+  },
+  {
+    "id": "0153",
+    "value": "Metronidazol tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0153\" name=\"check[]\">"
+  },
+  {
+    "id": "0154",
+    "value": "Mikonazole krim 2%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0154\" name=\"check[]\">"
+  },
+  {
+    "id": "0155",
+    "value": "Natrium bikarbonat tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0155\" name=\"check[]\">"
+  },
+  {
+    "id": "0156",
+    "value": "Natrium diklofenak 50 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0156\" name=\"check[]\">"
+  },
+  {
+    "id": "0157",
+    "value": "Natrium klorida infus 0,9%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0157\" name=\"check[]\">"
+  },
+  {
+    "id": "0158",
+    "value": "Nifedipin 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0158\" name=\"check[]\">"
+  },
+  {
+    "id": "0159",
+    "value": "Nova Papaverin tablet 40 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0159\" name=\"check[]\">"
+  },
+  {
+    "id": "0160",
+    "value": "OBH",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0160\" name=\"check[]\">"
+  },
+  {
+    "id": "0161",
+    "value": "Ofloksasin tablet 200 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0161\" name=\"check[]\">"
+  },
+  {
+    "id": "0162",
+    "value": "Ofloksasin tablet 400 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0162\" name=\"check[]\">"
+  },
+  {
+    "id": "0163",
+    "value": "Oksitetrasiklin HCl inj. 50 mg/ml - 10 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0163\" name=\"check[]\">"
+  },
+  {
+    "id": "0164",
+    "value": "Oksitetrasiklin HCl salap mata 1 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0164\" name=\"check[]\">"
+  },
+  {
+    "id": "0165",
+    "value": "Oksitetrasiklin salap kulit 3%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0165\" name=\"check[]\">"
+  },
+  {
+    "id": "0166",
+    "value": "Oksitosin injeksi 10 IU/ml - 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0166\" name=\"check[]\">"
+  },
+  {
+    "id": "0167",
+    "value": "Omeprazole kapsul 20 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0167\" name=\"check[]\">"
+  },
+  {
+    "id": "0168",
+    "value": "Ondansentron 4 mg injeksi",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0168\" name=\"check[]\">"
+  },
+  {
+    "id": "0169",
+    "value": "Oxybiotik 10 ml Injeksi",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0169\" name=\"check[]\">"
+  },
+  {
+    "id": "0170",
+    "value": "Papaverin 40 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0170\" name=\"check[]\">"
+  },
+  {
+    "id": "0171",
+    "value": "Parasetamol sirup 120 mg/5ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0171\" name=\"check[]\">"
+  },
+  {
+    "id": "0172",
+    "value": "Parasetamol tablet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0172\" name=\"check[]\">"
+  },
+  {
+    "id": "0173",
+    "value": "Phenobarbital 30 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0173\" name=\"check[]\">"
+  },
+  {
+    "id": "0174",
+    "value": "Piracetam 400 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0174\" name=\"check[]\">"
+  },
+  {
+    "id": "0175",
+    "value": "Piracetam 800 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0175\" name=\"check[]\">"
+  },
+  {
+    "id": "0176",
+    "value": "Piracetam injeksi 200 mg/15 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0176\" name=\"check[]\">"
+  },
+  {
+    "id": "0177",
+    "value": "Pirantel tablet 125 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0177\" name=\"check[]\">"
+  },
+  {
+    "id": "0178",
+    "value": "Piridoksin HCl (Vit. B6) tablet 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0178\" name=\"check[]\">"
+  },
+  {
+    "id": "0179",
+    "value": "Piridoksin tablet 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0179\" name=\"check[]\">"
+  },
+  {
+    "id": "0180",
+    "value": "Pirosikam tablet 20 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0180\" name=\"check[]\">"
+  },
+  {
+    "id": "0181",
+    "value": "Plester 1,25 cm x 4,5 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0181\" name=\"check[]\">"
+  },
+  {
+    "id": "0182",
+    "value": "Plester 5 yard x 2 inchi",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0182\" name=\"check[]\">"
+  },
+  {
+    "id": "0183",
+    "value": "Povidon iodida 10 % - 30 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0183\" name=\"check[]\">"
+  },
+  {
+    "id": "0184",
+    "value": "Povidon iodida 10 % - 300 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0184\" name=\"check[]\">"
+  },
+  {
+    "id": "0185",
+    "value": "Povidon Iodida 60 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0185\" name=\"check[]\">"
+  },
+  {
+    "id": "0186",
+    "value": "Povidon iodide lar 10%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0186\" name=\"check[]\">"
+  },
+  {
+    "id": "0187",
+    "value": "Prednison tablet 5 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0187\" name=\"check[]\">"
+  },
+  {
+    "id": "0188",
+    "value": "Primaquin tablet",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0188\" name=\"check[]\">"
+  },
+  {
+    "id": "0189",
+    "value": "Propanolol HCl 40 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0189\" name=\"check[]\">"
+  },
+  {
+    "id": "0190",
+    "value": "Propiltiourasil (PTU) tablet 100 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0190\" name=\"check[]\">"
+  },
+  {
+    "id": "0191",
+    "value": "Propranolol HCl tablet 40 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0191\" name=\"check[]\">"
+  },
+  {
+    "id": "0192",
+    "value": "Ramoksil kaplet 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0192\" name=\"check[]\">"
+  },
+  {
+    "id": "0193",
+    "value": "Ramoksil Sirup 60 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0193\" name=\"check[]\">"
+  },
+  {
+    "id": "0194",
+    "value": "Ranitidin Injeksi 25 mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0194\" name=\"check[]\">"
+  },
+  {
+    "id": "0195",
+    "value": "Ranitidin tablet 150 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0195\" name=\"check[]\">"
+  },
+  {
+    "id": "0196",
+    "value": "Ranitidin tablet 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0196\" name=\"check[]\">"
+  },
+  {
+    "id": "0197",
+    "value": "Reserpin tablet 25 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0197\" name=\"check[]\">"
+  },
+  {
+    "id": "0198",
+    "value": "Ringer laktat",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0198\" name=\"check[]\">"
+  },
+  {
+    "id": "0199",
+    "value": "Salap 2 - 4 kombinasi : Asam salisilat 2 % +",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pot",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0199\" name=\"check[]\">"
+  },
+  {
+    "id": "0200",
+    "value": "Salbutamol 2 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0200\" name=\"check[]\">"
+  },
+  {
+    "id": "0201",
+    "value": "Salbutamol 4 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0201\" name=\"check[]\">"
+  },
+  {
+    "id": "0202",
+    "value": "Salisic talk",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0202\" name=\"check[]\">"
+  },
+  {
+    "id": "0203",
+    "value": "Salisil bedak 2 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0203\" name=\"check[]\">"
+  },
+  {
+    "id": "0204",
+    "value": "Sefadroksil 125 mg/5 ml sirup kering",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0204\" name=\"check[]\">"
+  },
+  {
+    "id": "0205",
+    "value": "Sefadroksil 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0205\" name=\"check[]\">"
+  },
+  {
+    "id": "0206",
+    "value": "Semen Seng Fosfat",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0206\" name=\"check[]\">"
+  },
+  {
+    "id": "0207",
+    "value": "Serum Anti Tetanus inj. 1.500 IU/amp (ATS)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0207\" name=\"check[]\">"
+  },
+  {
+    "id": "0208",
+    "value": "Sianokobalamin (Vit. B12) ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0208\" name=\"check[]\">"
+  },
+  {
+    "id": "0209",
+    "value": "Sianokobalamin (Vit. B12) inj. 500 mg / ml - 1 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0209\" name=\"check[]\">"
+  },
+  {
+    "id": "0210",
+    "value": "Sianokobalamin injeksi 500 mcg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0210\" name=\"check[]\">"
+  },
+  {
+    "id": "0211",
+    "value": "Silk (benang bedah sutera) No. 3/0 dengan",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0211\" name=\"check[]\">"
+  },
+  {
+    "id": "0212",
+    "value": "Simvastatin 10 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0212\" name=\"check[]\">"
+  },
+  {
+    "id": "0213",
+    "value": "Siprofloksasin 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0213\" name=\"check[]\">"
+  },
+  {
+    "id": "0214",
+    "value": "Spuit 0,05 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0214\" name=\"check[]\">"
+  },
+  {
+    "id": "0215",
+    "value": "Spuit 0,5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0215\" name=\"check[]\">"
+  },
+  {
+    "id": "0216",
+    "value": "Spuit 10 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0216\" name=\"check[]\">"
+  },
+  {
+    "id": "0217",
+    "value": "Spuit 3 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0217\" name=\"check[]\">"
+  },
+  {
+    "id": "0218",
+    "value": "Spuit 5 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0218\" name=\"check[]\">"
+  },
+  {
+    "id": "0219",
+    "value": "Sulfasetamida  Natrium tetes mata 15 %",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0219\" name=\"check[]\">"
+  },
+  {
+    "id": "0220",
+    "value": "Surgical gloves 6,5",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0220\" name=\"check[]\">"
+  },
+  {
+    "id": "0221",
+    "value": "Surgical gloves 7",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0221\" name=\"check[]\">"
+  },
+  {
+    "id": "0222",
+    "value": "Surgical gloves 7,5",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0222\" name=\"check[]\">"
+  },
+  {
+    "id": "0223",
+    "value": "Temporary Stopping Flecher",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0223\" name=\"check[]\">"
+  },
+  {
+    "id": "0224",
+    "value": "Tetrasiklin 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0224\" name=\"check[]\">"
+  },
+  {
+    "id": "0225",
+    "value": "Tetrasiklin HCl kapsul 250 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0225\" name=\"check[]\">"
+  },
+  {
+    "id": "0226",
+    "value": "Tetrasiklin HCl kapsul 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0226\" name=\"check[]\">"
+  },
+  {
+    "id": "0227",
+    "value": "Thiamphenicol 500 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0227\" name=\"check[]\">"
+  },
+  {
+    "id": "0228",
+    "value": "Tiamin 100 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0228\" name=\"check[]\">"
+  },
+  {
+    "id": "0229",
+    "value": "Tiamin HCl/Mononitrat (Vit.B1) inj.100mg/ml-1ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0229\" name=\"check[]\">"
+  },
+  {
+    "id": "0230",
+    "value": "Tiamin HCl/Mononitrat (Vit.B1) tablet 50 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0230\" name=\"check[]\">"
+  },
+  {
+    "id": "0231",
+    "value": "Tramadol Injeksi 50 mg/ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0231\" name=\"check[]\">"
+  },
+  {
+    "id": "0232",
+    "value": "Traneksamat acid tablet",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0232\" name=\"check[]\">"
+  },
+  {
+    "id": "0233",
+    "value": "Verban 4 yard x 10 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0233\" name=\"check[]\">"
+  },
+  {
+    "id": "0234",
+    "value": "Verban 4 yard x 15 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0234\" name=\"check[]\">"
+  },
+  {
+    "id": "0235",
+    "value": "Verban 4 yard x 5 cm",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0235\" name=\"check[]\">"
+  },
+  {
+    "id": "0236",
+    "value": "Vevrin Drops 15 ml",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0236\" name=\"check[]\">"
+  },
+  {
+    "id": "0237",
+    "value": "Vitamin B kompleks tablet",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0237\" name=\"check[]\">"
+  },
+  {
+    "id": "0238",
+    "value": "ZINK 20 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0238\" name=\"check[]\">"
+  },
+  {
+    "id": "0239",
+    "value": "CIMETIDINE 200 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0239\" name=\"check[]\">"
+  },
+  {
+    "id": "0240",
+    "value": "HALOPERIDOL 5 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0240\" name=\"check[]\">"
+  },
+  {
+    "id": "0241",
+    "value": "TABLET TAMBAH DARAHKOMBINASI",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0241\" name=\"check[]\">"
+  },
+  {
+    "id": "0242",
+    "value": "CO-AMOXICLAV 625 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0242\" name=\"check[]\">"
+  },
+  {
+    "id": "0243",
+    "value": "HYOSINE N-BUTYL BROMIDE TABLET PLUS",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0243\" name=\"check[]\">"
+  },
+  {
+    "id": "0244",
+    "value": "FENITOIN NA KAPSUL 100 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0244\" name=\"check[]\">"
+  },
+  {
+    "id": "0245",
+    "value": "dimenhitdrinate 50 mg",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0245\" name=\"check[]\">"
+  },
+  {
+    "id": "0246",
+    "value": "RETINOL (VITAMIN A) KAPSUL 200.000 IU",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0246\" name=\"check[]\">"
+  },
+  {
+    "id": "0247",
+    "value": "BETAHISTINE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0247\" name=\"check[]\">"
+  },
+  {
+    "id": "0248",
+    "value": "LOPERAMIDE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0248\" name=\"check[]\">"
+  },
+  {
+    "id": "0249",
+    "value": "FENOL GLISEROL TETES TELINGA",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0249\" name=\"check[]\">"
+  },
+  {
+    "id": "0250",
+    "value": "DOKSISIKLINE 100 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0250\" name=\"check[]\">"
+  },
+  {
+    "id": "0251",
+    "value": "KLORPROMAZIN TAB 100 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0251\" name=\"check[]\">"
+  },
+  {
+    "id": "0252",
+    "value": "ACETOSAL",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0252\" name=\"check[]\">"
+  },
+  {
+    "id": "0253",
+    "value": "CELL PACK",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0253\" name=\"check[]\">"
+  },
+  {
+    "id": "0254",
+    "value": "ALPRAZOLAM 5 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0254\" name=\"check[]\">"
+  },
+  {
+    "id": "0255",
+    "value": "OBAT ANTI TBC FDC I &amp; III",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Paket",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0255\" name=\"check[]\">"
+  },
+  {
+    "id": "0256",
+    "value": "SOLVITRAL (MULTIVITAMIN)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0256\" name=\"check[]\">"
+  },
+  {
+    "id": "0257",
+    "value": "ALBENDAZOL 400 MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0257\" name=\"check[]\">"
+  },
+  {
+    "id": "0258",
+    "value": "KLORAMFENIKOL SIRUP",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0258\" name=\"check[]\">"
+  },
+  {
+    "id": "0259",
+    "value": "KERTAS PUYER MESIN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0259\" name=\"check[]\">"
+  },
+  {
+    "id": "0260",
+    "value": "AGUADES STERIL",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0260\" name=\"check[]\">"
+  },
+  {
+    "id": "0261",
+    "value": "KERTAS RESEP MERAH ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0261\" name=\"check[]\">"
+  },
+  {
+    "id": "0262",
+    "value": "KERTAS RESEP KUNING",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0262\" name=\"check[]\">"
+  },
+  {
+    "id": "0263",
+    "value": "SPUIT 1 CC",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0263\" name=\"check[]\">"
+  },
+  {
+    "id": "0264",
+    "value": "ABBOCATH 18",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0264\" name=\"check[]\">"
+  },
+  {
+    "id": "0265",
+    "value": "ABBOCATH 20",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0265\" name=\"check[]\">"
+  },
+  {
+    "id": "0266",
+    "value": "ABBOCATH 22",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0266\" name=\"check[]\">"
+  },
+  {
+    "id": "0267",
+    "value": "ABBOCATH 24",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0267\" name=\"check[]\">"
+  },
+  {
+    "id": "0268",
+    "value": " CONBIVENT ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "fls",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0268\" name=\"check[]\">"
+  },
+  {
+    "id": "0269",
+    "value": "metoclopramide inj",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0269\" name=\"check[]\">"
+  },
+  {
+    "id": "0270",
+    "value": "EPINEFRIN HCL/BITATRAT",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0270\" name=\"check[]\">"
+  },
+  {
+    "id": "0271",
+    "value": "AMPISILLIN SERB INJ 1000 MG/Vial",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0271\" name=\"check[]\">"
+  },
+  {
+    "id": "0272",
+    "value": "KASA PEMBALUT HYDROFIL 4MX10",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0272\" name=\"check[]\">"
+  },
+  {
+    "id": "0273",
+    "value": "MESS PISAU BEDAH",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0273\" name=\"check[]\">"
+  },
+  {
+    "id": "0274",
+    "value": " COMPOSIT (A3.5) ANTERIOR ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0274\" name=\"check[]\">"
+  },
+  {
+    "id": "0275",
+    "value": " COMPOSIT (A3.5) POSTERIOR ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0275\" name=\"check[]\">"
+  },
+  {
+    "id": "0276",
+    "value": "COMPOSIT (A2) POSTERIOR",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0276\" name=\"check[]\">"
+  },
+  {
+    "id": "0277",
+    "value": "COMPOSIT (A2) ANTERIOR",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0277\" name=\"check[]\">"
+  },
+  {
+    "id": "0278",
+    "value": "OCO",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0278\" name=\"check[]\">"
+  },
+  {
+    "id": "0279",
+    "value": "MONOKLOR KAMPER MENTHOL CAIRAN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0279\" name=\"check[]\">"
+  },
+  {
+    "id": "0280",
+    "value": "TRIKRESOL FORMALIN CAIRAN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0280\" name=\"check[]\">"
+  },
+  {
+    "id": "0281",
+    "value": "SPONGOSTAN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0281\" name=\"check[]\">"
+  },
+  {
+    "id": "0282",
+    "value": "POLIKRESULEN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0282\" name=\"check[]\">"
+  },
+  {
+    "id": "0283",
+    "value": "GLASS IONOMER CEMENT (GC IX)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0283\" name=\"check[]\">"
+  },
+  {
+    "id": "0284",
+    "value": "LARUTAN DRABSKIN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0284\" name=\"check[]\">"
+  },
+  {
+    "id": "0285",
+    "value": "JARUM JAHIT ( BEDAH ) NO. 9 - 14",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0285\" name=\"check[]\">"
+  },
+  {
+    "id": "0286",
+    "value": "TRIHEXYPHENIDIL 2MG (HEXIMER)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0286\" name=\"check[]\">"
+  },
+  {
+    "id": "0287",
+    "value": "SCALVEN 25 G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0287\" name=\"check[]\">"
+  },
+  {
+    "id": "0288",
+    "value": "COUNTERPAIN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0288\" name=\"check[]\">"
+  },
+  {
+    "id": "0289",
+    "value": "BIO PLACENTON",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0289\" name=\"check[]\">"
+  },
+  {
+    "id": "0290",
+    "value": "NISTATIN 100.000 IU/G TAB/VAG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Suppositoria",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0290\" name=\"check[]\">"
+  },
+  {
+    "id": "0291",
+    "value": "AMPISILLIN SERB INJ 1000 MG/Vial",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0291\" name=\"check[]\">"
+  },
+  {
+    "id": "0292",
+    "value": "EPINEFRIN HCL/BITATRAT",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0292\" name=\"check[]\">"
+  },
+  {
+    "id": "0293",
+    "value": " METOCLOPRAMIDE 5MG/ML ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0293\" name=\"check[]\">"
+  },
+  {
+    "id": "0294",
+    "value": " METAMIZOLE INJ ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0294\" name=\"check[]\">"
+  },
+  {
+    "id": "0295",
+    "value": "KASA HIDROPYL 40 X 80 ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0295\" name=\"check[]\">"
+  },
+  {
+    "id": "0296",
+    "value": "HAND SCOON ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0296\" name=\"check[]\">"
+  },
+  {
+    "id": "0297",
+    "value": "SARUNG TANGAN PANJANG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0297\" name=\"check[]\">"
+  },
+  {
+    "id": "0298",
+    "value": "URINE BAG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Bag",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0298\" name=\"check[]\">"
+  },
+  {
+    "id": "0299",
+    "value": "KASA PEMBALUT HYDROFIL 4MX10",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0299\" name=\"check[]\">"
+  },
+  {
+    "id": "0300",
+    "value": "FOLEY CATETER",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0300\" name=\"check[]\">"
+  },
+  {
+    "id": "0301",
+    "value": "MINERAL MIX",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0301\" name=\"check[]\">"
+  },
+  {
+    "id": "0302",
+    "value": "KETOCONAZOLE TAB",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0302\" name=\"check[]\">"
+  },
+  {
+    "id": "0303",
+    "value": "anti hemoroid",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Suppositoria",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0303\" name=\"check[]\">"
+  },
+  {
+    "id": "0304",
+    "value": "KASA STERIL",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Sachet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0304\" name=\"check[]\">"
+  },
+  {
+    "id": "0305",
+    "value": "dulcolax 10 mg ( dewasa )",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Suppositoria",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0305\" name=\"check[]\">"
+  },
+  {
+    "id": "0306",
+    "value": "AMINOFILIN INJEKSI 24 MG/ML",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0306\" name=\"check[]\">"
+  },
+  {
+    "id": "0307",
+    "value": "AMLODIPIN 10MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0307\" name=\"check[]\">"
+  },
+  {
+    "id": "0308",
+    "value": "CEFIXIME 200MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaplet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0308\" name=\"check[]\">"
+  },
+  {
+    "id": "0309",
+    "value": "AZITHROMICYN 500MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0309\" name=\"check[]\">"
+  },
+  {
+    "id": "0310",
+    "value": "DIAZEPAM 5MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0310\" name=\"check[]\">"
+  },
+  {
+    "id": "0311",
+    "value": "FITOMENADION INJ 2 MG/ML",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0311\" name=\"check[]\">"
+  },
+  {
+    "id": "0312",
+    "value": "FLUCONAZOLE 150MG",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0312\" name=\"check[]\">"
+  },
+  {
+    "id": "0313",
+    "value": "KA-EN 3B",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0313\" name=\"check[]\">"
+  },
+  {
+    "id": "0314",
+    "value": "MAGNESIUM SULFAT 40% (MGSO4)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Flakon",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0314\" name=\"check[]\">"
+  },
+  {
+    "id": "0315",
+    "value": "PAMOL SUP",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Suppositoria",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0315\" name=\"check[]\">"
+  },
+  {
+    "id": "0316",
+    "value": "RETINOL (VITAMIN A) KAPSUL 100.000 IU",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kapsul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0316\" name=\"check[]\">"
+  },
+  {
+    "id": "0317",
+    "value": "SOLVITRON / MULTIVITAMIN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0317\" name=\"check[]\">"
+  },
+  {
+    "id": "0318",
+    "value": "URISPAS",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0318\" name=\"check[]\">"
+  },
+  {
+    "id": "0319",
+    "value": "VENTOLIN NEBULE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0319\" name=\"check[]\">"
+  },
+  {
+    "id": "0320",
+    "value": "MYOMERGIN INJ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0320\" name=\"check[]\">"
+  },
+  {
+    "id": "0321",
+    "value": "DULCOLAX SUPP 5MG (ANAK)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Suppositoria",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0321\" name=\"check[]\">"
+  },
+  {
+    "id": "0322",
+    "value": "LITAKUR SIRUP",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0322\" name=\"check[]\">"
+  },
+  {
+    "id": "0323",
+    "value": "SCABIMITE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tube",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0323\" name=\"check[]\">"
+  },
+  {
+    "id": "0324",
+    "value": "BLOOD LANCET 28G",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0324\" name=\"check[]\">"
+  },
+  {
+    "id": "0325",
+    "value": "KASA PEMBALUT 2 M X 80 CM",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Roll",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0325\" name=\"check[]\">"
+  },
+  {
+    "id": "0326",
+    "value": "KERTAS PUYER OBAT",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0326\" name=\"check[]\">"
+  },
+  {
+    "id": "0327",
+    "value": "KERTAS RESEP PUTIH",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0327\" name=\"check[]\">"
+  },
+  {
+    "id": "0328",
+    "value": "KLIP PLASTIK OBAT",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Lembar",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0328\" name=\"check[]\">"
+  },
+  {
+    "id": "0329",
+    "value": "HANDSCOON STERIL",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Pasang",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0329\" name=\"check[]\">"
+  },
+  {
+    "id": "0330",
+    "value": "SAFETY BOX",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0330\" name=\"check[]\">"
+  },
+  {
+    "id": "0331",
+    "value": "KAPORIT",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kaleng",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0331\" name=\"check[]\">"
+  },
+  {
+    "id": "0332",
+    "value": "COMPOSIT (A3) ANTERIOR/SOLARE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0332\" name=\"check[]\">"
+  },
+  {
+    "id": "0333",
+    "value": "COMPOSIT (A3) POSTERIOR / SOLAREX",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0333\" name=\"check[]\">"
+  },
+  {
+    "id": "0334",
+    "value": "STAE BONDING",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0334\" name=\"check[]\">"
+  },
+  {
+    "id": "0335",
+    "value": "CELLCLEAN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0335\" name=\"check[]\">"
+  },
+  {
+    "id": "0336",
+    "value": "EDTA 10%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0336\" name=\"check[]\">"
+  },
+  {
+    "id": "0337",
+    "value": "PP TEST",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0337\" name=\"check[]\">"
+  },
+  {
+    "id": "0338",
+    "value": "STIK ASAM URAT (EASY TOUCH)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0338\" name=\"check[]\">"
+  },
+  {
+    "id": "0339",
+    "value": "STIK GULA DARAH (EASY TOUCH)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0339\" name=\"check[]\">"
+  },
+  {
+    "id": "0340",
+    "value": "STIK HEMOGLOBIN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0340\" name=\"check[]\">"
+  },
+  {
+    "id": "0341",
+    "value": "STIK KOLESTEROL DARAH (EASY TOUCH)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0341\" name=\"check[]\">"
+  },
+  {
+    "id": "0342",
+    "value": "STIK URINE 10 PARAMETER",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0342\" name=\"check[]\">"
+  },
+  {
+    "id": "0343",
+    "value": "STIK URINE 3 PARAMETER",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0343\" name=\"check[]\">"
+  },
+  {
+    "id": "0344",
+    "value": "STROMATOLIZER WH",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0344\" name=\"check[]\">"
+  },
+  {
+    "id": "0345",
+    "value": "ZIEHL NELSEN",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0345\" name=\"check[]\">"
+  },
+  {
+    "id": "0346",
+    "value": "HIV ONCOPROBE",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0346\" name=\"check[]\">"
+  },
+  {
+    "id": "0347",
+    "value": "HIV TRILINE INTEC",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0347\" name=\"check[]\">"
+  },
+  {
+    "id": "0348",
+    "value": "ACCU-CHEK",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Box",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0348\" name=\"check[]\">"
+  },
+  {
+    "id": "0349",
+    "value": "PRENAMIA (MULTIVITAMIN)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0349\" name=\"check[]\">"
+  },
+  {
+    "id": "0350",
+    "value": "THYAMFENICOL SIRUP",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0350\" name=\"check[]\">"
+  },
+  {
+    "id": "0351",
+    "value": "CEFTRIAXONE 1GR",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0351\" name=\"check[]\">"
+  },
+  {
+    "id": "0352",
+    "value": "BENZATIN PENICILLIN 2.4JT IU",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Vial",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0352\" name=\"check[]\">"
+  },
+  {
+    "id": "0353",
+    "value": "GLUKOSA LARUTAN INFUS 10%",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0353\" name=\"check[]\">"
+  },
+  {
+    "id": "0354",
+    "value": "HYOSINE N-BUTYL BROMIDE INJ",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Ampul",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0354\" name=\"check[]\">"
+  },
+  {
+    "id": "0355",
+    "value": "INSTO TETES MATA",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0355\" name=\"check[]\">"
+  },
+  {
+    "id": "0356",
+    "value": "OBJEK GLASS",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0356\" name=\"check[]\">"
+  },
+  {
+    "id": "0357",
+    "value": "BAHAN TUMPATAN SEMENTARA",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Botol",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0357\" name=\"check[]\">"
+  },
+  {
+    "id": "0358",
+    "value": "DEVITALISASI PASTA (NON ARSEN)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Kotak",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0358\" name=\"check[]\">"
+  },
+  {
+    "id": "0359",
+    "value": "ETCHA",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0359\" name=\"check[]\">"
+  },
+  {
+    "id": "0360",
+    "value": "PASTA CA(OH)2 (DYCAL)",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Buah",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0360\" name=\"check[]\">"
+  },
+  {
+    "id": "0361",
+    "value": "ANTASIDA DOEN TAB",
+    "obat_title": "LIFE SAVING",
+    "obat_unit": "Tablet",
+    "obat_jenis": "OBAT",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"0361\" name=\"check[]\">"
+  }
+]

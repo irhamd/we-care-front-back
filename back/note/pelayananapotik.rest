@@ -1,0 +1,133 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+//CATATAN
+//BUAT DAFTAR PASIEN YANG SUDAH DIINPUT RESEPNYA
+//KLIK SATU DAFTAR RESEP DAN BERALIH KE FORM BARU AMBIL DETAIL RESEP
+//SIMPAN PELAYANAN OBAT
+//BUAT FORM DAFTAR PELAYANAN OBAT
+//BERALIH KE FORM BARU LIAT DETAIL PELAYANAN OBAT PASIEN
+//DELETE TOMBOL
+###
+//save-pelayananobat
+POST http://localhost:8000/api/apotik/save-obat-pasien
+X-TOKEN: {{token}}
+
+{
+   "norec_apd" : "df54adf0-e38a-11eb-9a1c-e3840d14",
+   "iddepo": 19,
+   "depo": "Apotek",
+   "idpenulisresep" : 1,
+   "statusprioritas": "TIDAK",
+   "idapoteker": 1,
+   "noresep": "A761827",
+   "norec_rp": "",
+   "detail" : [
+       {
+           "idjeniskemasan" : 1,
+            "racikanke" : null,
+            "dosisracikan" : null,
+            "idproduk" : 392,
+            "jumlah" : 2,
+            "signa" : "1x1",
+            "idaturanpakai" : 1,
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       },
+       {
+           "idjeniskemasan" : 1,
+            "racikanke" : null,
+            "dosisracikan" : null,
+            "idproduk" : 409,
+            "jumlah" : 2,
+            "signa" : "1x1",
+            "idaturanpakai" : 1,
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       }
+   ]
+
+}
+
+###
+//get-pelayananobat
+GET http://localhost:8000/api/apotik/get-daftar-pasien-obat
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-01 10:00:00",
+    "tglAkhir":"2021-08-08 23:59:59",
+    "idruangan":"",
+    "iddepo":"",
+    "nocm":"",
+    "namapasien":"",
+    "noregistrasi":""
+}
+
+###
+//get-pelayananobat
+GET http://localhost:8000/api/apotik/get-detail-obat-bystruk?noregistrasi=2107000114
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114"
+}
+
+###
+//get-daftar-pasien-resep
+GET http://localhost:8000/api/apotik/get-daftar-pasien-resep
+X-TOKEN: {{token}}
+{
+    "tglAwal":"2021-07-01 10:00:00",
+    "tglAkhir":"2021-08-08 23:59:59",
+    "idruangan":"",
+    "iddepo":"",
+    "nocm":"",
+    "namapasien":"",
+    "noregistrasi":""
+}
+
+###
+//get-detail-resep
+GET http://localhost:8000/api/apotik/get-detail-resep-bynores?norec_rp=62ec2f00-f726-11eb-a954-070325a2
+X-TOKEN: {{token}}
+
+{
+    "norec_rp":"62ec2f00-f726-11eb-a954-070325a2"
+}
+
+###
+//combo produk
+GET http://localhost:8000/api/apotik/get-produk-pelayanan-obat
+X-TOKEN: {{token}}
+
+{
+    "nama":"a",
+    "idruangan": 19
+}
+
+###
+//combo pegawai
+GET http://localhost:8000/api/apotik/get-pegawai-pelayanan-obat
+X-TOKEN: {{token}}
+
+{
+    "nama":"a"
+}
+
+###
+//combo ruangan
+GET http://localhost:8000/api/apotik/get-ruangan-pelayanan-obat
+X-TOKEN: {{token}}
+
+{
+    "nama":"a"
+}
+
+###
+//delete pelayanan obat
+POST http://localhost:8000/api/apotik/delete-pelayanan-obat
+X-TOKEN: {{token}}
+
+{
+    "norec_item_pp": ["72709ac0-f8b6-11eb-9836-2744b9bd"]
+}

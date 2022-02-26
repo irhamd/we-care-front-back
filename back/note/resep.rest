@@ -1,0 +1,79 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//save-resep
+POST http://localhost:8000/api/resep/save-resep-pasien
+X-TOKEN: {{token}}
+
+{
+   "norec_rp":"",
+   "norec_apd" : "e805c0f0-ef37-11eb-9e19-73789f0a",
+   "idruanganresep": 19,
+   "idpegawai" : 1,
+   "idasisten" : null,
+   "alergiobat" : "bebassss",
+   "statusprioritas": "TIDAK",
+   "detail" : [
+       {
+           "norec_rpd" : "",
+           "idjeniskemasan" : 1,
+            "racikanke" : null,
+            "dosisracikan" : null,
+            "idproduk" : 516,
+            "jumlah" : 2,
+            "signa" : "1x1",
+            "idaturanpakai" : 1,
+            "keterangan" : "contoh",
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       },
+       {
+           "norec_rpd" : "",
+           "idjeniskemasan" : 1,
+            "racikanke" : null,
+            "dosisracikan" : null,
+            "idproduk" : 519,
+            "jumlah" : 1,
+            "signa" : "2x1",
+            "idaturanpakai" : 1,
+            "keterangan" : "contoh2",
+            "hargasatuan" : 0,
+            "hargatotal": 0
+       }
+   ]
+
+}
+
+###
+//get-resep-pasien
+GET http://localhost:8000/api/resep/get-resep-pasien?noregistrasi=2107000131
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114",
+}
+
+###
+//get-combo
+GET http://localhost:8000/api/resep/get-combo-resep
+X-TOKEN: {{token}}
+
+
+###
+//get-produk-resep
+GET http://localhost:8000/api/resep/get-produk-resep-part?nama=am
+X-TOKEN: {{token}}
+
+{
+    "nama":"am"
+}
+
+
+###
+//delete-item-resep
+POST http://localhost:8000/api/resep/delete-item-resep
+X-TOKEN: {{token}}
+
+{
+   "nerec_items_rpd" : ["1eccfab0-ea97-11eb-b098-812c28d5", "1ecdd650-ea97-11eb-bfb8-4db4f52d"]
+}

@@ -1,0 +1,35 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+GET http://localhost:8000/api/sign-in/
+
+{
+    "username":"admin.it",
+    "password":"kita"
+}
+
+# rest client bermasalah
+# {
+#     "response": {
+#         "X_TOKEN": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g",
+#         "userData": {
+#             "id": 1,
+#             "namalengkap": "Administrator"
+#         }
+#     },
+#     "metadata": {
+#         "message": "Ok",
+#         "code": 200
+#     }
+# }
+
+###
+GET http://localhost:8000/api/pasien/get-pasien-lama
+X-TOKEN: {{token}}
+
+{
+    "nocm":"0005",
+    "namapasien": "Sumanto"
+}
+
+###

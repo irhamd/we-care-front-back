@@ -1,0 +1,72 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+###
+//get-daftar-produk
+GET http://localhost:8000/api/produk/get-daftar-produk
+X-TOKEN: {{token}}
+
+{
+    "produk":"",
+    "idproduk":"",
+    "idjenisproduk":1,
+    "status": true,
+    "jumlahpage": 20,
+    "page" : 3
+}
+
+###
+//get-combo
+GET http://localhost:8000/api/produk/get-combo-produk
+X-TOKEN: {{token}}
+
+
+###
+//save-produk
+POST http://localhost:8000/api/produk/save-produk-baru
+X-TOKEN: {{token}}
+
+{
+    "idproduk" : "",
+    "produk" : "Coba Produk 2",
+    "idsatuan" : 23,
+    "idjenisproduk" : 1,
+    "idjenisprodukdetail" : 7,
+    "idkategoriproduk" : ""
+}
+
+###
+//update-status-produk
+POST http://localhost:8000/api/produk/enable-disable-produk
+X-TOKEN: {{token}}
+
+{
+    "idproduk" : 745,
+    "status" : false
+}
+
+###
+//get-daftar-tarif-layanan
+GET http://localhost:8000/api/produk/get-daftar-tarif-layanan?page=23
+X-TOKEN: {{token}}
+
+{
+    "produk":"",
+    "idproduk":"",
+    "idjenisproduk":1,
+    "idjenispelayanan": "",
+    "jumlahpage": 20,
+    "page": 4
+}
+
+###
+//save-tarif-layanan
+POST http://localhost:8000/api/produk/save-tarif-layanan
+X-TOKEN: {{token}}
+
+{
+    "idharganetto" : "",
+    "idproduk" : 745,
+    "idjenispelayanan" : 1,
+    "hargasatuan" : 1000
+}

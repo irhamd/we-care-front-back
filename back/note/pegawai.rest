@@ -1,0 +1,94 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+###
+//get-daftar-pegawai
+GET http://localhost:8000/api/pegawai/get-daftar-pegawai?namapegawai=
+X-TOKEN: {{token}}
+
+{
+    "namapegawai":""
+}
+
+###
+//get-combo
+GET http://localhost:8000/api/pegawai/get-data-combo-pegawai
+X-TOKEN: {{token}}
+
+
+###
+//save-pegawai
+POST http://localhost:8000/api/pegawai/save-pegawai
+X-TOKEN: {{token}}
+
+{
+    "idpegawai" : "",
+    "nik" : "52039847262662",
+    "nip" : "198273660082736",
+    "noserikartupegawai" : "",
+    "namalengkap" : "dr. H. Mantum Sakinah Sp.PhP",
+    "gelardepan" : "dr",
+    "gelarbelakang" : "Sp.PhP",
+    "jeniskelamin" : "Laki-laki",
+    "idjeniskelamin" : 1,
+    "tempatlahir" : "Mataram",
+    "tgllahir" : "1980-03-01 00:00:00",
+    "agama" : "Islam",
+    "idagama" : 1,
+    "statusperkawinan" : "Belum Kawin",
+    "idstatusperkawinan" : 1,
+    "email" : "mantum@gmail.com",
+    "alamat" : "jln. Suka Muter, Karang Medain no 212",
+    "nohp" : "0989866555",
+    "pendidikanawal" : "S1",
+    "idpendidikanawal" : 9,
+    "kodesdmkawal" : "",
+    "pendidikanakhir" : "S1",
+    "idpendidikanakhir" : 9,
+    "kodesdmkakhir" : "",
+    "jabatan" : "Dokter Spesialis",
+    "idjabatan" : 40,
+    "statuskepegawaian" : "Aparatur Sipil Negara (ASN)-PSN",
+    "idstatuskepegawaian" : 1,
+    "tmtmenjadipns" : "2020-03-01 00:00:00",
+    "tmtmenjadicpns" : "2020-03-01 00:00:01",
+    "tanggalmulaitugas" : "2020-03-01 00:00:02",
+    "tanggalberakhirhonorer" : "2020-03-01 00:00:09",
+    "jeniskepegawaian" : "PNS",
+    "idjeniskepegawaian" : "1",
+    "golonganterakhir" : "4D",
+    "idgolonganterakhir" : 16,
+    "tmtgolongan" : "2020-03-01 00:00:09",
+    "masakerjagolonganthn" : "5",
+    "masakerjagolonganbulan" : "10",
+    "tglberakhirsip" : "2020-03-01 00:00:10",
+    "tglberakhirstr" : "2020-03-01 00:00:11",
+    "tglberakhirsik" : "2020-03-01 00:00:16"
+}
+
+###
+//get-combo-user
+GET http://localhost:8000/api/pegawai/get-combo-user
+X-TOKEN: {{token}}
+
+###
+//get-combo-user
+GET http://localhost:8000/api/pegawai/get-daftar-user?idpegawai=2
+X-TOKEN: {{token}}
+
+{
+    "namapegawai":"",
+    "namauser":""
+}
+
+###
+//get-combo-user
+POST http://localhost:8000/api/pegawai/save-user
+X-TOKEN: {{token}}
+
+{
+    "namauser": "mantum",
+    "katasandi": "mantum",
+    "idkelompokuser":7,
+    "idpegawai": 10
+}

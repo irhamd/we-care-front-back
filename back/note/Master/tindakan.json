@@ -1,0 +1,2650 @@
+[
+  {
+    "id": "UMUM0001",
+    "value": "Paket Persalinan per Vaginam dengan tindakan emergensi dasar",
+    "tarif": "Rp. 800,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"UMUM0001\" name=\"check[]\">"
+  },
+  {
+    "id": "02013",
+    "value": "Paket Persalinan per Vaginam normal (oleh Dokter)  - BPJS",
+    "tarif": "Rp. 800,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02013\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD014",
+    "value": "Persalinan dengan Penyulit",
+    "tarif": "Rp. 750,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD014\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02006",
+    "value": "Paket Persalinan per Vaginam dengan tindakan emergensi dasar",
+    "tarif": "Rp. 750,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02006\" name=\"check[]\">"
+  },
+  {
+    "id": "02006",
+    "value": "Paket Persalinan per Vaginam dengan tindakan emergensi dasar - BPJS",
+    "tarif": "Rp. 750,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02006\" name=\"check[]\">"
+  },
+  {
+    "id": "02007",
+    "value": "Penanganan pendarahan pasca keguguran   - BPJS",
+    "tarif": "Rp. 750,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02007\" name=\"check[]\">"
+  },
+  {
+    "id": "02012",
+    "value": "Paket Persalinan per Vaginam normal (oleh Bidan)  - BPJS",
+    "tarif": "Rp. 700,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02012\" name=\"check[]\">"
+  },
+  {
+    "id": "02005",
+    "value": "Paket persalinan per vaginam normal - BPJS",
+    "tarif": "Rp. 600,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02005\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02013",
+    "value": "Paket Persalinan per Vaginam normal (oleh Dokter)",
+    "tarif": "Rp. 600,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02013\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02012",
+    "value": "Paket Persalinan per Vaginam normal (oleh Bidan)",
+    "tarif": "Rp. 600,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02012\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD015",
+    "value": "Tindakan Curetase",
+    "tarif": "Rp. 500,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD015\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD013",
+    "value": "Persalinan Normal",
+    "tarif": "Rp. 500,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD013\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS03122",
+    "value": "MOP / Vasektomi",
+    "tarif": "Rp. 350,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS03122\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD017",
+    "value": "Perawatan bayi di luar Puskesmas 5 hari",
+    "tarif": "Rp. 350,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD017\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD042",
+    "value": "Visum Et Repertum : Tidakan Formalin",
+    "tarif": "Rp. 300,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD042\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD016",
+    "value": "Perawatan bayi di Puskesmas 1 s/d 3 hari",
+    "tarif": "Rp. 250,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD016\" name=\"check[]\">"
+  },
+  {
+    "id": "02010",
+    "value": "Koreksi Paket Persalinan per Vaginam normal (oleh Dokter), Sesuai PMK 52/2016  - BPJS",
+    "tarif": "Rp. 200,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02010\" name=\"check[]\">"
+  },
+  {
+    "id": "02008",
+    "value": "Koreksi Paket Persalinan per Vaginam dengan tindakan emergensi dasar, Sesuai PMK 52/2016  - BPJS",
+    "tarif": "Rp. 200,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02008\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05051",
+    "value": "HbA1c",
+    "tarif": "Rp. 200,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05051\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02001",
+    "value": "Rawat Inap di R. Perawatan Biasa",
+    "tarif": "Rp. 180,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02001\" name=\"check[]\">"
+  },
+  {
+    "id": "02003",
+    "value": "Pelayanan tindakan pasca persalinan - BPJS",
+    "tarif": "Rp. 175,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02003\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02003",
+    "value": "Pelayanan tindakan pasca persalinan",
+    "tarif": "Rp. 175,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02003\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD008",
+    "value": "Operasi kecil : Khitan",
+    "tarif": "Rp. 150,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD008\" name=\"check[]\">"
+  },
+  {
+    "id": "02004",
+    "value": "Pelayanan pra-rujukan pada komplikasi kebidanan dan neonatal - BPJS",
+    "tarif": "Rp. 125,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02004\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01007",
+    "value": "Pelayanan komplikasi KB pasca persalinan\r\n",
+    "tarif": "Rp. 125,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01007\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS02004",
+    "value": "Pelayanan pra-rujukan pada komplikasi kebidanan dan neonatal",
+    "tarif": "Rp. 125,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS02004\" name=\"check[]\">"
+  },
+  {
+    "id": "01007",
+    "value": "Pelayanan komplikasi KB pasca persalinan   - BPJS",
+    "tarif": "Rp. 125,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01007\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD041",
+    "value": "Visum Et Repertum : Ver Kecelakaan / Penganiayaan",
+    "tarif": "Rp. 120,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD041\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD040",
+    "value": "Visum Et Repertum : Periksa Luar",
+    "tarif": "Rp. 120,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD040\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05052",
+    "value": "Microalbuminaria",
+    "tarif": "Rp. 120,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05052\" name=\"check[]\">"
+  },
+  {
+    "id": "02001",
+    "value": "Rawat Inap di R. Perawatan Biasa - BPJS",
+    "tarif": "Rp. 120,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02001\" name=\"check[]\">"
+  },
+  {
+    "id": "02009",
+    "value": "Koreksi Paket Persalinan per Vaginam normal (oleh Bidan), Sesuai PMK 52/2016  - BPJS",
+    "tarif": "Rp. 100,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02009\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01031",
+    "value": "Pelayanan KB : Cabut IUD / Implant",
+    "tarif": "Rp. 100,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01031\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01005",
+    "value": "Pelayanan KB : Pemasangan IUD / Implant\r\n",
+    "tarif": "Rp. 100,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01005\" name=\"check[]\">"
+  },
+  {
+    "id": "02011",
+    "value": "Koreksi Paket Rawat Inap di R. Perawatan Biasa Sesuai PMK 52/2016  - BPJS",
+    "tarif": "Rp. 100,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"02011\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01032",
+    "value": "Pelayanan KB : Cabut &amp; Pemasangan IUD / Implant",
+    "tarif": "Rp. 100,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01032\" name=\"check[]\">"
+  },
+  {
+    "id": "01005",
+    "value": "Pelayanan KB : Pemasangan IUD / Implant   - BPJS",
+    "tarif": "Rp. 100,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01005\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD038",
+    "value": "Pemakaian Mobil Puskesmas / Ambulance Dari Puskesm",
+    "tarif": "Rp. 76,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD038\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05054",
+    "value": "Kolesterol LDL",
+    "tarif": "Rp. 60,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05054\" name=\"check[]\">"
+  },
+  {
+    "id": "G007",
+    "value": "Pembedahan gigi",
+    "tarif": "Rp. 60,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G007\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01024",
+    "value": "Pelayanan ANC 2 (Dua)",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01024\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01023",
+    "value": "Pelayanan ANC 1 (Satu)",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01023\" name=\"check[]\">"
+  },
+  {
+    "id": "09001",
+    "value": "Evakuasi medis / Ambulans Darat   - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"09001\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD035",
+    "value": "Pemasangan dan pencabutan Implant tidak termasuk b",
+    "tarif": "Rp. 50,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD035\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01025",
+    "value": "Pelayanan ANC 3 (Tiga)",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01025\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD034",
+    "value": "Perwatan di ruang rawat inap Puskesmas / Hari obat",
+    "tarif": "Rp. 50,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD034\" name=\"check[]\">"
+  },
+  {
+    "id": "01026",
+    "value": "Pelayanan ANC 4 (Empat)  - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01026\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05056",
+    "value": "Kolesterol Trigliserida",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05056\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS09001",
+    "value": "Evakuasi medis / Ambulans Darat\r\n",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS09001\" name=\"check[]\">"
+  },
+  {
+    "id": "01004",
+    "value": "Pelayanan PNC (FFS)   - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01004\" name=\"check[]\">"
+  },
+  {
+    "id": "01003",
+    "value": "Pelayanan ANC (FFS)   - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01003\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01026",
+    "value": "Pelayanan ANC 4 (Empat)",
+    "tarif": "Rp. 50,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01026\" name=\"check[]\">"
+  },
+  {
+    "id": "01023",
+    "value": "Pelayanan ANC 1 (Satu)  - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01023\" name=\"check[]\">"
+  },
+  {
+    "id": "01025",
+    "value": "Pelayanan ANC 3 (Tiga)  - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01025\" name=\"check[]\">"
+  },
+  {
+    "id": "01024",
+    "value": "Pelayanan ANC 2 (Dua)  - BPJS",
+    "tarif": "Rp. 50,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01024\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05055",
+    "value": "Kolesterol HDL",
+    "tarif": "Rp. 45,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05055\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05053",
+    "value": "Kolesterol Total",
+    "tarif": "Rp. 45,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05053\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD009",
+    "value": "Operasi kecil : pemasangan spalk tangan",
+    "tarif": "Rp. 40,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD009\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD010",
+    "value": "Operasi kecil : pemasangan spalk kaki",
+    "tarif": "Rp. 40,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD010\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD007",
+    "value": "Operasi kecil : Ekterpasi (Lipoma, Ganlijorna, kut",
+    "tarif": "Rp. 40,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD007\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD011",
+    "value": "Huknah",
+    "tarif": "Rp. 30,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD011\" name=\"check[]\">"
+  },
+  {
+    "id": "G008",
+    "value": "Pencabutan komplikasi",
+    "tarif": "Rp. 30,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G008\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD036",
+    "value": "Pemasangan AKDR (IUD) sudah termasuk obat-obatan k",
+    "tarif": "Rp. 30,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD036\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05023",
+    "value": "Kreatinin",
+    "tarif": "Rp. 30,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05023\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD012",
+    "value": "Kumbah Lambung",
+    "tarif": "Rp. 30,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD012\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05022",
+    "value": "Ureum",
+    "tarif": "Rp. 30,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05022\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD004",
+    "value": "Penjahitan luka termasuk obat-obatan lebih 10 simp",
+    "tarif": "Rp. 30,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD004\" name=\"check[]\">"
+  },
+  {
+    "id": "G005",
+    "value": "Penambalan gigi permanent",
+    "tarif": "Rp. 26,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G005\" name=\"check[]\">"
+  },
+  {
+    "id": "G006",
+    "value": "Perawatan pulpa (Pulpitis)",
+    "tarif": "Rp. 26,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G006\" name=\"check[]\">"
+  },
+  {
+    "id": "01030",
+    "value": "BPJS - Pelayanan PNC 4 (Empat)",
+    "tarif": "Rp. 25,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01030\" name=\"check[]\">"
+  },
+  {
+    "id": "01029",
+    "value": "Pelayanan PNC 3 (Tiga)  - BPJS",
+    "tarif": "Rp. 25,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01029\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01027",
+    "value": "Pelayanan PNC 1 (Satu)",
+    "tarif": "Rp. 25,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01027\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01030",
+    "value": "Pelayanan PNC 4 (Empat)",
+    "tarif": "Rp. 25,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01030\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01029",
+    "value": "Pelayanan PNC 3 (Tiga)",
+    "tarif": "Rp. 25,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01029\" name=\"check[]\">"
+  },
+  {
+    "id": "01027",
+    "value": "Pelayanan PNC 1 (Satu)  - BPJS",
+    "tarif": "Rp. 25,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01027\" name=\"check[]\">"
+  },
+  {
+    "id": "01028",
+    "value": "Pelayanan PNC 2 (Dua)  - BPJS",
+    "tarif": "Rp. 25,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01028\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01028",
+    "value": "Pelayanan PNC 2 (Dua)",
+    "tarif": "Rp. 25,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01028\" name=\"check[]\">"
+  },
+  {
+    "id": "G002",
+    "value": "Tindakan khusus pencabutan gigi sulung",
+    "tarif": "Rp. 20,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G002\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD026",
+    "value": "Perawatan THT Iritasi Telinga",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD026\" name=\"check[]\">"
+  },
+  {
+    "id": "05049",
+    "value": "Gula Darah Puasa (GDP) - PRB/Prolanis - BPJS",
+    "tarif": "Rp. 20,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05049\" name=\"check[]\">"
+  },
+  {
+    "id": "G003",
+    "value": "Pembersihan karang gigi",
+    "tarif": "Rp. 20,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G003\" name=\"check[]\">"
+  },
+  {
+    "id": "G004",
+    "value": "Penambalan gigi sementara",
+    "tarif": "Rp. 20,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G004\" name=\"check[]\">"
+  },
+  {
+    "id": "05048",
+    "value": "Gula Darah Sewaktu (GDS) - PRB/Prolanis - BPJS",
+    "tarif": "Rp. 20,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05048\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS05049",
+    "value": "Gula Darah Puasa (GDP) - PRB/Prolanis",
+    "tarif": "Rp. 20,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS05049\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD023",
+    "value": "Perawatan kulit Insisi Furunkel / Abses",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD023\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD024",
+    "value": "Perawatan THT Belog Tampon",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD024\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD025",
+    "value": "Perawatan THT Corpus Alinium di Hidung dan Telinga",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD025\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD028",
+    "value": "Perawatan THT Parasentesa Telinga",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD028\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD044",
+    "value": "Surat Keterangan Sakit",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD044\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD030",
+    "value": "Perawatan THT Reposisi Trauma Hidung Sederhana",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD030\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD031",
+    "value": "Perawatan THT Spoeling Cerumen Telinga",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD031\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD043",
+    "value": "Surat Keterangan Bebadan Sehat",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD043\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD037",
+    "value": "Injeksi kontrasepsi termasuk obat kontrasepsi",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD037\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD027",
+    "value": "Perawatan THT Neculizer",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD027\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD003",
+    "value": "Penjahitan luka termasuk obat-obatan 4 s/d 10 simp",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD003\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD006",
+    "value": "Operasi kecil : Incisi abses, tampon, grain dengan",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD006\" name=\"check[]\">"
+  },
+  {
+    "id": "G001",
+    "value": "Tindakan khusus pencabutan gigi permanen",
+    "tarif": "Rp. 20,000",
+    "tipe": "GIGI",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"G001\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD029",
+    "value": "Perawatan THT Pengobatan Epistaksis",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD029\" name=\"check[]\">"
+  },
+  {
+    "id": "05050",
+    "value": "Gula Darah Post Prandial (GDPP) - PRB/Prolanis - BPJS",
+    "tarif": "Rp. 20,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05050\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD045",
+    "value": "Surat Keterangan Kehamilan",
+    "tarif": "Rp. 20,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD045\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD033",
+    "value": "Perawatan Urologi Pasang / Angkat Tampon",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD033\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD002",
+    "value": "Penjahitan luka termasuk obat-obatan 1 s/d 3 simpu",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD002\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD032",
+    "value": "Perawatan Urologi Pasang Kateter",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD032\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD001",
+    "value": "Kunjungan berobat jalan",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD001\" name=\"check[]\">"
+  },
+  {
+    "id": "BM003",
+    "value": "Perawatan Mata Streak Retinoscopy",
+    "tarif": "Rp. 16,000",
+    "tipe": "MATA",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BM003\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD020",
+    "value": "Perawatan kulit Vukura Vulgaris",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD020\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD005",
+    "value": "Perawatan luka meliputi pembersihan luka, ganti pe",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD005\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD018",
+    "value": "Perawatan kulit injeksi kenacort / ganglion",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD018\" name=\"check[]\">"
+  },
+  {
+    "id": "BM002",
+    "value": "Perawatan Mata Spooling Bola Mata",
+    "tarif": "Rp. 16,000",
+    "tipe": "MATA",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BM002\" name=\"check[]\">"
+  },
+  {
+    "id": "BM001",
+    "value": "Perawatan Mata Epilasi Bulu Mata",
+    "tarif": "Rp. 16,000",
+    "tipe": "MATA",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BM001\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD022",
+    "value": "Perawatan kulit Kautik",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD022\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD021",
+    "value": "Perawatan kulit Syringoma",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD021\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD019",
+    "value": "Perawatan kulit Necrotomy",
+    "tarif": "Rp. 16,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD019\" name=\"check[]\">"
+  },
+  {
+    "id": "BPJS01006",
+    "value": "Pelayanan KB : Suntik\r\n",
+    "tarif": "Rp. 15,000",
+    "tipe": "REGULAR",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"BPJS01006\" name=\"check[]\">"
+  },
+  {
+    "id": "01006",
+    "value": "Pelayanan KB : Suntik   - BPJS",
+    "tarif": "Rp. 15,000",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01006\" name=\"check[]\">"
+  },
+  {
+    "id": "PRD039",
+    "value": "Pemakaian Mobil Puskesmas / Ambulance Radius &gt; 7 K",
+    "tarif": "Rp. 10,000",
+    "tipe": "PRODUK",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"PRD039\" name=\"check[]\">"
+  },
+  {
+    "id": "05010",
+    "value": "Laju Endap Darah (LED) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05010\" name=\"check[]\">"
+  },
+  {
+    "id": "05008",
+    "value": "Lekosit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05008\" name=\"check[]\">"
+  },
+  {
+    "id": "05007",
+    "value": "Haemaglobin (HB) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05007\" name=\"check[]\">"
+  },
+  {
+    "id": "05006",
+    "value": "Faeces Lengkap / Benxidin/ Telur cacing - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05006\" name=\"check[]\">"
+  },
+  {
+    "id": "04016",
+    "value": "Penanggulangan Dry Socket - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04016\" name=\"check[]\">"
+  },
+  {
+    "id": "05005",
+    "value": "Test Kehamilan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05005\" name=\"check[]\">"
+  },
+  {
+    "id": "05004",
+    "value": "Sedimen - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05004\" name=\"check[]\">"
+  },
+  {
+    "id": "05011",
+    "value": "Erytrosit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05011\" name=\"check[]\">"
+  },
+  {
+    "id": "05012",
+    "value": "Hitung Jenis - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05012\" name=\"check[]\">"
+  },
+  {
+    "id": "04018",
+    "value": "One visite Endodontic - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04018\" name=\"check[]\">"
+  },
+  {
+    "id": "03004",
+    "value": "Perawatan Luka dengan buka jahitan (aff hecting) &gt; 20 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03004\" name=\"check[]\">"
+  },
+  {
+    "id": "03005",
+    "value": "Perawatan Luka tanpa jahitan / ganti verban - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03005\" name=\"check[]\">"
+  },
+  {
+    "id": "03006",
+    "value": "Hecting 1-5 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03006\" name=\"check[]\">"
+  },
+  {
+    "id": "05013",
+    "value": "Trombosit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05013\" name=\"check[]\">"
+  },
+  {
+    "id": "03007",
+    "value": "Hecting 6-10 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03007\" name=\"check[]\">"
+  },
+  {
+    "id": "05014",
+    "value": "Hematokrit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05014\" name=\"check[]\">"
+  },
+  {
+    "id": "05009",
+    "value": "Gambaran darah tepi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05009\" name=\"check[]\">"
+  },
+  {
+    "id": "05003",
+    "value": "Albumin - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05003\" name=\"check[]\">"
+  },
+  {
+    "id": "04015",
+    "value": "Buka jahitan / post pencabutan gigi dengan tindakan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04015\" name=\"check[]\">"
+  },
+  {
+    "id": "04017",
+    "value": "Kontrol post pencabutan gigi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04017\" name=\"check[]\">"
+  },
+  {
+    "id": "03060",
+    "value": "Polipektomi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03060\" name=\"check[]\">"
+  },
+  {
+    "id": "04019",
+    "value": "Tambalan Amalgam - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04019\" name=\"check[]\">"
+  },
+  {
+    "id": "04020",
+    "value": "Tambalan GIC - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04020\" name=\"check[]\">"
+  },
+  {
+    "id": "04021",
+    "value": "Pembersihan plak - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04021\" name=\"check[]\">"
+  },
+  {
+    "id": "04022",
+    "value": "Macro Scalling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04022\" name=\"check[]\">"
+  },
+  {
+    "id": "01013",
+    "value": "Imunisasi DPT II   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01013\" name=\"check[]\">"
+  },
+  {
+    "id": "01014",
+    "value": "Imunisasi DPT III   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01014\" name=\"check[]\">"
+  },
+  {
+    "id": "01015",
+    "value": "Imunisasi Polio 0   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01015\" name=\"check[]\">"
+  },
+  {
+    "id": "01016",
+    "value": "Imunisasi Polio I   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01016\" name=\"check[]\">"
+  },
+  {
+    "id": "04023",
+    "value": "Buka Jahitan / Buka Pack - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04023\" name=\"check[]\">"
+  },
+  {
+    "id": "04024",
+    "value": "Kontrol Pasca Tindakan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04024\" name=\"check[]\">"
+  },
+  {
+    "id": "05001",
+    "value": "Urine lengkap - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05001\" name=\"check[]\">"
+  },
+  {
+    "id": "05002",
+    "value": "Reduksi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"05002\" name=\"check[]\">"
+  },
+  {
+    "id": "03014",
+    "value": "Perawatan luka bakar s/d 5% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03014\" name=\"check[]\">"
+  },
+  {
+    "id": "03008",
+    "value": "Hecting &gt; 10 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03008\" name=\"check[]\">"
+  },
+  {
+    "id": "03049",
+    "value": "Myringotomi (Barancefefe) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03049\" name=\"check[]\">"
+  },
+  {
+    "id": "03065",
+    "value": "Enukleasi Moloskum Kontaglosum - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03065\" name=\"check[]\">"
+  },
+  {
+    "id": "03066",
+    "value": "Cyrosurgery - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03066\" name=\"check[]\">"
+  },
+  {
+    "id": "03067",
+    "value": "Chemical Pelling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03067\" name=\"check[]\">"
+  },
+  {
+    "id": "03068",
+    "value": "Ekstraksi Granuloma Kulit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03068\" name=\"check[]\">"
+  },
+  {
+    "id": "03069",
+    "value": "Aplikasi Tinctura Padodphylin 25% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03069\" name=\"check[]\">"
+  },
+  {
+    "id": "03070",
+    "value": "Aplikasi Asam Trikloroasetat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03070\" name=\"check[]\">"
+  },
+  {
+    "id": "03071",
+    "value": "Test Lepromin - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03071\" name=\"check[]\">"
+  },
+  {
+    "id": "03072",
+    "value": "Test Acetowhite untuk Kondiloma Akuminata - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03072\" name=\"check[]\">"
+  },
+  {
+    "id": "03073",
+    "value": "Vaksinasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03073\" name=\"check[]\">"
+  },
+  {
+    "id": "03074",
+    "value": "Eksisi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03074\" name=\"check[]\">"
+  },
+  {
+    "id": "03064",
+    "value": "Electro Surgery / Cauter - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03064\" name=\"check[]\">"
+  },
+  {
+    "id": "03063",
+    "value": "Injeksi Kenacort A untuk keloid - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03063\" name=\"check[]\">"
+  },
+  {
+    "id": "03062",
+    "value": "Ekstraksi Komedimilia - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03062\" name=\"check[]\">"
+  },
+  {
+    "id": "03050",
+    "value": "Kaak Spooling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03050\" name=\"check[]\">"
+  },
+  {
+    "id": "03051",
+    "value": "Kalori Test - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03051\" name=\"check[]\">"
+  },
+  {
+    "id": "03052",
+    "value": "Tampon Hidung - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03052\" name=\"check[]\">"
+  },
+  {
+    "id": "03053",
+    "value": "Tympano Gram - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03053\" name=\"check[]\">"
+  },
+  {
+    "id": "03054",
+    "value": "Tampon Belloque - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03054\" name=\"check[]\">"
+  },
+  {
+    "id": "03055",
+    "value": "Cauter Pharing - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03055\" name=\"check[]\">"
+  },
+  {
+    "id": "03056",
+    "value": "Trakeostomi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03056\" name=\"check[]\">"
+  },
+  {
+    "id": "03057",
+    "value": "Incisi Septal Abses - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03057\" name=\"check[]\">"
+  },
+  {
+    "id": "03058",
+    "value": "Tes Fungsi Tuba - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03058\" name=\"check[]\">"
+  },
+  {
+    "id": "03059",
+    "value": "Test Alergi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03059\" name=\"check[]\">"
+  },
+  {
+    "id": "03075",
+    "value": "Elektrokauter ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03075\" name=\"check[]\">"
+  },
+  {
+    "id": "03076",
+    "value": "Elektrokauter sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03076\" name=\"check[]\">"
+  },
+  {
+    "id": "03019",
+    "value": "Insisi Abses Palpbera - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03019\" name=\"check[]\">"
+  },
+  {
+    "id": "03018",
+    "value": "Ekstraksi Lithiasis Konjungtiva - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03018\" name=\"check[]\">"
+  },
+  {
+    "id": "03017",
+    "value": "Perawatan luka bakar &gt; 50% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03017\" name=\"check[]\">"
+  },
+  {
+    "id": "03016",
+    "value": "Perawatan luka bakar &gt; 10-50% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03016\" name=\"check[]\">"
+  },
+  {
+    "id": "03015",
+    "value": "Perawatan luka bakar &gt; 5 -10 % - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03015\" name=\"check[]\">"
+  },
+  {
+    "id": "03061",
+    "value": "AWO (Irigasi Sinus Max) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03061\" name=\"check[]\">"
+  },
+  {
+    "id": "03013",
+    "value": "Katerisasi kandung kemih - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03013\" name=\"check[]\">"
+  },
+  {
+    "id": "03012",
+    "value": "Ekstraksi benda asing di jaringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03012\" name=\"check[]\">"
+  },
+  {
+    "id": "03011",
+    "value": "Insisi Abses - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03011\" name=\"check[]\">"
+  },
+  {
+    "id": "03010",
+    "value": "Eksterpasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03010\" name=\"check[]\">"
+  },
+  {
+    "id": "03020",
+    "value": "Insisi Khalazion - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03020\" name=\"check[]\">"
+  },
+  {
+    "id": "03021",
+    "value": "Insisi Hordeolom - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03021\" name=\"check[]\">"
+  },
+  {
+    "id": "03022",
+    "value": "Jahitan Luka kecil (palpebra) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03022\" name=\"check[]\">"
+  },
+  {
+    "id": "03077",
+    "value": "Elektrokauter berat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03077\" name=\"check[]\">"
+  },
+  {
+    "id": "03078",
+    "value": "Insisi Kecil (tanpa benang) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03078\" name=\"check[]\">"
+  },
+  {
+    "id": "03079",
+    "value": "Insisi Luas (dengan benang) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03079\" name=\"check[]\">"
+  },
+  {
+    "id": "03080",
+    "value": "Subsisi ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03080\" name=\"check[]\">"
+  },
+  {
+    "id": "03081",
+    "value": "Subsisi sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03081\" name=\"check[]\">"
+  },
+  {
+    "id": "03082",
+    "value": "Subsisi berat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03082\" name=\"check[]\">"
+  },
+  {
+    "id": "03083",
+    "value": "Injeksi Kenacort - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03083\" name=\"check[]\">"
+  },
+  {
+    "id": "03084",
+    "value": "Ekstraksi ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03084\" name=\"check[]\">"
+  },
+  {
+    "id": "03085",
+    "value": "Ekstaksi sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03085\" name=\"check[]\">"
+  },
+  {
+    "id": "03086",
+    "value": "Peeling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03086\" name=\"check[]\">"
+  },
+  {
+    "id": "03059",
+    "value": "Test Alergi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03059\" name=\"check[]\">"
+  },
+  {
+    "id": "03058",
+    "value": "Tes Fungsi Tuba - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03058\" name=\"check[]\">"
+  },
+  {
+    "id": "03057",
+    "value": "Incisi Septal Abses - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03057\" name=\"check[]\">"
+  },
+  {
+    "id": "03056",
+    "value": "Trakeostomi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03056\" name=\"check[]\">"
+  },
+  {
+    "id": "03055",
+    "value": "Cauter Pharing - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03055\" name=\"check[]\">"
+  },
+  {
+    "id": "03054",
+    "value": "Tampon Belloque - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03054\" name=\"check[]\">"
+  },
+  {
+    "id": "03053",
+    "value": "Tympano Gram - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03053\" name=\"check[]\">"
+  },
+  {
+    "id": "03052",
+    "value": "Tampon Hidung - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03052\" name=\"check[]\">"
+  },
+  {
+    "id": "03051",
+    "value": "Kalori Test - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03051\" name=\"check[]\">"
+  },
+  {
+    "id": "03050",
+    "value": "Kaak Spooling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03050\" name=\"check[]\">"
+  },
+  {
+    "id": "03049",
+    "value": "Myringotomi (Barancefefe) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03049\" name=\"check[]\">"
+  },
+  {
+    "id": "03048",
+    "value": "Irigasi Telinga - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03048\" name=\"check[]\">"
+  },
+  {
+    "id": "03047",
+    "value": "Incisi Perickaritis Telinga - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03047\" name=\"check[]\">"
+  },
+  {
+    "id": "03046",
+    "value": "Incisi Peritonsilar Abces - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03046\" name=\"check[]\">"
+  },
+  {
+    "id": "03045",
+    "value": "Incisi Sub Mandibula Abces - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03045\" name=\"check[]\">"
+  },
+  {
+    "id": "03044",
+    "value": "Incisi Sub Peritonsilar Abces - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03044\" name=\"check[]\">"
+  },
+  {
+    "id": "03024",
+    "value": "Test Fluorescin - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03024\" name=\"check[]\">"
+  },
+  {
+    "id": "03023",
+    "value": "Pemeriksaan Funduskopi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03023\" name=\"check[]\">"
+  },
+  {
+    "id": "03003",
+    "value": "Perawatan Luka dengan buka jahitan (aff hecting) 11-20 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03003\" name=\"check[]\">"
+  },
+  {
+    "id": "03002",
+    "value": "Perawatan Luka dengan buka jahitan (aff hecting) 6-10 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03002\" name=\"check[]\">"
+  },
+  {
+    "id": "01022",
+    "value": "Imunisasi Hepatitis-B III   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01022\" name=\"check[]\">"
+  },
+  {
+    "id": "01021",
+    "value": "Imunisasi Hepatitis-B II   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01021\" name=\"check[]\">"
+  },
+  {
+    "id": "01020",
+    "value": "Imunisasi Hepatitis-B I   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01020\" name=\"check[]\">"
+  },
+  {
+    "id": "01019",
+    "value": "Imunisasi Campak   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01019\" name=\"check[]\">"
+  },
+  {
+    "id": "01018",
+    "value": "Imunisasi Polio III   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01018\" name=\"check[]\">"
+  },
+  {
+    "id": "01017",
+    "value": "Imunisasi Polio II   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01017\" name=\"check[]\">"
+  },
+  {
+    "id": "01016",
+    "value": "Imunisasi Polio I   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01016\" name=\"check[]\">"
+  },
+  {
+    "id": "01015",
+    "value": "Imunisasi Polio 0   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01015\" name=\"check[]\">"
+  },
+  {
+    "id": "01014",
+    "value": "Imunisasi DPT III   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01014\" name=\"check[]\">"
+  },
+  {
+    "id": "01013",
+    "value": "Imunisasi DPT II   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01013\" name=\"check[]\">"
+  },
+  {
+    "id": "01012",
+    "value": "Imunisasi DPT I   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01012\" name=\"check[]\">"
+  },
+  {
+    "id": "01011",
+    "value": "Imunisasi BCG   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01011\" name=\"check[]\">"
+  },
+  {
+    "id": "01010",
+    "value": "Pelayanan KB : Kondom - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01010\" name=\"check[]\">"
+  },
+  {
+    "id": "01009",
+    "value": "Pelayanan KB : Pil - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01009\" name=\"check[]\">"
+  },
+  {
+    "id": "01002",
+    "value": "Rawat jalan di Poliklinik spesialis  - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01002\" name=\"check[]\">"
+  },
+  {
+    "id": "03004",
+    "value": "Perawatan Luka dengan buka jahitan (aff hecting) &gt; 20 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03004\" name=\"check[]\">"
+  },
+  {
+    "id": "03005",
+    "value": "Perawatan Luka tanpa jahitan / ganti verban - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03005\" name=\"check[]\">"
+  },
+  {
+    "id": "03022",
+    "value": "Jahitan Luka kecil (palpebra) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03022\" name=\"check[]\">"
+  },
+  {
+    "id": "03021",
+    "value": "Insisi Hordeolom - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03021\" name=\"check[]\">"
+  },
+  {
+    "id": "03020",
+    "value": "Insisi Khalazion - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03020\" name=\"check[]\">"
+  },
+  {
+    "id": "03019",
+    "value": "Insisi Abses Palpbera - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03019\" name=\"check[]\">"
+  },
+  {
+    "id": "03018",
+    "value": "Ekstraksi Lithiasis Konjungtiva - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03018\" name=\"check[]\">"
+  },
+  {
+    "id": "03017",
+    "value": "Perawatan luka bakar &gt; 50% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03017\" name=\"check[]\">"
+  },
+  {
+    "id": "03016",
+    "value": "Perawatan luka bakar &gt; 10-50% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03016\" name=\"check[]\">"
+  },
+  {
+    "id": "03015",
+    "value": "Perawatan luka bakar &gt; 5 -10 % - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03015\" name=\"check[]\">"
+  },
+  {
+    "id": "03014",
+    "value": "Perawatan luka bakar s/d 5% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03014\" name=\"check[]\">"
+  },
+  {
+    "id": "03013",
+    "value": "Katerisasi kandung kemih - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03013\" name=\"check[]\">"
+  },
+  {
+    "id": "03012",
+    "value": "Ekstraksi benda asing di jaringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03012\" name=\"check[]\">"
+  },
+  {
+    "id": "03011",
+    "value": "Insisi Abses - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03011\" name=\"check[]\">"
+  },
+  {
+    "id": "03010",
+    "value": "Eksterpasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03010\" name=\"check[]\">"
+  },
+  {
+    "id": "03009",
+    "value": "Khitanan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03009\" name=\"check[]\">"
+  },
+  {
+    "id": "03008",
+    "value": "Hecting &gt; 10 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03008\" name=\"check[]\">"
+  },
+  {
+    "id": "03007",
+    "value": "Hecting 6-10 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03007\" name=\"check[]\">"
+  },
+  {
+    "id": "03006",
+    "value": "Hecting 1-5 - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03006\" name=\"check[]\">"
+  },
+  {
+    "id": "01001",
+    "value": "Rawat jalan di Poliklinik Umum / KIA - KB/Gigi setiap kali kunjungan  - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"01001\" name=\"check[]\">"
+  },
+  {
+    "id": "04015",
+    "value": "Buka jahitan / post pencabutan gigi dengan tindakan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04015\" name=\"check[]\">"
+  },
+  {
+    "id": "03117",
+    "value": "Tindakan kebidanan dan penyakit kandungan kuret - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03117\" name=\"check[]\">"
+  },
+  {
+    "id": "03116",
+    "value": "Tindakan persalinan di Puskesmas oleh Bidan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03116\" name=\"check[]\">"
+  },
+  {
+    "id": "03115",
+    "value": "Tindakan persalinan di Puskesmas oleh Dokter - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03115\" name=\"check[]\">"
+  },
+  {
+    "id": "03114",
+    "value": "Tindik Telinga - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03114\" name=\"check[]\">"
+  },
+  {
+    "id": "03113",
+    "value": "Skintest - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03113\" name=\"check[]\">"
+  },
+  {
+    "id": "03112",
+    "value": "Breast Pump - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03112\" name=\"check[]\">"
+  },
+  {
+    "id": "03111",
+    "value": "Test perkembangan anak (DIDTK) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03111\" name=\"check[]\">"
+  },
+  {
+    "id": "03110",
+    "value": "Pemasangan kateter urine - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03110\" name=\"check[]\">"
+  },
+  {
+    "id": "03109",
+    "value": "Maagslang/NGT - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03109\" name=\"check[]\">"
+  },
+  {
+    "id": "03108",
+    "value": "Pemasangan Sonde hidung - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03108\" name=\"check[]\">"
+  },
+  {
+    "id": "03107",
+    "value": "Senam Hamil - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03107\" name=\"check[]\">"
+  },
+  {
+    "id": "03106",
+    "value": "Senam Nifas - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03106\" name=\"check[]\">"
+  },
+  {
+    "id": "03105",
+    "value": "Perawatan Payudara - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03105\" name=\"check[]\">"
+  },
+  {
+    "id": "03104",
+    "value": "Pemasangan infus - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03104\" name=\"check[]\">"
+  },
+  {
+    "id": "03103",
+    "value": "Pijat bayi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03103\" name=\"check[]\">"
+  },
+  {
+    "id": "03102",
+    "value": "Ransel Verban - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03102\" name=\"check[]\">"
+  },
+  {
+    "id": "03101",
+    "value": "Resusitasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03101\" name=\"check[]\">"
+  },
+  {
+    "id": "03118",
+    "value": "Tindakan kebidanan dan penyakit kandunganPlacenta manual  - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03118\" name=\"check[]\">"
+  },
+  {
+    "id": "03119",
+    "value": "Tindakan kebidanan dan penyakit kandunganIncubator  - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03119\" name=\"check[]\">"
+  },
+  {
+    "id": "04014",
+    "value": "Hecting 1-3 jahitan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04014\" name=\"check[]\">"
+  },
+  {
+    "id": "04013",
+    "value": "Pencabutan gigi tetap dengan komplikasi / penyakit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04013\" name=\"check[]\">"
+  },
+  {
+    "id": "04012",
+    "value": "Pencabutan gigi tetap dengan anestesi injeksi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04012\" name=\"check[]\">"
+  },
+  {
+    "id": "04011",
+    "value": "Pencabutan gigi tetap dengan anestesi topikal - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04011\" name=\"check[]\">"
+  },
+  {
+    "id": "04010",
+    "value": "Kontrol Pasca Tindakan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04010\" name=\"check[]\">"
+  },
+  {
+    "id": "04009",
+    "value": "Anasthesi lokal pada Tindakan Konservasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04009\" name=\"check[]\">"
+  },
+  {
+    "id": "04008",
+    "value": "Pengisian kamar pulpa - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04008\" name=\"check[]\">"
+  },
+  {
+    "id": "04007",
+    "value": "Trepanasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04007\" name=\"check[]\">"
+  },
+  {
+    "id": "04006",
+    "value": "Devitalisasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04006\" name=\"check[]\">"
+  },
+  {
+    "id": "04005",
+    "value": "Tambalan Sementara Direct / Indirect Pulp Capping - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04005\" name=\"check[]\">"
+  },
+  {
+    "id": "04004",
+    "value": "Tambalan Sementara Rotation of medication - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04004\" name=\"check[]\">"
+  },
+  {
+    "id": "04003",
+    "value": "Tambalan GIC - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04003\" name=\"check[]\">"
+  },
+  {
+    "id": "04002",
+    "value": "Tambalan Composite - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04002\" name=\"check[]\">"
+  },
+  {
+    "id": "04001",
+    "value": "Tambalan Amalgam - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"04001\" name=\"check[]\">"
+  },
+  {
+    "id": "03122",
+    "value": "MOP / Vasektomi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03122\" name=\"check[]\">"
+  },
+  {
+    "id": "03121",
+    "value": "Tindakan kebidanan dan penyakit kandunganSuction   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03121\" name=\"check[]\">"
+  },
+  {
+    "id": "03120",
+    "value": "Tindakan kebidanan dan penyakit kandungan Diftone.per hari   - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03120\" name=\"check[]\">"
+  },
+  {
+    "id": "03100",
+    "value": "Pemasangan mitella/splak - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03100\" name=\"check[]\">"
+  },
+  {
+    "id": "03099",
+    "value": "Nebulizer - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03099\" name=\"check[]\">"
+  },
+  {
+    "id": "03079",
+    "value": "Insisi Luas (dengan benang) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03079\" name=\"check[]\">"
+  },
+  {
+    "id": "03078",
+    "value": "Insisi Kecil (tanpa benang) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03078\" name=\"check[]\">"
+  },
+  {
+    "id": "03077",
+    "value": "Elektrokauter berat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03077\" name=\"check[]\">"
+  },
+  {
+    "id": "03076",
+    "value": "Elektrokauter sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03076\" name=\"check[]\">"
+  },
+  {
+    "id": "03075",
+    "value": "Elektrokauter ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03075\" name=\"check[]\">"
+  },
+  {
+    "id": "03074",
+    "value": "Eksisi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03074\" name=\"check[]\">"
+  },
+  {
+    "id": "03073",
+    "value": "Vaksinasi - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03073\" name=\"check[]\">"
+  },
+  {
+    "id": "03072",
+    "value": "Test Acetowhite untuk Kondiloma Akuminata - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03072\" name=\"check[]\">"
+  },
+  {
+    "id": "03071",
+    "value": "Test Lepromin - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03071\" name=\"check[]\">"
+  },
+  {
+    "id": "03070",
+    "value": "Aplikasi Asam Trikloroasetat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03070\" name=\"check[]\">"
+  },
+  {
+    "id": "03069",
+    "value": "Aplikasi Tinctura Padodphylin 25% - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03069\" name=\"check[]\">"
+  },
+  {
+    "id": "03068",
+    "value": "Ekstraksi Granuloma Kulit - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03068\" name=\"check[]\">"
+  },
+  {
+    "id": "03067",
+    "value": "Chemical Pelling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03067\" name=\"check[]\">"
+  },
+  {
+    "id": "03066",
+    "value": "Cyrosurgery - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03066\" name=\"check[]\">"
+  },
+  {
+    "id": "03065",
+    "value": "Enukleasi Moloskum Kontaglosum - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03065\" name=\"check[]\">"
+  },
+  {
+    "id": "03064",
+    "value": "Electro Surgery / Cauter - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03064\" name=\"check[]\">"
+  },
+  {
+    "id": "03063",
+    "value": "Injeksi Kenacort A untuk keloid - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03063\" name=\"check[]\">"
+  },
+  {
+    "id": "03080",
+    "value": "Subsisi ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03080\" name=\"check[]\">"
+  },
+  {
+    "id": "03081",
+    "value": "Subsisi sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03081\" name=\"check[]\">"
+  },
+  {
+    "id": "03098",
+    "value": "Cabut Kuku - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03098\" name=\"check[]\">"
+  },
+  {
+    "id": "03097",
+    "value": "Pap Smear / Apus Vaginal (Serviks) - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03097\" name=\"check[]\">"
+  },
+  {
+    "id": "03096",
+    "value": "Kontrol IUD - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03096\" name=\"check[]\">"
+  },
+  {
+    "id": "03095",
+    "value": "Injeksi KB - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03095\" name=\"check[]\">"
+  },
+  {
+    "id": "03094",
+    "value": "Pengangkatan Implant - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03094\" name=\"check[]\">"
+  },
+  {
+    "id": "03093",
+    "value": "Pemasangan Implant - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03093\" name=\"check[]\">"
+  },
+  {
+    "id": "03092",
+    "value": "Pemasangan/ pengangkatan IUD oleh Bidan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03092\" name=\"check[]\">"
+  },
+  {
+    "id": "03091",
+    "value": "Pemasangan/ pengangkatan IUD oleh Dokter - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03091\" name=\"check[]\">"
+  },
+  {
+    "id": "03090",
+    "value": "PPD Test - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03090\" name=\"check[]\">"
+  },
+  {
+    "id": "03089",
+    "value": "Ekohliasi berat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03089\" name=\"check[]\">"
+  },
+  {
+    "id": "03088",
+    "value": "Ekohliasi sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03088\" name=\"check[]\">"
+  },
+  {
+    "id": "03087",
+    "value": "Ekohliasi ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03087\" name=\"check[]\">"
+  },
+  {
+    "id": "03086",
+    "value": "Peeling - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03086\" name=\"check[]\">"
+  },
+  {
+    "id": "03085",
+    "value": "Ekstaksi sedang - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03085\" name=\"check[]\">"
+  },
+  {
+    "id": "03084",
+    "value": "Ekstraksi ringan - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03084\" name=\"check[]\">"
+  },
+  {
+    "id": "03083",
+    "value": "Injeksi Kenacort - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03083\" name=\"check[]\">"
+  },
+  {
+    "id": "03082",
+    "value": "Subsisi berat - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03082\" name=\"check[]\">"
+  },
+  {
+    "id": "03062",
+    "value": "Ekstraksi Komedimilia - BPJS",
+    "tarif": "Rp. 0",
+    "tipe": "BPJS",
+    "deleted_at": "",
+    "checkbox": "<input type=\"checkbox\" value=\"03062\" name=\"check[]\">"
+  }
+]

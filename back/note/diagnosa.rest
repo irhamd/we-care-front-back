@@ -1,0 +1,64 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//PEGAWAI/DOKTER
+GET http://localhost:8000/api/diagnosa/get-pegawai-diagnosa
+X-TOKEN: {{token}}
+
+{
+    "nama":"adm"
+}
+
+###
+//diagnosa bpjs bridging
+GET http://localhost:8000/api/bpjs/get-diagnosa-part?nama=p03
+X-TOKEN: {{token}}
+
+{
+    "nama":"p03"
+}
+
+###
+//GET DAFTAR DIAGNOSA
+GET http://localhost:8000/api/diagnosa/get-daftar-diagnosa
+
+{
+    "noregistrasi":"2107000117",
+    "idruangan": null
+}
+
+###
+//SAVE DIAGNOSA
+POST http://localhost:8000/api/diagnosa/save-diagnosa
+
+{
+    "diagnosapasien":[
+        {
+            "norec_apd": "f36987f0-e38a-11eb-b37c-e96bcd07",
+            "diagnosa" : "P03.0 - Fetus and newborn affected by breech delivery and extraction",
+            "kodediagnosa": "P03.0",
+            "idpegawaidiagnosa" : 1,
+            "idjenisdiagnosa" : 1, 
+            "statuskasuspenyakit" : "BARU",
+            "idparamedis" : null
+        },
+        {
+            "norec_apd": "f36987f0-e38a-11eb-b37c-e96bcd07",
+            "diagnosa" : "P03.2 - Fetus and newborn affected by forceps delivery",
+            "kodediagnosa": "P03.2",
+            "idpegawaidiagnosa" : 1,
+            "idjenisdiagnosa" : 2, 
+            "statuskasuspenyakit" : "BARU",
+            "idparamedis" : null
+        }
+    ]
+
+}
+
+###
+//DELETE DIAGNOSA
+POST http://localhost:8000/api/diagnosa/delete-diagnosa
+
+{
+    "diagnosapasien":["5e8cf0a0-e5df-11eb-8d0f-d5392c39","76a34fc0-e699-11eb-94db-d938aaf0"]
+}

@@ -1,0 +1,121 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+//CATATAN
+//BUAT DAFTAR PASIEN YANG SUDAH DIINPUT BLANKOLABNYA
+//KLIK SATU DAFTAR BLANKOLAB DAN BERALIH KE FORM BARU AMBIL DETAIL BLANKOLAB
+//SIMPAN PELAYANAN LAB
+//BUAT FORM DAFTAR PELAYANAN LAB
+//BERALIH KE FORM BARU LIAT DETAIL PELAYANAN LAB PASIEN
+//DELETE TOMBOL
+###
+//save-pelayananlab
+POST http://localhost:8000/api/lab/save-pemeriksaan-lab
+X-TOKEN: {{token}}
+
+{
+   "norec_pd" : "5542ec10-f725-11eb-882e-7df4c876",
+   "norec_apdlab" : "--",
+   "idruanganlab": 20,
+   "ruanganlab": "LABORATORIUM",
+   "idruanganasal": 1,
+   "ruanganasal": "Poli Umum",
+   "tglregistrasi" : "2021-08-10 08:30:00",
+   "norec_blankolab": "",
+   "noblankolab": "",
+   "statusprioritas": "TIDAK",
+   "nolab": "--",
+   "detail" : [
+       {
+            "idproduk": 574,
+            "idpelaksana": 1,
+            "jumlah": 1,
+            "hargasatuan": 0,
+            "hargatotal": 0
+       }
+   ]
+
+}
+
+###
+//get-daftar-pelayananlab
+GET http://localhost:8000/api/lab/get-daftar-pasien-pelayanan-lab
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-01 10:00:00",
+    "tglAkhir":"2021-08-10 23:59:59",
+    "idruangan":"",
+    "idruanganlab":"",
+    "nocm":"",
+    "namapasien":"",
+    "noregistrasi":""
+}
+
+###
+//get-detail-pelayananlab
+GET http://localhost:8000/api/lab/get-detail-pelayanan-lab?noregistrasi=2108000003
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2108000003"
+}
+
+###
+//get-daftar-blankolab
+GET http://localhost:8000/api/lab/get-daftar-pasien-blankolab
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-01 10:00:00",
+    "tglAkhir":"2021-08-10 23:59:59",
+    "idruangan":"",
+    "idruanganlab":"",
+    "nocm":"",
+    "namapasien":"",
+    "noregistrasi":""
+}
+
+###
+//get-detail-blankolab
+GET http://localhost:8000/api/lab/get-detail-blankolab-bynorec?norec_blankolab=0c0285f0-f726-11eb-b78d-2369deb6
+X-TOKEN: {{token}}
+
+{
+    "norec_blankolab":"0c0285f0-f726-11eb-b78d-2369deb6"
+}
+
+###
+//combo produk
+GET http://localhost:8000/api/lab/get-produk-lab
+X-TOKEN: {{token}}
+
+{
+    "nama":"a"
+}
+
+###
+//combo pegawai
+GET http://localhost:8000/api/apotik/get-pegawai-lab
+X-TOKEN: {{token}}
+
+{
+    "nama":"a"
+}
+
+###
+//combo ruangan
+GET http://localhost:8000/api/apotik/get-ruangan-lab
+X-TOKEN: {{token}}
+
+{
+    "nama":"a"
+}
+
+###
+//delete pelayanan obat
+POST http://localhost:8000/api/lab/delete-pelayanan-lab
+X-TOKEN: {{token}}
+
+{
+    "norec_item_pp": ["9bfb74f0-f98e-11eb-b493-c1379d1c"]
+}

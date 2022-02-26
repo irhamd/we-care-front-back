@@ -1,0 +1,88 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//save-penerimaanbarang
+POST http://localhost:8000/api/penerimaanbarang/save-penerimaan-barang
+X-TOKEN: {{token}}
+
+{
+    "norec_pb":"",
+    "idruangan" : 18,
+    "nopenerimaan" : null,
+    "idpenenggungjawab" : 1,
+    "idsumberdana" : 2,
+    "tahunanggaran" : 2021,
+    "idsuplier" : 2,
+    "suplier": "CV FUTURA TECHNO SOLUTION",
+    "keterangan" : "tes",
+    "detail" : [
+       {
+            "norec_pbd":"",
+            "idproduk": 333,
+            "jumlah": 11,
+            "hargabeli": 100,
+            "hargajual": "120",
+            "hargatotal": 1100,
+            "tglkadaluarsa": "2021-10-10 00:00:00"
+       },
+       {
+            "norec_pbd":"",
+            "idproduk": 334,
+            "jumlah": 13,
+            "hargabeli": 100,
+            "hargajual": "120",
+            "hargatotal": 1300,
+            "tglkadaluarsa": "2021-10-10 00:00:00"
+       }
+   ]
+
+}
+
+###
+//get-penerimaanbarang
+GET http://localhost:8000/api/penerimaanbarang/get-daftar-head-penerimaan
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-30 00:00:00",
+    "tglAkhir":"2021-07-30 23:59:59",
+    "nopenerimaan":"",
+    "idsuplier":"",
+    "idruangan":""
+}
+
+###
+//get-penerimaanbarang
+GET http://localhost:8000/api/penerimaanbarang/get-produk-penerimaan-barang
+X-TOKEN: {{token}}
+
+{
+    "nama":"amo"
+}
+
+###
+//get-penerimaanbarang
+GET http://localhost:8000/api/penerimaanbarang/get-combo-penerimaan-barang
+X-TOKEN: {{token}}
+
+###
+//delete-penerimaanbarang
+POST http://localhost:8000/api/penerimaanbarang/delete-penerimaan-barang-detail
+X-TOKEN: {{token}}
+
+{
+    "keterangandelete":"",
+    "norec_items_pbd": ["0d455a50-f0d0-11eb-a086-dd68af0b"]
+}
+
+###
+//daftar-kartu-stok
+GET http://localhost:8000/api/penerimaanbarang/get-daftar-kartu-stok
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-30 00:00:00",
+    "tglAkhir":"2021-07-31 23:59:59",
+    "idruangan":"",
+    "idproduk":339
+}

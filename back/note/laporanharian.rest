@@ -1,0 +1,35 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//kunjungan rumah sakit
+GET http://localhost:8000/api/laporanharian/get-kunjungan-harian
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "idruangan":"",
+    "idinstalasi":"",
+    "idjeniskelamin":"",
+    "idpenjamin":"",
+    "jeniskunjungan":"",
+    "jumlahbaris": 20,
+    "page": 1
+}
+
+###
+//pengunjung rumah sakit
+GET http://localhost:8000/api/laporanharian/get-pengunjung-harian
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "idruangan":"",
+    "idinstalasi":"",
+    "idjeniskelamin":"",
+    "idpenjamin":"",
+    "jeniskunjungan":"",
+    "jumlahbaris": 20,
+    "page": 1
+}

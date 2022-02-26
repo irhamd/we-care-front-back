@@ -1,0 +1,87 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+POST http://localhost:8000/api/anamnesa/save-anamnesa-pasien
+X-TOKEN: {{token}}
+
+{
+    "anamnesahead": {
+        "norec_anhead":"0b2ae080-ebaa-11eb-992d-e3f8daa0",
+        "norec_apd":"df54adf0-e38a-11eb-9a1c-e3840d14"
+    },
+    "anamnesa":{
+        "idpegawai" : 1,
+        "idasisten":null,
+        "keluhanutama" : "muntah-muntah",
+        "keluhantambahan" : "pusing",
+        "lamasakitthn" : 0,
+        "lamasakitbln" : 0,
+        "lamasakithr": 12
+    },
+    "pemeriksaanfisik": {
+        "kesadaran" : "COMPOS MENTIS",
+        "idkesadaran" : "1",
+        "sistole" : "80",
+        "diastole" : "50",
+        "tinggibadan" : "120",
+        "caraukurtb" : "Berdiri",
+        "idcaraukur" : "5",
+        "beratbadan" : "60",
+        "lingkarperut" : "30",
+        "imt" : "2.667",
+        "hasilimt" : "LEBIH",
+        "detaknadi" : "120",
+        "nafas" : "100",
+        "saturasi" : "20",
+        "suhu" : "30",
+        "aktifitasfisik" : "BAIK",
+        "statushamil" : null,
+        "detakjantung" : "REGULAR",
+        "triage" : "TIDAK GAWAT DARURAT",
+        "skalanyeri" : "SEDANG",
+        "skalanyeriangka" : 5
+    },
+    "riwayatpenyakit" : {
+        "istidakada": true,
+        "rps":"Asma",
+        "rpd":"Asma",
+        "rpk":""
+    },
+    "alergipasien" : {
+        "istidakada":true,
+        "obat":"Paracetamol",
+        "makanan":"Seafood",
+        "lainnya":""
+    },
+    "lainnya" : {
+        "edukasi" : "edukasi",
+        "terapi" : "terapi",
+        "rencana" : "rencana",
+        "tipeaskep" : "text",
+        "deskripsiaskep" : "deskripsiaskep",
+        "observasi" : "observasi",
+        "biopsikososial" : "biopsikososial",
+        "keterangan" : "keterangan",
+        "merokok" : "Tidak",
+        "konsumsialkohol" : "Ya",
+        "kurangsayurbuah" : "Tidak"
+    }
+
+}
+
+
+###
+//GET ANAMNESA PASIEN
+GET http://localhost:8000/api/anamnesa/get-anamnesa-pasien?noregistrasi=2107000121
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000114"
+}
+
+
+### 
+
+//GET COMBO ANAMNESA
+GET http://localhost:8000/api/anamnesa/get-combo-anamnesa
+X-TOKEN: {{token}}

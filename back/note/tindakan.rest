@@ -1,0 +1,69 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//save-tindakan
+POST http://localhost:8000/api/tindakan/save-tindakan
+X-TOKEN: {{token}}
+
+{
+    "pelayananpasien":[
+        {
+            "tglpelayanan": "2021-07-15 08:32:00",
+            "norec_apd": "f36987f0-e38a-11eb-b37c-e96bcd07",
+            "produkfk": 100,
+            "jumlah": 1,
+            "hargasatuan" : 20000,
+            "hargatotal" : 20000,
+            "idpelaksana": 1,
+            "idparamedis":null
+        },
+        {
+            "tglpelayanan": "2021-07-15 08:35:00",
+            "norec_apd": "f36987f0-e38a-11eb-b37c-e96bcd07",
+            "produkfk": 101,
+            "jumlah": 1,
+            "hargasatuan" : 16000,
+            "hargatotal" : 16000,
+            "idpelaksana": 1,
+            "idparamedis": 1
+        }
+    ]
+
+}
+
+###
+//delete-tindakan
+POST http://localhost:8000/api/tindakan/delete-tindakan-pasien
+X-TOKEN: {{token}}
+
+{
+    "pelayananpasien":["54ebb760-e508-11eb-8e7a-2d77eb2e","norec_pp":"8fb0abe0-e507-11eb-a51d-95523e60"]
+}
+
+###
+//get-tindakan
+GET http://localhost:8000/api/tindakan/get-tindakan-pasien
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2107000117",
+    "idruangan":null
+}
+
+###
+//get-produk
+GET http://localhost:8000/api/tindakan/get-produk
+X-TOKEN: {{token}}
+
+{
+    "nama":"gigi"
+}
+
+###
+//get-pegawai
+GET http://localhost:8000/api/tindakan/get-pegawai
+X-TOKEN: {{token}}
+
+{
+    "nama":"adm"
+}

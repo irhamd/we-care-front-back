@@ -1,0 +1,70 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+###
+//get daftar registrasi
+http://localhost:8000/api/registrasi/get-daftar-registrasi
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "nocm":"P00000005",
+    "noregistrasi":"",
+    "namapasien":"",
+    "idruangan":"",
+    "idinstalasi":""
+}
+
+###
+POST http://localhost:8000/api/registrasi/save-registrasi-pelayanan
+X-TOKEN: {{token}}
+
+{
+        "norec_pd":"",
+        "israwatinap":false,
+        "idpegawai": 1,
+        "penjamin": "BPJS",
+        "idpenjamin": 2,
+        "idpasien":28,
+        "idruangan" : 1,
+        "statuskasuspenyakit": "BARU",
+        "tglregistrasi": "2021-07-10 08:00:00",
+        "idkelas":0,
+        "pjnama": "pjnama",
+        "pjhubungan": "pjhubungan",
+        "pjnohp": "08777777",
+        "asalrujukan": "Sendiri",
+        "idasalrujukan":1,
+        "namaperujuk": "namaperujuk",
+        "catatanrujukan": "catatan"
+}
+
+###
+//get daftar registrasi rajal
+http://localhost:8000/api/registrasi/get-daftar-registrasi-rajal
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "nocm":"P00000005",
+    "noregistrasi":"",
+    "namapasien":"",
+    "idruangan":"",
+    "idinstalasi":""
+}
+
+###
+//get daftar registrasi ranap
+http://localhost:8000/api/registrasi/get-daftar-registrasi-ranap
+X-TOKEN: {{token}}
+
+{
+    "tglAwal":"2021-07-10 00:00:00",
+    "tglAkhir":"2021-07-12 23:59:59",
+    "nocm":"P00000005",
+    "noregistrasi":"",
+    "namapasien":"",
+    "idruangan":"",
+    "idinstalasi":""
+}

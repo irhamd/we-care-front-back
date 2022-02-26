@@ -1,0 +1,29 @@
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi5pdCJ9.yA2GELoqmY5D9XcBeQxStR2-G_VzTZLw71iQTX_WKTa3cNQ5SwmpjstC6E0NbDZF8IENQFMy_u23ya2vv7lG-g
+
+
+###
+//get-detail-pasien
+GET http://localhost:8000/api/pasien/get-detail-pasien
+X-TOKEN: {{token}}
+
+{
+    "nocmfk":"25"
+}
+
+###
+//get-detail-pasien
+GET http://localhost:8000/api/pasien/get-riwayat-pendaftaran-pasien?nocmfk=25
+X-TOKEN: {{token}}
+
+{
+    "nocmfk":"25"
+}
+
+###
+//get-detail-pasien
+GET http://localhost:8000/api/pasien/get-detail-riwayat-pendaftaran?noregistrasi=2108000004
+X-TOKEN: {{token}}
+
+{
+    "noregistrasi":"2108000003"
+}
