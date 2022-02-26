@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Form, Input, Button, Radio, Row, Card, Spin, Switch } from 'antd';
 import { InfoCircleOutlined } from '@ant-design/icons';
-import { DivCol, _Input, _Input1, _Search, _Select, _TitleBar, _Date, _Label, _Switch, _Button } from '../../Services/Forms/Forms';
+import { DivCol, _Input, _Input1, _Search, _Select, _TitleBar, _Date, _Label, _Switch, _Button, _RadioGroup } from '../../Services/Forms/Forms';
 import LayoutAnt from '../Layout/LayoutAnt';
 import { Col } from 'react-bootstrap';
 import _Api from '../../Services/Api/_Api';
@@ -19,6 +19,7 @@ function InputPasienBaru(pr) {
     const [statusperkawinan, setstatusperkawinan] = useState([])
     const [golongandarah, setgolongandarah] = useState([])
     const [penjamin, setpenjamin] = useState([])
+    const [jenispasien, setjenispasien] = useState([])
     const [warganegara, setwarganegara] = useState([])
     const [bodyPasien, setbodyPasien] = useState({})
     const [bodyAlamat, setbodyAlamat] = useState({})
@@ -44,7 +45,7 @@ function InputPasienBaru(pr) {
 
     const comboBox = () => {
         _Api.get("pasien/compo-registrasi-pasien").then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             setpekerjaan(res.data.pekerjaan)
             setagama(res.data.agama)
             setpendidikan(res.data.pendidikan)
@@ -53,6 +54,7 @@ function InputPasienBaru(pr) {
             // setjeniskelamin(res.data.jeniskelamin)
             setkelompokPasien(res.data.kelompokpasien)
             setpenjamin(res.data.penjamin)
+            setjenispasien(res.data.jenispasien)
         })
     }
 
@@ -98,13 +100,7 @@ function InputPasienBaru(pr) {
         });
     };
 
-    const handleChangeDomisili = (field) => (e) => {
-        let isMoment = e._isAMomentObject && e._isAMomentObject
-        setbodyDomisili({
-            ...bodyDomisili,
-            [field]: isMoment ? moment(e).format('YYYY-MM-DD') : e.target.value
-        });
-    };
+ 
 
     const changeSelect = (field, obj) => (e) => {
         setbodyPasien({
@@ -113,12 +109,7 @@ function InputPasienBaru(pr) {
         });
     };
 
-    const changeSelectAlamat = (field, obj) => (e) => {
-        setbodyAlamat({
-            ...bodyAlamat,
-            [field]: obj[e]
-        });
-    };
+ 
 
     const changeAutocompleteAlamat = (field, id, row) => (e, f) => {
         setbodyAlamat({
@@ -129,21 +120,8 @@ function InputPasienBaru(pr) {
         });
     };
 
-    const changeSelectDomisili = (field, obj) => (e) => {
-        setbodyDomisili({
-            ...bodyDomisili,
-            [field]: obj[e]
-        });
-    };
-
-    const handleChangeDate = field => (e, f) => {
-        console.log(e)
-        console.log(f)
-        //   setbodyPasien({
-        //     ...bodyPasien,
-        //     [field]: tgl
-        // });
-    };
+ 
+ 
 
     const savePasien = () => {
         setloading(true)
@@ -175,7 +153,11 @@ function InputPasienBaru(pr) {
                             <_Search required onChange={handleChange('noidentitas')} label="NIK" />
                         </Col>
                         <Col sm>
-                            <_Input label="No. KK" onChange={handleChange('nokk')} />
+                            {/* <_Input label="Jenis Pasien" onChange={handleChange('id_jenispasien')} /> */}
+                            <_Select option={jenispasien} label="Jenis Pasien" val="id" caption="jenispasien"
+                                    onChange={changeSelect("id_jenispasien", jenispasien)}
+                                />
+
                         </Col>
                     </Row>
                     {/* <Row>
@@ -194,7 +176,7 @@ function InputPasienBaru(pr) {
                     </Row> */}
                     <Row>
                         <Col>
-                            <_Input label="No. Paspor" onChange={handleChange('nopaspor')} />
+                            <_Input label="No. NRP" onChange={handleChange('nrp')} />
                         </Col>
                         <Col >
                             <_Input onChange={handleChange('tempatlahir')} required label="Tempat Lahir" />
@@ -217,24 +199,24 @@ function InputPasienBaru(pr) {
                             <_Input onChange={handleChange('nohp')} label="Nomor HP" />
                         </Col>
                         <Col>
-                            <_Input onChange={handleChange('email')} label="Email" />
+                            <_Input onChange={handleChange('nip')} label="NIP" />
                         </Col>
 
                         <Col sm={12}>
                             <_Label label={"Alamat Sesuai KTP"} />
                         </Col>
                         <Col sm={12}>
-                            <_Input multiline label="Alamat Lengkap" onChange={handleChangeAlamat('alamat')} />
+                            <_Input multiline label="Alamat Lengkap *" onChange={handleChangeAlamat('alamat')} />
                         </Col>
                         <Row>
                             <Col sm={8}>
-                                <_Input label="Dusun" onChange={handleChangeAlamat('dusun')} />
+                                <_Input label="Dusun *" onChange={handleChangeAlamat('dusun')} />
                             </Col>
                             <Col sm={2}>
-                                <_Input label="RT" onChange={handleChangeAlamat('rt')} />
+                                <_Input label="RT *" onChange={handleChangeAlamat('rt')} defaultValue="0" />
                             </Col>
                             <Col sm={2}>
-                                <_Input label="RW" onChange={handleChangeAlamat('rw')} />
+                                <_Input label="RW" onChange={handleChangeAlamat('rw')} defaultValue="0" />
                             </Col>
                         </Row>
                         <Col sm={12}>
@@ -281,7 +263,8 @@ function InputPasienBaru(pr) {
                         <Col sm={2}>
                             <_Switch label="WNI" defaultChecked onChange={changeSwitch} />
                         </Col>
-                        <_Button label="Simpan Ke Database" submit btnSave sm={12} block />
+                        <Col sm={6} />
+                        <_Button label="Simpan Ke Database" submit btnSave sm={6} block />
 
                         {/* <Col sm={7}>
                             <_Input onChange={handleChange('namaayah')} label="Nama Ayah" />

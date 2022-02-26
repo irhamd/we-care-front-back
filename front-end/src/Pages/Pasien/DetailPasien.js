@@ -6,7 +6,7 @@ import { Cache } from '../../Services/Cache'
 import { ubahText } from '../../Services/Crypto'
 import { DivCol, _Input } from '../../Services/Forms/Forms'
 // import foto from "../../_Assets/foto/foto.jpg"
-import foto from "../../_Assets/foto/foto.jpg"
+import foto from "../../_Assets/foto/users.png"
 
 // import foto from "../../_Assets/foto/foto.jpg"
 import moment from 'moment';

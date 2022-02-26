@@ -31,6 +31,9 @@ Route::group(['prefix' => 'produk'], function () {
     Route::post("/save-tarif-layanan","Transaksi\ProdukController@saveTarifLayanan");
 });
 
+Route::post("/getMasterData","MasterController@getMasterData");
+
+
 Route::group(['prefix' => 'pasien'], function () {
     Route::get("/compo-registrasi-pasien","Transaksi\PasienBaruController@getDataCombo");
     Route::get("/get-pasien-lama","Transaksi\PasienBaruController@getDaftarPasien");

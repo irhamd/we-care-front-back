@@ -78,6 +78,12 @@ class PasienBaruController extends ApiController
             ->orderBy('dat.id')
             ->get();
 
+        $jenispasien = \DB::table('m_jenispasien as dat')
+            ->select('dat.id', 'dat.jenispasien')
+            ->where('dat.statusenabled', true)
+            ->orderBy('dat.id')
+            ->get();
+
 	    $result = array(
 	    	'kelompokpasien' => $dataKelompok,
 	    	'agama' => $dataAgama,
@@ -87,6 +93,7 @@ class PasienBaruController extends ApiController
             'golongandarah' => $dataGolonganDarah,
             'penjamin' => $dataPenjamin,
             'pekerjaan' => $dataPekerjaan,
+            'jenispasien' => $jenispasien,
             'statuskeluarga' => $dataStatusKeluarga,
 	    );
 
@@ -178,7 +185,7 @@ class PasienBaruController extends ApiController
 	public function getDaftarPasien( Request $request) {
         $data = \DB::table('pasien_m as ps')
             ->leftjoin('alamatpasien_m as al','al.pasienfk','=','ps.id')
-            ->select('ps.nocm','ps.namapasien','ps.tgldaftar', 'ps.tgllahir','ps.foto',
+            ->select('ps.nocm','ps.namapasien','ps.tgldaftar', 'ps.tgllahir','ps.foto','ps.nrp','ps.nip',
                 'ps.jeniskelamin','ps.noidentitas', 'ps.id as nocmfk','ps.namaayah','ps.notelepon','ps.nohp',
                 'ps.tglmeninggal','ps.alergi','ps.isriwayatmenular','al.alamat','al.desakelurahan', 'ps.tempatlahir'
             );
@@ -189,6 +196,14 @@ class PasienBaruController extends ApiController
 
         if(isset($request['namapasien']) && $request['namapasien']!="" && $request['namapasien']!="undefined") {
             $data = $data->where('ps.namapasien', 'like', '%'. $request['namapasien'] .'%');
+        };
+
+        if(isset($request['nip']) && $request['nip']!="" && $request['nip']!="undefined") {
+            $data = $data->where('ps.nip', 'like', '%'. $request['nip'] .'%');
+        };
+
+        if(isset($request['nrp']) && $request['nrp']!="" && $request['nrp']!="undefined") {
+            $data = $data->where('ps.nrp', 'like', '%'. $request['nrp'] .'%');
         };
 
         $data = $data->where('ps.statusenabled',true);
@@ -260,8 +275,8 @@ class PasienBaruController extends ApiController
                 $dataPS->golongandarahfk =  $request['pasien']['golongandarah']['id'];
             }
 
-            if (isset( $request['pasien']['email']) &&  $request['pasien']['email']!="" &&  $request['pasien']['email']!="undefined"){
-                $dataPS->email =  $request['pasien']['email'];
+            if (isset( $request['pasien']['nip']) &&  $request['pasien']['nip']!="" &&  $request['pasien']['nip']!="undefined"){
+                $dataPS->nip =  $request['pasien']['nip'];
             }
             $dataPS->nohp =  $request['pasien']['nohp'];
             $dataPS->pekerjaan =  $request['pasien']['pekerjaan']['pekerjaan'];
@@ -280,14 +295,17 @@ class PasienBaruController extends ApiController
             $dataPS->statuskeluargafk =  $request['pasien']['statuskeluarga']['id'];
             $dataPS->kebangsaan =  $request['pasien']['kebangsaan']['kebangsaan'];
             $dataPS->kebangsaanfk =  $request['pasien']['kebangsaan']['id'];
-            if (isset( $request['pasien']['nopaspor']) &&  $request['pasien']['nopaspor']!="" &&  $request['pasien']['nopaspor']!="undefined"){
-                $dataPS->nopaspor =  $request['pasien']['nopaspor'];
+            if (isset( $request['pasien']['nrp']) &&  $request['pasien']['nrp']!="" &&  $request['pasien']['nrp']!="undefined"){
+                $dataPS->nrp =  $request['pasien']['nrp'];
             }
             if (isset( $request['pasien']['namaayah']) &&  $request['pasien']['namaayah']!="" &&  $request['pasien']['namaayah']!="undefined"){
                 $dataPS->namaayah =  $request['pasien']['namaayah'];
             }
             if (isset( $request['pasien']['namaibu']) &&  $request['pasien']['namaibu']!="" &&  $request['pasien']['namaibu']!="undefined"){
                 $dataPS->namaibu =  $request['pasien']['namaibu'];
+            }
+            if (isset( $request['pasien']['id_jenispasien']) &&  $request['pasien']['id_jenispasien']!="" &&  $request['pasien']['id_jenispasien']!="undefined"){
+                $dataPS->id_jenispasien =  $request['pasien']['id_jenispasien'];
             }
             $dataPS->tgldaftar =  date('Y-m-d H:i:s');
             $dataPS->nocm = $noCm;

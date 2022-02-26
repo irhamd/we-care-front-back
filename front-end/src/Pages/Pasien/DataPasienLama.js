@@ -3,7 +3,7 @@ import LayoutAnt from '../Layout/LayoutAnt'
 import { Table, Radio, Divider, Input, Button, Form, Drawer, Space, DatePicker, Spin, Popconfirm, Tooltip, Tag, Image, Badge } from 'antd';
 import { DivCol, _ButtonFilter, _Date, _Input, _Number, _Search, _TitleBar, _Button } from '../../Services/Forms/Forms';
 import { mainColor } from '../../Services/Color';
-import { WarningOutlined, CloseCircleOutlined, DownloadOutlined, FormOutlined, RedoOutlined, CloudUploadOutlined, FieldTimeOutlined } from '@ant-design/icons';
+import { WarningOutlined, CloseCircleOutlined, DownloadOutlined, FormOutlined, RedoOutlined, CloudUploadOutlined, FieldTimeOutlined, SyncOutlined } from '@ant-design/icons';
 import { _Message } from '../../Services/Toastr/Notify/NotifyToastr';
 import _Api from '../../Services/Api/_Api';
 import '../../_Assets/react-notifications-component.css'
@@ -19,7 +19,7 @@ import { useHistory, withRouter } from 'react-router-dom';
 import { Cache } from '../../Services/Cache';
 import moment from 'moment';
 import { fitrah } from '../../Services/Text/GlobalText';
-import foto from "../../_Assets/foto/foto.jpg"
+import foto from "../../_Assets/foto/users.png"
 import RiwayatPasien from './RiwayatPasien';
 
 
@@ -75,20 +75,51 @@ function DataPasienLama() {
             width: 70,
             render: (_, rc) =>
                 data.length >= 1 ? (
-                    <Image style={{ width: "100%" }} width={40} src={!rc.foto ? foto : rc.foto} />
+                    <Image preview={false} style={{ width: "100%" }} width={40} src={!rc.foto ? foto : rc.foto} />
                 ) : null,
+        },
+
+        {
+            title: 'No. NRP',
+            width:200,
+            // dataIndex: 'nrp',
+            sorter: (a, b) => a.nrp.length - b.nrp.length,
+            render: row => (
+                <>
+                    <Tag  color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", textAlign: "center", fontWeight :"bold" }}>
+                        { row.nrp }
+                    </Tag>
+                </>
+            ),
+
         },
 
         {
             title: 'No. RM',
             width:100,
-            dataIndex: 'nocm',
-            sorter: (a, b) => a.namapasien.length - b.namapasien.length,
+            // dataIndex: 'nocm',
+            render: row => (
+                <>
+                    <b>
+                        { row.nocm }
+                    </b>
+                </>
+            ),
+
+
+            // sorter: (a, b) => a.namapasien.length - b.namapasien.length,
         },
         {
             title: 'Nama Pasien',
             width:300,
-            dataIndex: 'namapasien',
+            // dataIndex: 'namapasien',
+            render: row => (
+                <>
+                    <b>
+                        {  row.namapasien.toUpperCase() }
+                    </b>
+                </>
+            ),
             sorter: (a, b) => a.namapasien.length - b.namapasien.length,
         },
         {
@@ -96,6 +127,12 @@ function DataPasienLama() {
             width:200,
             dataIndex: 'noidentitas',
             sorter: (a, b) => a.noidentitas - b.noidentitas,
+        },
+        {
+            title: 'NIP',
+            width:200,
+            dataIndex: 'nip',
+            sorter: (a, b) => a.nip - b.nip,
         },
         {
             title: 'Tempat Lahir',
@@ -205,17 +242,18 @@ function DataPasienLama() {
 
             <LayoutAnt  >
                 <_TitleBar title="DATA PASIEN" align="center" />
-                <DivCol pl="13px" pr="10px">
+                <DivCol pl="15px" pr="40px">
                     <Form layout={"vertical"} onFinish={LoadData} >
                         <_row >
+                            <_grid sm={1}><_Input label="NRP" name='nrp' style={{ marginRight: "-15px" }} /> </_grid>
                             <_grid sm={1}><_Input label="No. RM" name="nocm" style={{ marginRight: "-15px" }} /> </_grid>
                             <_grid sm={2}><_Input label="Nama Pasien" name='namapasien' style={{ marginRight: "-15px" }} /> </_grid>
-                            <_grid sm={2}><_Date label="Tanggal Lahir" name='tgllahir' style={{ marginRight: "-15px" }} /> </_grid>
+                            <_grid sm={1}><_Input label="NIP" name='nip' style={{ marginRight: "-15px" }} /> </_grid>
                             <_grid sm={3}>
-                                <Button type="primary" htmlType="submit" style={{ marginTop: "23px", paddingTop: "0px" }} icon={<RedoOutlined />}>
+                                <Button type="primary"  htmlType="submit" style={{ marginTop: "23px", fontWeight :"bold" }} icon={<RedoOutlined />}>
                                     Filter
                                 </Button> &nbsp;
-                                <Button type="primary" icon={<CloudUploadOutlined />} style={{ marginTop: "23px", paddingTop: "0px" }} onClick={showDrawer}>
+                                <Button type="primary" icon={<CloudUploadOutlined />} style={{ marginTop: "23px", fontWeight :"bold" }} onClick={showDrawer}>
                                     Input Pasien Baru
                                 </Button> &nbsp;
                             </_grid>
@@ -228,7 +266,7 @@ function DataPasienLama() {
                     </Form>
                 </DivCol>
                 <br />
-                <DivCol>
+                <DivCol pl="0px">
                     <Table
                         rowKey="nocmfk"
                         // rowSelection={{

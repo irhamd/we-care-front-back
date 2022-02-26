@@ -1,4 +1,4 @@
-import { CloseCircleOutlined, CloudDownloadOutlined, DeliveredProcedureOutlined, FilterOutlined, SaveOutlined, SearchOutlined } from "@ant-design/icons"
+import { CloseCircleOutlined, CloudDownloadOutlined, DeliveredProcedureOutlined, DownloadOutlined, FilterOutlined, SaveOutlined, SearchOutlined } from "@ant-design/icons"
 import { Button, Col, DatePicker, Form, Input, InputNumber, Mentions, Radio, Row, Select, Switch } from "antd"
 import { mainColor } from "../Color"
 import { Col as ColB } from 'react-bootstrap';
@@ -59,7 +59,7 @@ export const _Input = (r) => {
                             addonAfter={r.addonAfter}
                             maxLength={r.maxLength}
                             addonBefore={r.addonBefore}
-                            style={{ ...r.style }}
+                            style={{ ...r.style, width:"100%" }}
                             defaultValue={r.defaultValue}
                         />
                 }
@@ -240,7 +240,7 @@ export const _TitleBar = ({ title, align, sm, label, color }) => {
     return (
         <div>
             <Row>
-                <Col style={{ background: color ? color : "rgb(95 116 134 / 61%)", padding: "5px 10px 0px 10px", textAlign: align }} span={24}>
+                <Col style={{ background: color ? color : "rgb(95 116 134 / 61%)", padding: "5px 10px 0px 10px", fontWeight: "bold", textAlign: align }} span={24}>
                     {title ?
                         <h5> <b> {title} </b> </h5> :
                         <div style={{ fontSize: "14px", fontWeight: "bold", paddingLeft: "17px", paddingBottom: "5px" }}>
@@ -346,7 +346,7 @@ export const _Button = (r) => {
                 size={r.size}
                 type={"primary"}
 
-                icon={r.btnSave ? <SaveOutlined /> : r.btnFind ? <SearchOutlined /> : r.btnCancel ? <CloseCircleOutlined /> : r.icon}>
+                icon={r.btnSave ? <DownloadOutlined /> : r.btnFind ? <SearchOutlined /> : r.btnCancel ? <CloseCircleOutlined /> : r.icon}>
                 {r.title} {r.label}
             </Button>
         </ColB>

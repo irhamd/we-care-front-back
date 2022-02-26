@@ -133,7 +133,7 @@ function ResepPasien(pr) {
     return (
         <LayoutAnt>
             <_TitleBar label="DAFTAR RESEP PASIEN" />
-            <DivCol>
+            <DivCol pr="30px">
                 <Form layout={"vertical"} onFinish={loadData}
                     initialValues={{ tglAwal: moment(tglAwal), tglAkhir: moment(tglAkhir) }}
                 >

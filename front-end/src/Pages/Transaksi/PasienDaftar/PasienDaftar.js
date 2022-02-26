@@ -157,8 +157,8 @@ function PasienDaftar(r) {
                                             onChange={handleChange('idruangan')} required name="idruangan"
                                         />
 
-                                        <_Select option={combobox.kelas} label="Kelas" val="id" caption="kelas" sm={5}
-                                            onChange={handleChange('idkelas')} required name="idkelas" />
+                                        {/* <_Select option={combobox.kelas} label="Kelas" val="id" caption="kelas" sm={5}
+                                            onChange={handleChange('idkelas')} required name="idkelas" /> */}
                                         <_Switch label="Status Penyakit" titleCheck="Baru" titleUnCheck="Lama"
                                             onChange={e => setstatuspenyakit(e ? "baru" : "lama")}
                                         />

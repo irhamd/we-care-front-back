@@ -177,7 +177,7 @@ function RiwayatKunjungan(pr) {
                 title="Detail Riwayat Kunjungan"
                 headerStyle={{ background: "rgb(97 182 249)" }}
                 placement={"left"}
-                width="800"
+                width="1400"
                 size="small"
                 bodyStyle={{ background: "rgb(0 0 0 / 0.07%)" }}
                 // closable={false}

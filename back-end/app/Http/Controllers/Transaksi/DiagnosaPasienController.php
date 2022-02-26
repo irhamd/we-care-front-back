@@ -40,7 +40,7 @@ class DiagnosaPasienController extends ApiController
         return $this->respond($data);
     }
 
-
+    
     public function getMasterDiagnosa(Request $request){
         $data = \DB::table('m_diagnosa as dat')
                 ->select('dat.id', 'dat.kode','dat.diagnosa as namadiagnosa', DB::raw( " concat( dat.kode,' - ',dat.diagnosa ) as  diagnosa " ))

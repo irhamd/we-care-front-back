@@ -11,7 +11,7 @@ import _Api from '../../../Services/Api/_Api'
 import TemptResep from './TemptResep'
 import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr'
 // import foto from "../_Assets/foto/foto.jpg"
-import foto from "../../../_Assets/foto/foto.jpg"
+import foto from "../../../_Assets/foto/users.png"
 
 
 function InputResep(pr) {
@@ -97,9 +97,9 @@ function InputResep(pr) {
                     <_Col sm={12}>
                         {/* <DetailPasien nocm={data.nocm} /> */}
                         <_Row>
-                            <_Col sm={1} style={{ background: "#bfbfbf" }}>
+                            {/* <_Col sm={1} style={{ background: "#bfbfbf" }}>
                                 <Image width={124} style={{ paddingRight: "20px" }} className="rounded" src={foto} />
-                            </_Col>
+                            </_Col> */}
                             <_Col>
                                 <Descriptions
                                     bordered

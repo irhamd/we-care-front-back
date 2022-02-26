@@ -11,7 +11,7 @@ import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
 import _Api from '../../Services/Api/_Api';
 import { acakText } from '../../Services/Crypto';
 import { fDB, fitrah, formatTglWaktu } from '../../Services/Text/GlobalText';
-import foto from "../../_Assets/foto/foto.jpg"
+import foto from "../../_Assets/foto/users.png"
 import { Col, Row } from 'react-bootstrap';
 import { _Push } from '../../Services/Route/ProtectedRoute';
 import { Cache } from '../../Services/Cache';

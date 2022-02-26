@@ -179,7 +179,7 @@ function InputPasienBaru() {
                             <_Input onChange={handleChange('nopenjamin')} label="Nomor Penjamin" />
                         </Col>
                         <Col>
-                            <_Input label="No. Paspor" onChange={handleChange('nopaspor')} />
+                            <_Input label="NRP" onChange={handleChange('nrp')} />
                         </Col>
                     </Row>
                     <Row>
