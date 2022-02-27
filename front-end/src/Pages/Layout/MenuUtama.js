@@ -102,6 +102,7 @@ function MenuUtama(R) {
 
 
                 <SubMenu style={{ float: "right", background: "#094783", color: "whitesmoke", borderWidth: "20px", borderStyle: "revert", fontWeight: "bold" }} key="sub7" icon={<UserSwitchOutlined />} title={user.namalengkap}>
+                    <Menu.Item key="71-2" icon={<SettingOutlined />}> <Link to={"/"}>   Setting </Link></Menu.Item>
                     <Menu.Item key="71-1" icon={<LogoutOutlined />}> <Link to={"/login"}>   Logout </Link></Menu.Item>
                 </SubMenu>
 

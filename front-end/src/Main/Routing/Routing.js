@@ -37,6 +37,7 @@ import DataPembayaran from '../../Pages/Transaksi/Kasir/DataPembayaran'
 import DataProduk from '../../Pages/Transaksi/Produk/DataProduk'
 import TarifLayanan from '../../Pages/Transaksi/Produk/TarifLayanan'
 import TestFirebase from '../../Pages/Test/Test-Firebase'
+import KartuPasien from '../../Pages/RegistrasiPasien/KartuPasien'
 // import InputPengaduanPasien from '../../MPP/InputPengaduanPasien'
 
 
@@ -69,6 +70,7 @@ function Routing() {
 
                 {/* LABOLATURIUM */}
                 <ProtectedRoute path="/RequestPemriksaanLab" component={RequestPemriksaanLab} />
+                <ProtectedRoute path="/KartuPasien" component={KartuPasien} />
 
 
                 {/* PENERIMAAN BARANG */}

@@ -166,6 +166,9 @@ Route::group(['prefix' => 'laporanharian'], function () {
     Route::get("/get-pengunjung-harian","Transaksi\LaporanHarianController@getPengunjungHarian");
 
 });
+Route::group(['prefix' => 'kartupasien'], function () {
+    Route::get("/get-kartu-pasien","Transaksi\KartuPasienController@getKartuPasien");
+});
 
 
 

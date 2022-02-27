@@ -28,14 +28,14 @@ function DetailPasienDaftar({ data }) {
         >
             <Descriptions.Item label="No. RM : ">{datas.nocm}</Descriptions.Item>
             <Descriptions.Item label="Nama Pasien :">{datas.namapasien}</Descriptions.Item>
+            <Descriptions.Item label="No. NRP:"> &nbsp;{datas.nrp}</Descriptions.Item>
             {/* <Descriptions.Item label="Nama Pasien">{datas.namapasien}</Descriptions.Item> */}
+            <Descriptions.Item label="Penjamin :">{datas.penjamin}</Descriptions.Item>
             <Descriptions.Item label="Tempat Lahir :">{datas.tempatlahir}</Descriptions.Item>
             <Descriptions.Item label="Tgl Lahir :">{ formatTgl(datas.tgllahir) } / {fitrah.getUmur(datas.tgllahir)} </Descriptions.Item>
             <Descriptions.Item label="No. KTP :">{datas.noktp}</Descriptions.Item>
             <Descriptions.Item label="Jenis Kelamin :">{datas.jeniskelamin}</Descriptions.Item>
             <Descriptions.Item label="No. Registrasi :">{datas.noregistrasi}</Descriptions.Item>
-            <Descriptions.Item label="Asal Rujukan :"> &nbsp;{datas.asalrujukan}</Descriptions.Item>
-            <Descriptions.Item label="Penjamin :">{datas.penjamin}</Descriptions.Item>
             <Descriptions.Item label="Ruangan Saat Ini :">{datas.ruangan}</Descriptions.Item>
             <Descriptions.Item label="Instalasi :">{datas.instalasi}</Descriptions.Item>
         </Descriptions>

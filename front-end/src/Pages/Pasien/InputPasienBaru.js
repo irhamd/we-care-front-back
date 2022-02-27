@@ -21,6 +21,7 @@ function InputPasienBaru(pr) {
     const [penjamin, setpenjamin] = useState([])
     const [jenispasien, setjenispasien] = useState([])
     const [warganegara, setwarganegara] = useState([])
+    const [pangkat, setpangkat] = useState([])
     const [bodyPasien, setbodyPasien] = useState({})
     const [bodyAlamat, setbodyAlamat] = useState({})
     const [dataKecamatan, setdataKecamatan] = useState([])
@@ -47,6 +48,7 @@ function InputPasienBaru(pr) {
         _Api.get("pasien/compo-registrasi-pasien").then(res => {
             // console.log(res.data)
             setpekerjaan(res.data.pekerjaan)
+            setpangkat(res.data.pangkat)
             setagama(res.data.agama)
             setpendidikan(res.data.pendidikan)
             setstatusperkawinan(res.data.statusperkawinan)
@@ -70,6 +72,8 @@ function InputPasienBaru(pr) {
         let isMoment = e._isAMomentObject && e._isAMomentObject
         setbodyPasien({
             ...bodyPasien,
+            "rt" : "0",
+            "rw" : "0",
             "instansipekerjaan": "Rumah Sakit Kota Mataram",
             "idpasien": "",
             "statuskeluarga": {
@@ -199,6 +203,12 @@ function InputPasienBaru(pr) {
                             <_Input onChange={handleChange('nohp')} label="Nomor HP" />
                         </Col>
                         <Col>
+                            <_Select option={pangkat} label="Pangkat" val="id" caption="pangkat"
+                                onChange={changeSelect("pangkat", pangkat)}
+                                />
+                            </Col>
+
+                        <Col>
                             <_Input onChange={handleChange('nip')} label="NIP" />
                         </Col>
 
@@ -258,12 +268,11 @@ function InputPasienBaru(pr) {
                             />
                         </Col>
 
-
-
+ 
                         <Col sm={2}>
                             <_Switch label="WNI" defaultChecked onChange={changeSwitch} />
                         </Col>
-                        <Col sm={6} />
+                        <Col sm={6} style={{ marginBottom:"200px" }}/>
                         <_Button label="Simpan Ke Database" submit btnSave sm={6} block />
 
                         {/* <Col sm={7}>
@@ -312,9 +321,8 @@ function InputPasienBaru(pr) {
 
                     </Row>
                 </Col>
-
-                <br />
-                <br />
+                <br/>
+         
 
                 {/* <Col sm={6}>
                     <Col sm={12}>
@@ -367,7 +375,7 @@ function InputPasienBaru(pr) {
                 {/* <Button type="primary" htmlType="submit" style={{ marginTop: "23px", marginBottom: "150px", paddingTop: "0px" }} loading={loading} >
                     Simpan Data
                 </Button> &nbsp; */}
-
+ 
             </Row>
         </Form>
     )

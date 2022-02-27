@@ -226,6 +226,11 @@ function RegistrasiPasien() {
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))
     }
 
+    const pushKartuPasien = () => {
+        histori.push("/KartuPasien")
+        // Cache.set("pasien_pd",  JSON.stringify("ffff"))
+    }
+
     return (
         <LayoutAnt pl="10px" mr="40px">
             <_TitleBar title="Daftar Registrasi Pasien" align="center" />
@@ -281,12 +286,10 @@ function RegistrasiPasien() {
                     <_Button sm={2} icon={<AppstoreAddOutlined />} primary
                         title="Resep" onClick={inputResep} block />
 
-                    <_Button sm={2} icon={<FileSearchOutlined />} primary
-                        title="Blanko Lab" onClick={pushLab} block />
+                    {/* <_Button sm={2} icon={<FileSearchOutlined />} primary title="Blanko Lab" onClick={pushLab} block /> */}
 
                     <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
-                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
-                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
+                    <_Button sm={2} icon={<FileSearchOutlined />} primary  title="Kartu Pasien" onClick={pushKartuPasien} block />
 
                 </_Row>
             </DivCol>

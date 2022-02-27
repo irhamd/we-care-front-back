@@ -70,7 +70,7 @@ function PemeriksaanFisik(pr) {
                                 <_Text align="right" sm={4}> Sistole  &nbsp; :</_Text>
                                 <_Input number name={['pemeriksaanfisik', 'sistole']} addonAfter="mm" sm={6} />
 
-                                <_Text align="right" sm={4}> Diastole  &nbsp; :</_Text>
+                                <_Text align="right" sm={4}> Diastole / Tekanan Darah &nbsp; :</_Text>
                                 <_Input number addonAfter="Hg" name={['pemeriksaanfisik', 'diastole']} sm={5} />
 
                                 <_Text align="right" sm={4}> Tinggi Badan  &nbsp; :</_Text>

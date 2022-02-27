@@ -21,7 +21,7 @@ function RiwayatKunjungan(pr) {
 
     const { TabPane } = Tabs;
     const getGetailByNorec = (noreg) => {
-        _Api.get(`pasien/get-detail-riwayat-pendaftaran?noregistrasi=${noreg}`).then(res => {
+        _Api.get(`pasien/get-detail-riwayat-pendaftaran?pasienfk=19`).then(res => {
             setanamnesa(res.data.anamnesa.anamnesa)
             setpfisik(res.data.anamnesa.pemeriksaanfisik)
             setdetail(res.data.anamnesa)

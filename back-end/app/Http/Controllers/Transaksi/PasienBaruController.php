@@ -83,6 +83,11 @@ class PasienBaruController extends ApiController
             ->where('dat.statusenabled', true)
             ->orderBy('dat.id')
             ->get();
+        $pangkat = \DB::table('pangkat_m as dat')
+            ->select('dat.id', 'dat.pangkat')
+            ->where('dat.statusenabled', true)
+            ->orderBy('dat.id')
+            ->get();
 
 	    $result = array(
 	    	'kelompokpasien' => $dataKelompok,
@@ -94,6 +99,7 @@ class PasienBaruController extends ApiController
             'penjamin' => $dataPenjamin,
             'pekerjaan' => $dataPekerjaan,
             'jenispasien' => $jenispasien,
+            'pangkat' => $pangkat,
             'statuskeluarga' => $dataStatusKeluarga,
 	    );
 
@@ -293,6 +299,7 @@ class PasienBaruController extends ApiController
             $dataPS->statusperkawinanfk =  $request['pasien']['statusperkawinan']['id'];
             $dataPS->statuskeluarga =  $request['pasien']['statuskeluarga']['statuskeluarga'];
             $dataPS->statuskeluargafk =  $request['pasien']['statuskeluarga']['id'];
+            $dataPS->pangkatfk =  $request['pasien']['pangkat']['id'];
             $dataPS->kebangsaan =  $request['pasien']['kebangsaan']['kebangsaan'];
             $dataPS->kebangsaanfk =  $request['pasien']['kebangsaan']['id'];
             if (isset( $request['pasien']['nrp']) &&  $request['pasien']['nrp']!="" &&  $request['pasien']['nrp']!="undefined"){
@@ -305,7 +312,7 @@ class PasienBaruController extends ApiController
                 $dataPS->namaibu =  $request['pasien']['namaibu'];
             }
             if (isset( $request['pasien']['id_jenispasien']) &&  $request['pasien']['id_jenispasien']!="" &&  $request['pasien']['id_jenispasien']!="undefined"){
-                $dataPS->id_jenispasien =  $request['pasien']['id_jenispasien'];
+                $dataPS->id_jenispasien =  $request['pasien']['id_jenispasien']['id'];
             }
             $dataPS->tgldaftar =  date('Y-m-d H:i:s');
             $dataPS->nocm = $noCm;

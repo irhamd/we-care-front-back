@@ -86,7 +86,7 @@ function AttemptAuth() {
             <h1 style={{ textAlign: "center", marginTop: "8%" }}></h1>
             <div style={{ textAlign: "center" }}>
                 <p><img width="300" src={logoLogin} alt="" /></p>
-                <p style={{ textAlign: "center", fontWeight: "bolder" }}> <span style={{ color: "#258fe6f7" }}> KLINIK </span> PERMATA ARTHA MEDIKA </p>
+                <p style={{ textAlign: "center", fontWeight: "bolder" }}> <span style={{ color: "#258fe6f7" }}> BALAI KESEHATAN </span> PANGKALAN TNI AL MATARAM </p>
 
                 {/* <b> Silahkan Login </b> */}
             </div>
