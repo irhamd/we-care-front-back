@@ -52,7 +52,6 @@ function TempInputPelayananDiLab(pr) {
     }
     useEffect(() => {
         const d = pr.produk
-        console.log(pr.produk)
     }, [])
 
     // const obatKosong = pr.produk ? pr.produk : [{

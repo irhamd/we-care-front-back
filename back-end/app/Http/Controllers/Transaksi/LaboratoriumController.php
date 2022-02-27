@@ -160,7 +160,8 @@ class LaboratoriumController extends ApiController
             ->join('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->join('ruangan_m as ru2', 'ru2.id','=','rp.ruanganfk')
             ->leftjoin('pegawai_m as pg', 'pg.id','=','rp.pegawaifk')
-            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','pd.tglregistrasi','pg.namalengkap as pegawaiblanko','pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pd.noregistrasi','rp.noblankolab','rp.norec as norec_blankolab'
+            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','pd.tglregistrasi','pg.namalengkap as pegawaiblanko',
+                    'pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pd.noregistrasi','rp.noblankolab','rp.norec as norec_blankolab'
             )
             ->where('pd.statusenabled',1);
 
@@ -293,9 +294,13 @@ class LaboratoriumController extends ApiController
             ->join('struklab_t as rp','rp.antrianpasiendiperiksafk','=','apd.norec')
             ->join('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->join('ruangan_m as ru2', 'ru2.id','=','rp.ruanganfk')
-            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','ru2.id as idruanganlab','ru2.ruangan as ruanganlab','pd.noregistrasi','rp.nolab','rp.norec as norec_sl'
-            )
+            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','pd.norec as norec_pd','apd.norec as norec_apd',
+                    'ru.id as idruangan','ru.ruangan','ru2.id as idruanganlab','ru2.ruangan as ruanganlab','pd.noregistrasi','rp.nolab',
+                    'rp.norec as norec_sl')
+          
             ->where('pd.statusenabled',1);
+            // ->groupBy('ps.id','ps.namapasien','ps.nocm','pd.noregistrasi','pd.norec','apd.norec');
+
 
 
         if(isset($request['tglAwal']) && $request['tglAwal']!="" && $request['tglAwal']!="undefined") {

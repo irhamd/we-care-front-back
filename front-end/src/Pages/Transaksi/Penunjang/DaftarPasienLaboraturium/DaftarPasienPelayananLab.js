@@ -55,26 +55,34 @@ function DaftarPasienPelayananLab(pr) {
             ),
         },
         {
+            title: 'Ruangan Lab', width: 200,
+            dataIndex: 'ruanganlab'
+        },
+        {
             title: 'No. RM', width: 100,
             dataIndex: 'nocm'
+        },
+        {
+            title: 'Noregistrasi', width: 160,
+            dataIndex: 'noregistrasi'
         },
         {
             title: 'Nama Pasien',
             dataIndex: 'namapasien'
         },
+
         {
-            title: 'Noregistrasi', width: 130,
-            dataIndex: 'noregistrasi'
+            title: 'Act', width: 100,
+            render: (row) => (
+                <_Button title="Input Pemeriksaan" icon={<FundViewOutlined />}    />
+            ),
         },
 
         // {
         //     title: 'Ruangan', width: 200,
         //     dataIndex: 'ruangan'
         // },
-        {
-            title: 'Ruangan Lab', width: 200,
-            dataIndex: 'ruanganlab'
-        },
+
         // {
         //     title: 'Detail', width: 100,
         //     render: (row) => (
@@ -130,6 +138,7 @@ function DaftarPasienPelayananLab(pr) {
     useEffect(() => {
         loadData()
         LoadCombo()
+        // loadDataPasienMenunggu(null)
     }, [])
 
     return (

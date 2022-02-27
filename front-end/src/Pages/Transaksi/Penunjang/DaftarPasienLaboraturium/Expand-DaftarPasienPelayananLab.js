@@ -52,7 +52,7 @@ function ExpandDaftarPasienPelayananLab(pr) {
         {
             title: 'Act', width: 100,
             render: (row) => (
-                <_Button title="Hapus" icon={<FundViewOutlined />} onClick={()=>deletePemeriksaan(row.norec_pp)}   />
+                <_Button title="Hapus" danger icon={<FundViewOutlined />} onClick={()=>deletePemeriksaan(row.norec_pp)}   />
             ),
         },
         // { title: '' },

@@ -341,7 +341,7 @@ export const _Button = (r) => {
                 shape={r.shape}
                 disabled={r.disabled}
                 danger={r.danger}
-                style={{ ...r.style, background: r.color, borderColor: r.color }}
+                style={{ ...r.style, background: r.color, borderColor: r.color, marginBottom:"10px" }}
                 htmlType={r.submit ? "submit" : r.submit}
                 size={r.size}
                 type={"primary"}

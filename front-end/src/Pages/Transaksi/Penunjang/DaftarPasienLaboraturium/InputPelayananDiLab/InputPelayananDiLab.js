@@ -27,6 +27,8 @@ function InputPelayananDiLab(pr) {
 
     let data = JSON.parse(arr)
 
+    console.log('data', data)
+
     const [combobox, setcombobox] = useState({})
     const [produk, setProduk] = useState([])
     const [ruangan, setruangan] = useState([])
@@ -86,7 +88,7 @@ function InputPelayananDiLab(pr) {
             setSpin(true)
             await _Api.get(`lab/get-detail-blankolab-bynorec?norec_blankolab=${data.norec_blankolab}`).then(res => {
                 let row = res.data
-                setdataForm({ ...res.data, 'nolab': '', norec_apdlab: '' })
+                setdataForm({ ...res.data, 'nolab': data.noblankolab, norec_apdlab: data.norec_apd })
                 setSpin(false)
                 // setstate({ ...state, namadokter: [row.idpegawai, row.pegawai] })
                 // setstate({ ...state, asisten: [row.idasisten, row.asisten] })
@@ -115,7 +117,7 @@ function InputPelayananDiLab(pr) {
 
     }, [])
     const onFinish = (values) => {
-        console.log(values);
+        // console.log(values);
         var gabung = { ...values, ...dataForm }
         console.log(gabung)
         _Api.post("lab/save-pemeriksaan-lab", gabung).then(res => {

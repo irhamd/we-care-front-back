@@ -227,14 +227,14 @@ function RegistrasiPasien() {
     }
 
     return (
-        <LayoutAnt pl="10px" >
+        <LayoutAnt pl="10px" mr="40px">
             <_TitleBar title="Daftar Registrasi Pasien" align="center" />
             <DivCol pl="13px">
                 <Form layout={"vertical"} onFinish={LoadData} initialValues={{ tglAwal: moment(tglAwal), tglAkhir: moment(tglAkhir) }} >
                     <_Row >
                         <_Date sm={2} name="tglAwal" showTime label="Tanggal" />
                         <_Date sm={2} name="tglAkhir" label=" " showTime />
-                        <_Select sm={2} name="instalasi" option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" />
+                        {/* <_Select sm={2} name="instalasi" option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" /> */}
                         <_Select sm={2} option={combo.ruangan} label="Ruangan" val="id" name="idruangan" caption="ruangan" />
                         <_Input sm={1} label="No. RM" name="nocm" />
                         <_Input sm={1} label="Nama Pasien" name="namapasien" />
@@ -267,7 +267,7 @@ function RegistrasiPasien() {
                         };
                     }}
                 />
-            <DivCol pl="10px">
+            <DivCol pl="10px" pr="30px">
                 <_Row>
                     <_Button sm={2} icon={<BranchesOutlined />} color="orange"
                         primary onClick={pengkajianMedis} title="Pengkajian Pasien" block />
@@ -283,6 +283,11 @@ function RegistrasiPasien() {
 
                     <_Button sm={2} icon={<FileSearchOutlined />} primary
                         title="Blanko Lab" onClick={pushLab} block />
+
+                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
+                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
+                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
+
                 </_Row>
             </DivCol>
             <br />
