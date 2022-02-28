@@ -100,6 +100,45 @@ class ApotikController extends ApiController
         try {
             $noresep = $request['noresep'];
 
+            if($request['norec_rp']==''){
+
+                $noresep = $this->generateCodeBySeqTable(new ResepPasien, 'noresep', 15, 'RP' . date('ym') . '');
+
+                if ($noresep == '') {
+                    $transMessage = "Gagal mengumpukan data, Coba lagi.!";
+                    DB::rollBack();
+                    $result = array(
+                        "status" => 400,
+                        "message" => $transMessage,
+                    );
+                    return $this->setStatusCode($result['status'])->respond($result, $transMessage);
+                }
+
+                $ResepPas = new ResepPasien();
+                $ResepPas->norec = $ResepPas->generateNewId();
+                $ResepPas->kdprofile = 0;
+                $ResepPas->statusenabled = true;
+                $ResepPas->antrianpasiendiperiksafk = $request['norec_apd'];
+                $ResepPas->noresep = $noresep;
+                $ResepPas->tglresep = date('Y-m-d H:i:s');
+                // $ResepPas->ruanganfk = $request['idruanganresep'];
+                // $ResepPas->pegawaifk = $request['idpegawai'];
+                // if (isset($request['idasisten']) && $request['idasisten']!="" && $request['idasisten']!="undefined"){
+                //     $ResepPas->asistenfk = $request['idasisten'];
+                // }
+                // if (isset($request['alergiobat']) && $request['alergiobat']!="" && $request['alergiobat']!="undefined"){
+                //     $ResepPas->alergiobat = $request['alergiobat'];
+                // }
+                if (isset($request['statusprioritas']) && $request['statusprioritas']!="" && $request['statusprioritas']!="undefined"){
+                    $ResepPas->statusprioritas = $request['statusprioritas'];
+                }
+                $ResepPas->pegawaiinputfk =  $dataLogin['userData']['id'];
+                $ResepPas->save();
+            }else{
+                $ResepPas =  ResepPasien::where('norec',$request['norec_rp'])->first();
+            }
+
+
             if($request['noresep']==''){
 
                 $noresep = $this->generateCodeBySeqTable(new ResepPasien, 'noresep', 15, 'RP' . date('ym') . '');
@@ -350,11 +389,13 @@ class ApotikController extends ApiController
         $data = \DB::table('pasiendaftar_t as pd')
             ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
             ->join('pasien_m as ps','ps.id','=','pd.pasienfk')
-            ->join('reseppasien_t as rp', 'rp.antrianpasiendiperiksafk','=','apd.norec')
+            ->leftjoin('reseppasien_t as rp', 'rp.antrianpasiendiperiksafk','=','apd.norec')
             ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->leftjoin('ruangan_m as ru2', 'ru2.id','=','rp.ruanganfk')
             ->leftjoin('pegawai_m as pg', 'pg.id','=','rp.pegawaifk')
-            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','rp.noresep','pg.namalengkap as penulisresep','pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pd.noregistrasi','ru2.id as iddepo','ru2.ruangan as depo','rp.norec as norec_rp')
+            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','rp.noresep','pg.namalengkap as penulisresep',
+            'pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pd.noregistrasi','ru2.id as iddepo',
+            'ru2.ruangan as depo','rp.norec as norec_rp')
             ->where('pd.statusenabled',1);
 
 
@@ -402,7 +443,8 @@ class ApotikController extends ApiController
             ->leftjoin('ruangan_m as ru', 'ru.id','=','rp.ruanganfk')
             ->select('pg.namalengkap as penulisresep','pg.id as idpenulisresep', 'apd.norec as norec_apd', 'rp.norec as norec_rp', 'rp.alergiobat','rp.statusprioritas', 'rp.noresep','rp.tglresep','ru.id as iddepo','ru.ruangan as depo'
             )
-            ->where('rp.norec', '=',$request['norec_rp'])
+            ->where('apd.norec', '=',$request['norec_apd'])
+            // ->where('pd.noregistrasi','2202000014')
             ->first();
 
         $detail = \DB::table('pasiendaftar_t as pd')
@@ -415,10 +457,14 @@ class ApotikController extends ApiController
             ->select('rpd.norec as norec_rpd', 'rpd.jeniskemasanfk as idjeniskemasan','rpd.racikanke','rpd.dosisracikan', 'pr.id as idproduk','pr.produk','rpd.jumlah','rpd.signa','jk.jeniskemasan','ap.id as idaturanpakai','ap.aturanpakai' , 'rpd.keterangan','rpd.hargasatuan','rpd.hargatotal','rpd.jasa','rpd.hargatotaljasa'
             )
             ->where('rp.norec', '=',$request['norec_rp'])
+            // ->where('pd.noregistrasi','2202000014')
+            // ->where('apd.norec', '=',$request['norec_apd'])
+
+
             ->where('rp.statusenabled', true)
             ->get();
-
-        $head->details = $detail;
+             
+      
 
         return $this->respond($head);
 

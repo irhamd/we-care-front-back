@@ -69,7 +69,8 @@ function ProsesInputResep(pr) {
     const LoadData = () => {
         try {
             setSpin(true)
-            _Api.get(`apotik/get-detail-resep-bynores?norec_rp=${data.norec_rp}`).then(res => {
+            console.log(data)
+            _Api.get(`apotik/get-detail-resep-bynores?norec_apd=${data.norec_apd}`).then(res => {
                 let row = res.data
                 setdataResep(res.data)
                 setSpin(false)
