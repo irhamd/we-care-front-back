@@ -39,6 +39,7 @@ import TarifLayanan from '../../Pages/Transaksi/Produk/TarifLayanan'
 import TestFirebase from '../../Pages/Test/Test-Firebase'
 import KartuPasien from '../../Pages/RegistrasiPasien/KartuPasien'
 import StokObat from '../../Pages/Transaksi/Apotek/StokObat'
+import { Print } from '../../Pages/Test/Print'
 // import InputPengaduanPasien from '../../MPP/InputPengaduanPasien'
 
 
@@ -58,6 +59,7 @@ function Routing() {
                 <ProtectedRoute path="/Dashboard" exact component={Dashboard} />
                 <ProtectedRoute path="/home" component={Home} />
                 <ProtectedRoute path="/contact/:id" component={Contact} />
+                {/* <ProtectedRoute path="/DataPasienLama" component={Print} /> */}
                 <ProtectedRoute path="/DataPasienLama" component={DataPasienLama} />
                 <ProtectedRoute path="/RegistrasiPasien" component={RegistrasiPasien} />
                 <ProtectedRoute path="/PasienDaftar/:detailpasien" component={PasienDaftar} />

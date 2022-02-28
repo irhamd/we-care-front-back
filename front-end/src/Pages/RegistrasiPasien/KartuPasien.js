@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { DivCol, _Button, _Date, _Input, _Select, _Switch, _TitleBar } from '../../Services/Forms/Forms'
 import { _Col, _grid, _Row, _row } from '../../Services/Forms/LayoutBootstrap'
 import LayoutAnt from '../Layout/LayoutAnt'
 import { Table, Radio, Divider, Input, Button, Form, Avatar, Drawer, Space, DatePicker, Spin, Popconfirm, Tooltip, Badge, Tag, Progress, Image, Rate, Descriptions } from 'antd';
 import moment from 'moment';
-import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined, PrinterOutlined } from '@ant-design/icons';
 
 import { useHistory, withRouter } from 'react-router-dom';
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
@@ -17,6 +17,7 @@ import { _Push } from '../../Services/Route/ProtectedRoute';
 import { Cache } from '../../Services/Cache';
 import DetailPasien from '../Pasien/DetailPasien';
 import DetailPasienDaftar from '../Pasien/DetailPasienDaftar';
+import ReactToPrint from 'react-to-print';
 
 
 
@@ -26,6 +27,8 @@ function KartuPasien(pr) {
     const [loading, setLoading] = useState(true)
     const [detailpasien, setdetailpasien] = useState("")
     // const [selected, selected] = useState("")
+    const printReff = useRef();
+
 
     const [combo, setcombo] = useState([])
     const histori = useHistory()
@@ -129,19 +132,40 @@ function KartuPasien(pr) {
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))
     }
 
+    const handleAfterPrint = React.useCallback(() => {
+        console.log("`onAfterPrint` called");
+        setLoading( false )
+
+      }, []);
+    
+      const handleBeforePrint = React.useCallback(() => {
+        console.log("`onBeforePrint` called");
+        setLoading( true )
+      }, []);
+
+
     return (
         <LayoutAnt>
            
 
-            <DetailPasienDaftar data={ { noregistrasi : pr.match.params.nocm} } />
+            <DetailPasienDaftar data={{ noregistrasi: pr.match.params.nocm }} />
 
-            <div style={{ background: "grey", padding: "25px 180px", fontSize: "14px" }}>
-                <_Col style={{ background: "white", padding: "25px 40px", height:"100%" , fontSize: "14px" }}>
-                    <_TitleBar title="KARTU PASIEN" align="center" />
+            <div style={{ background: "grey", padding: "10px 80px", fontSize: "14px" }}>
+                <_Col style={{ background: "white" }}>
 
-                    <br />
-                    <Table bordered columns={columns} dataSource={data} />
-
+                    <ReactToPrint
+                        onAfterPrint={handleAfterPrint}
+                        onBeforePrint={handleBeforePrint}
+                        trigger={() => <div> <br /> <_Button icon={<PrinterOutlined />} label="Cetak" /> </div>}
+                        content={() => printReff.current}
+                    />
+                    <div ref={printReff} style={{ padding: "15px 110px" }}>
+                        <Spin spinning={ loading }>
+                        <_TitleBar title="KARTU PASIEN" align="center" />
+                        <br />
+                        <Table bordered columns={columns} dataSource={data} />
+                        </Spin>
+                    </div>
 
                 </_Col>
 
