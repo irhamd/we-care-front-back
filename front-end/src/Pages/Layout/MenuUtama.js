@@ -4,7 +4,7 @@ import { Content } from 'antd/lib/layout/layout';
 import {
     UserOutlined, LaptopOutlined, PlayCircleOutlined, NotificationOutlined, DownloadOutlined, SyncOutlined, UserSwitchOutlined,
     LogoutOutlined, BarChartOutlined, DribbbleSquareOutlined, SendOutlined, ShareAltOutlined, ThunderboltOutlined, TransactionOutlined,
-    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined
+    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined, MenuFoldOutlined
 }
     from '@ant-design/icons';
 import _Api from '../../Services/Api/_Api';
@@ -50,15 +50,16 @@ function MenuUtama(R) {
 
                 </SubMenu>
                 <SubMenu key="sub4" icon={<ShareAltOutlined />} title="Apotek">
-                    <Menu.Item key="4-1" icon={<AppstoreAddOutlined />}><Link to={"/ProsesResep"}> Daftar Permintaan Resep  </Link></Menu.Item>
-                    <Menu.Item key="4-2" icon={<AppstoreAddOutlined />}><Link to={"/ResepPasien"}> Daftar Obat Pasien  </Link></Menu.Item>
+                    <Menu.Item key="4-1" icon={<MenuFoldOutlined />}><Link to={"/ProsesResep"}> Daftar Permintaan Resep  </Link></Menu.Item>
+                    <Menu.Item key="4-2" icon={<MenuFoldOutlined />}><Link to={"/ResepPasien"}> Daftar Obat Pasien  </Link></Menu.Item>
+                    <Menu.Item key="4-2" icon={<MenuFoldOutlined />}><Link to={"/StokObat"}> Stok Obat  </Link></Menu.Item>
                 </SubMenu>
 
                 <SubMenu key="sub5" icon={<ShoppingCartOutlined />} title="Penerimaan Barang">
                     <SubMenu key="sub51" icon={<BarChartOutlined />} title="Penerimaan">
-                        <Menu.Item key="51-1" icon={<AppstoreAddOutlined />}> <Link to={"/PenerimaaanBarang/1"}>   Input Barang Masuk </Link></Menu.Item>
-                        <Menu.Item key="51-2" icon={<AppstoreAddOutlined />}> <Link to={"/PenerimaaanBarang/2"}>   Data Penerimaan Barang </Link></Menu.Item>
-                        <Menu.Item key="51-3" icon={<AppstoreAddOutlined />}> <Link to={"/PenerimaaanBarang/3"}>   Kartu Stok </Link></Menu.Item>
+                        <Menu.Item key="51-1" icon={<MenuFoldOutlined />}> <Link to={"/PenerimaaanBarang/1"}>   Input Barang Masuk </Link></Menu.Item>
+                        <Menu.Item key="51-2" icon={<MenuFoldOutlined />}> <Link to={"/PenerimaaanBarang/2"}>   Data Penerimaan Barang </Link></Menu.Item>
+                        <Menu.Item key="51-3" icon={<MenuFoldOutlined />}> <Link to={"/PenerimaaanBarang/3"}>   Kartu Stok </Link></Menu.Item>
                     </SubMenu>
                     <SubMenu key="sub61" icon={<BarChartOutlined />} title="Distribusi">
                         <Menu.Item key="61-1" icon={<ShareAltOutlined />}> <Link to={"/PengirimanBarang"}>   Kirim Barang </Link></Menu.Item>

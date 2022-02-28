@@ -38,6 +38,7 @@ import DataProduk from '../../Pages/Transaksi/Produk/DataProduk'
 import TarifLayanan from '../../Pages/Transaksi/Produk/TarifLayanan'
 import TestFirebase from '../../Pages/Test/Test-Firebase'
 import KartuPasien from '../../Pages/RegistrasiPasien/KartuPasien'
+import StokObat from '../../Pages/Transaksi/Apotek/StokObat'
 // import InputPengaduanPasien from '../../MPP/InputPengaduanPasien'
 
 
@@ -70,7 +71,7 @@ function Routing() {
 
                 {/* LABOLATURIUM */}
                 <ProtectedRoute path="/RequestPemriksaanLab" component={RequestPemriksaanLab} />
-                <ProtectedRoute path="/KartuPasien" component={KartuPasien} />
+                <ProtectedRoute path="/KartuPasien/:nocm/:nocmfk" component={KartuPasien} />
 
 
                 {/* PENERIMAAN BARANG */}
@@ -101,6 +102,7 @@ function Routing() {
                 {/* PRODUK */}
                 <ProtectedRoute path="/Produk/DataProduk" exact component={DataProduk} />
                 <ProtectedRoute path="/Produk/TarifLayanan" exact component={TarifLayanan} />
+                <ProtectedRoute path="/StokObat" exact component={StokObat} />
 
                 {/* LAPORAN */}
                 <ProtectedRoute path="/Laporan/Dashboard" exact component={Test} />

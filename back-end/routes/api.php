@@ -145,6 +145,7 @@ Route::group(['prefix' => 'apotik'], function () {
     Route::get("/get-pegawai-pelayanan-obat","Transaksi\ApotikController@getPegawaiObat");
     Route::get("/get-ruangan-pelayanan-obat","Transaksi\ApotikController@getRuanganObat");
     Route::post("/delete-pelayanan-obat","Transaksi\ApotikController@deletePelayananObatPasien");
+    Route::get("/get-stok-obat","Transaksi\ProdukController@getStokObat");
 
 });
 

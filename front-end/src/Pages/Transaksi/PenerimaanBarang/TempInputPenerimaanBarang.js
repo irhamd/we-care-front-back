@@ -162,6 +162,7 @@ function TempInputPenerimaanBarang(pr) {
                             // onChange={handleChange("produkfk", "produk")}
                             name="idproduk"
                             callback={setdetailProduk}
+                            onChange={e=>console.log(e)}
                             // onSelect={(e,f)=>console.log(f)}
                             route="penerimaanbarang/get-produk-penerimaan-barang"
                             label="Nama Barang"
@@ -174,9 +175,7 @@ function TempInputPenerimaanBarang(pr) {
                         <_Number name="jumlah" onChange={hitungTotal} label="Jumlah" sm={1} required />
                         <_Number name="hargajual" label="Harga Jual" format sm={1} required />
                         <_Date required name="tglkadaluarsa" format='DD-MM-YYYY' sm={2} label="Tanggal Kedaluarsa" />
-
                         <_Number name="hargatotal" disabled label="Total Harga" format sm={2} required />
-
                         <hr />
                         {/* <Col sm={12} style={{textAlign:"right"}}> */}
                         <_Button sm={1} style={{ marginTop: "23px" }} color="orange" submit label="Tambah" type="primary" icon={<EnterOutlined />} />

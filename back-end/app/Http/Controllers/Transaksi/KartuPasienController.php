@@ -32,7 +32,7 @@ class KartuPasienController extends ApiController
           join an_anamnesa_t as aat on aat.an_anamnesaheadfk = anh.norec
           left join an_pemeriksaanfisik_t as apt on apt.an_anamnesaheadfk = anh.norec
           join pasien_m as ps on ps.id = pd.pasienfk 
-        WHERE  pd.pasienfk  = 19
+        WHERE  pd.pasienfk  = $req->nocmfk
         and anh.statusenabled  = 1 ";
 
        $data = DB::select($query);

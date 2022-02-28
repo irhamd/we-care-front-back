@@ -6,7 +6,7 @@ import { Table, Radio, Divider, Input, Button, Form, Avatar, Drawer, Space, Date
 import moment from 'moment';
 import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined } from '@ant-design/icons';
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, withRouter } from 'react-router-dom';
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
 import _Api from '../../Services/Api/_Api';
 import { acakText } from '../../Services/Crypto';
@@ -20,7 +20,7 @@ import DetailPasienDaftar from '../Pasien/DetailPasienDaftar';
 
 
 
-function KartuPasien() {
+function KartuPasien(pr) {
     const [data, setData] = useState([])
     const [selected, setselected] = useState()
     const [loading, setLoading] = useState(true)
@@ -39,7 +39,7 @@ function KartuPasien() {
 
     const LoadData = () => {
         setLoading(true)
-        _Api.get("kartupasien/get-kartu-pasien").then(res => {
+        _Api.get("kartupasien/get-kartu-pasien?nocmfk="+pr.match.params.nocmfk).then(res => {
             console.log(res.data)
             setData(res.data)
             setLoading(false)
@@ -53,37 +53,16 @@ function KartuPasien() {
     }
 
     useEffect(() => {
+
+        console.log('pr', pr)
         LoadData();
         isiCombobox();
     }, [])
 
-    const pengkajianMedis = () => {
-        if (!detailpasien) {
-            _Toastr.error("Silahkan pilih data ...")
-            return
-        }
-        histori.push("PengkajianMedis/" + detailpasien)
+   
 
-    }
-    const inputResep = () => {
-        if (!detailpasien) {
-            _Toastr.error("Silahkan pilih data ...")
-            return
-        }
-        histori.push("Resep/" + detailpasien)
-    }
-    const detailTransaksi = () => {
-        if (!detailpasien) {
-            _Toastr.error("Silahkan pilih data ...")
-            return
-        } else {
-            histori.push("/DetailTransaksi/" + selected.noregistrasi)
-            console.log(`detailpasien`, detailpasien)
-        }
-    }
+    var stile = { fontSize: "17px", background: " white", padding: "10px", top: "0px" }
 
-    var stile =  { fontSize :"17px", background :" white", padding:"10px", top:"0px"}
-    
 
     const columns = [
         {
@@ -92,19 +71,19 @@ function KartuPasien() {
             key: 'tglregistrasi',
             width: 150,
             render: row =>
-            <div style={{ textAlign:"center" }}>
-                <a style={stile}>{ moment(row.tglregistrasi).format("DD/MM yyyy") }</a>
-                <div style={{ marginTop:"-10px" }}>  <_Button size="small" label="Detail" btnFind /> </div>
-            </div>
+                <div style={{ textAlign: "center" }}>
+                    <a style={stile}>{moment(row.tglregistrasi).format("DD/MM yyyy")}</a>
+                    <div style={{ marginTop: "-10px" }}>  <_Button size="small" label="Detail" btnFind /> </div>
+                </div>
         },
         {
             title: 'ANAMNESIS / PEMERIKSAAN',
             render: row => <p style={stile}>
                 {row.keluhanutama} <br />
                 {row.keluhantambahan} /
-                <span> { row.diastole &&  "Tekanan Darah (TD) : " +row.diastole + " Hg"} </span>/
-                <span> { row.suhu &&  "Suhu : " +row.suhu + " °C" } </span>/
-                <span> { row.suhu &&  "Sistole : " +row.sistole + " mm" } </span>/
+                <span> {row.diastole && "Tekanan Darah (TD) : " + row.diastole + " Hg"} </span>/
+                <span> {row.suhu && "Suhu : " + row.suhu + " °C"} </span>/
+                <span> {row.sistole && "Sistole : " + row.sistole + " mm"} </span>/
             </p>
         },
         {
@@ -128,12 +107,12 @@ function KartuPasien() {
             title: 'RESEP / TERAPI / DLL',
             key: 'action',
             render: row =>
-            <div style={stile}>
+                <div style={stile}>
                     <ul>
                         {
                             row.resep.map((item, i) => {
                                 return (
-                                    <li key={i}> {item.produk} / {item.jumlah} - {item.satuan } / {item.aturanpakai} </li>
+                                    <li key={i}> {item.produk} / {item.jumlah} - {item.satuan} / {item.aturanpakai} </li>
                                 )
                             })
                         }
@@ -152,18 +131,21 @@ function KartuPasien() {
 
     return (
         <LayoutAnt>
+           
 
-            <DetailPasienDaftar data={"33445"} />
+            <DetailPasienDaftar data={ { noregistrasi : pr.match.params.nocm} } />
 
-            <_Col style={{ background: "white", padding: "25px 180px", fontSize:"14px" }}>
-                <_TitleBar title="KARTU PASIEN" align="center" />
+            <div style={{ background: "grey", padding: "25px 180px", fontSize: "14px" }}>
+                <_Col style={{ background: "white", padding: "25px 40px", height:"100%" , fontSize: "14px" }}>
+                    <_TitleBar title="KARTU PASIEN" align="center" />
 
-                <br />
-                <Table bordered columns={columns} dataSource={data} />
+                    <br />
+                    <Table bordered columns={columns} dataSource={data} />
 
 
-            </_Col>
+                </_Col>
 
+            </div>
 
             <br />
             <br />
@@ -172,4 +154,4 @@ function KartuPasien() {
     )
 }
 
-export default KartuPasien
+export default withRouter(KartuPasien)

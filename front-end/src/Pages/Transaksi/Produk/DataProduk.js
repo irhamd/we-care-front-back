@@ -17,6 +17,7 @@ import { fitrah } from '../../../Services/Text/GlobalText';
 import { Row } from 'react-bootstrap';
 import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr'
 import TarifBaru from './TarifBaru';
+import InputProdukBaru from './InputProdukBaru';
 
 
 function DataProduk() {
@@ -267,25 +268,7 @@ function DataProduk() {
                 <br />
                 <br />
             </DivCol>
-            <Card title="Produk Baru / Update Produk" size="small" style={{ marginLeft: "20px", marginRight: "10px" }}>
-                <div style={{ paddingLeft: "20px" }}>
-                    <Form layout={"vertical"} onFinish={simpanProduk} form={formProduk} >
-                        <Row >
-                            <_Input sm={3} required name="produk" label="Produk" />
-                            {/* <_Input sm={2} label="ID Produk" /> */}
-                            <_Select sm={2} required name="idkategoriproduk" option={combo.kategoriproduk} label="Kategori" val="id" caption="kategoriproduk" />
-                            <_Select sm={2} required name="idjenisproduk" option={combo.jenisproduk} label="Jenis Produk" val="id" caption="jenisproduk" />
-                            <_Select sm={2} required name="idjenisprodukdetail" option={combo.jenisprodukdetail} label="Detail Jenis Produk" val="id" caption="jenisprodukdetail" />
-                            <_Select sm={3} required name="idsatuan" option={combo.satuan} label="Detail Jenis Produk" val="id" caption="satuan" />
-                            <_Button sm={1} block primary submit style={{ marginTop: "23px" }} title="Simpan" />
-                            <_Button sm={1} block primary danger style={{ marginTop: "23px" }} onClick={resetForm} title="Batal" />
-                        </Row>
-                    </Form>
-                </div>
-                <br />
-                <br />
-
-            </Card>
+            <InputProdukBaru />
             <br />
             <br />
             <br />

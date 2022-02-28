@@ -191,7 +191,8 @@ class PasienBaruController extends ApiController
 	public function getDaftarPasien( Request $request) {
         $data = \DB::table('pasien_m as ps')
             ->leftjoin('alamatpasien_m as al','al.pasienfk','=','ps.id')
-            ->select('ps.nocm','ps.namapasien','ps.tgldaftar', 'ps.tgllahir','ps.foto','ps.nrp','ps.nip',
+            ->leftjoin('pangkat_m as pt','pt.id','=','ps.pangkatfk')
+            ->select('ps.nocm','ps.namapasien','ps.tgldaftar', 'ps.tgllahir','ps.foto','ps.nrp','ps.nip','pt.pangkat',
                 'ps.jeniskelamin','ps.noidentitas', 'ps.id as nocmfk','ps.namaayah','ps.notelepon','ps.nohp',
                 'ps.tglmeninggal','ps.alergi','ps.isriwayatmenular','al.alamat','al.desakelurahan', 'ps.tempatlahir'
             );
@@ -366,8 +367,8 @@ class PasienBaruController extends ApiController
                 $dataPS->dusun =  $request['alamat']['dusun'];
             }
             $dataAL->alamat =  $request['alamat']['alamat'];
-            $dataAL->rt =  $request['alamat']['rt'];
-            $dataAL->rw =  $request['alamat']['rw'];
+            $dataAL->rt =  $request['alamat']['rt'] ? $request['alamat']['rt'] :"0";
+            $dataAL->rw =  $request['alamat']['rw'] ? $request['alamat']['rw'] :"0";
             $dataAL->save();
 
             if($request['pasien']['idpasien'] == '') {

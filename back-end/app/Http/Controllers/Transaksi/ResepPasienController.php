@@ -83,18 +83,19 @@ class ResepPasienController extends ApiController
                 $RPD->kdprofile = 0;
                 $RPD->statusenabled = true;
                 $RPD->reseppasienfk =  $norec_RP;
-                $RPD->jeniskemasanfk =  $item['idjeniskemasan'];
-                if (isset($item['racikanke']) && $item['racikanke']!="" && $item['racikanke']!="undefined"){
-                    $RPD->racikanke = $item['racikanke'];
-                }
-                if (isset($item['dosisracikan']) && $item['dosisracikan']!="" && $item['dosisracikan']!="undefined"){
-                    $RPD->dosisracikan = $item['dosisracikan'];
-                }
+                // $RPD->jeniskemasanfk =  $item['idjeniskemasan'];
+                // if (isset($item['racikanke']) && $item['racikanke']!="" && $item['racikanke']!="undefined"){
+                //     $RPD->racikanke = $item['racikanke'];
+                // }
+                // if (isset($item['dosisracikan']) && $item['dosisracikan']!="" && $item['dosisracikan']!="undefined"){
+                //     $RPD->dosisracikan = $item['dosisracikan'];
+                // }
                 $RPD->produkfk =  $item['idproduk'];
                 $RPD->jumlah =  $item['jumlah'];
+                $RPD->caraminum =  $item['caraminum'];
                 $RPD->signa =  $item['signa'];
                 $RPD->aturanpakaifk =  $item['idaturanpakai'];
-                $RPD->keterangan =  $item['keterangan'];
+                // $RPD->keterangan =  $item['keterangan'] ? $item['keterangan'] :"0";
                 $RPD->hargasatuan =  $item['hargasatuan'];
                 $RPD->hargatotal =  $item['hargatotal'];
                 $RPD->jasa =  $jasa;
@@ -151,7 +152,7 @@ class ResepPasienController extends ApiController
             ->join('produk_m as pr','pr.id','=','rpd.produkfk')
             ->leftjoin('aturanpakai_m as ap','ap.id','=','rpd.aturanpakaifk')
             ->leftjoin('jeniskemasan_m as jk','jk.id','=','rpd.jeniskemasanfk')
-            ->select('rpd.norec as norec_rpd', 'rpd.jeniskemasanfk as idjeniskemasan','rpd.racikanke','rpd.dosisracikan', 'pr.id as idproduk','pr.produk','rpd.jumlah','rpd.signa','jk.jeniskemasan','ap.id as idaturanpakai','ap.aturanpakai' , 'rpd.keterangan','rpd.hargasatuan','rpd.hargatotal','rpd.jasa','rpd.hargatotaljasa'
+            ->select('rpd.norec as norec_rpd','rpd.caraminum', 'rpd.jeniskemasanfk as idjeniskemasan','rpd.racikanke','rpd.dosisracikan', 'pr.id as idproduk','pr.produk','rpd.jumlah','rpd.signa','jk.jeniskemasan','ap.id as idaturanpakai','ap.aturanpakai' , 'rpd.keterangan','rpd.hargasatuan','rpd.hargatotal','rpd.jasa','rpd.hargatotaljasa'
             )
             ->where('pd.noregistrasi', '=',$request['noregistrasi'])
             ->where('rp.statusenabled', true)
@@ -199,6 +200,7 @@ class ResepPasienController extends ApiController
     public function getProdukResepPart(Request $request){
         $data = \DB::table('produk_m as dat')
             ->join('harganettoproduk_m as hn', 'hn.produkfk','=','dat.id')
+            ->join('stokproduk_t as st', 'st.produkfk','=','dat.id')
             ->select('dat.id', 'dat.produk','hn.hargasatuan')
             ->where('dat.statusenabled', true)
             ->where('dat.jenisprodukfk',2);

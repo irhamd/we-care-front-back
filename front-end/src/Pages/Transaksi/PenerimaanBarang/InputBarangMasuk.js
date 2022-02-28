@@ -9,6 +9,7 @@ import _Api from '../../../Services/Api/_Api'
 import { _Button, _Date, _Input, _Number, _Select, _Text } from '../../../Services/Forms/Forms'
 import { _Col, _Row } from '../../../Services/Forms/LayoutBootstrap'
 import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr'
+import InputProdukBaru from '../Produk/InputProdukBaru'
 import TempInputPenerimaanBarang from './TempInputPenerimaanBarang'
 
 function InputBarangMasuk(pr) {
@@ -60,14 +61,14 @@ function InputBarangMasuk(pr) {
                         <Col sm={{ span: 6, offset: 1 }} >
                             <_Row>
                                 {/* <_Text  align="right" sm={4} >  </_Text>  */}
-                                <_Text align="right" sm={4}> Nama Suplier  :</_Text>
+                                <_Text align="right" sm={4}> Nama Suplier / PBF :</_Text>
                                 <_Select sm={8} name="idsuplier" option={pr.Combo.suplier}
                                     val="id" caption="suplier" />
 
 
-                                <_Text align="right" sm={4}> Sumber Dana &nbsp; :</_Text>
-                                <_Select sm={8} name="idsumberdana" option={pr.Combo.sumberdana}
-                                    val="id" caption="sumberdana" />
+                                {/* <_Text align="right" sm={4}> Sumber Dana &nbsp; :</_Text> */}
+                                {/* <_Select sm={8} name="idsumberdana" option={pr.Combo.sumberdana}
+                                    val="id" caption="sumberdana" /> */}
 
                                 <_Text align="right" sm={4}> Tahun Anggaran &nbsp; :</_Text>
 
@@ -93,6 +94,9 @@ function InputBarangMasuk(pr) {
                 </Form>
                 <Col sm={12} >
                     <TempInputPenerimaanBarang form={form} resetFormDetail={resetFormDetail} setCallback={setCallback} />
+                </Col>
+                <Col sm={12} >
+                        <InputProdukBaru />
                 </Col>
 
                 {/* <_Button className="blink" label="Simpan Ke database" btnSave onClick={submitForm} /> */}

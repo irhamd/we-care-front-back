@@ -79,6 +79,17 @@ thead {
     border-bottom: 1px solid #6e4f4f;
 }
 
+.bg-kosong {
+    background-color: #e6916a47;
+    /* border-color: brown; */
+    border-bottom: 40px;
+    color: red;
+    border-width: 2px;
+    border-color: #5d3ebc;
+    border-style: solid;
+    border-bottom: 1px solid #6e4f4f;
+}
+
 .bg-green {
     background-color: rgba(0, 128, 0, 0.459);
     /* border-color: brown; */

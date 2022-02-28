@@ -46,16 +46,16 @@ function DataInputResep({ dataResep, LoadData }) {
                 <td width="10" style={{ paddingRight: "4px", textAlign : "center" }}>
                     {i + 1}
                 </td>
-                <td width="170" style={{ paddingRight: "4px" }}>
+                {/* <td width="170" style={{ paddingRight: "4px" }}>
                     <_Input mb="0px" style={kanan} value={item.jeniskemasan} />
                 </td>
                 <td width="100">
                     <_Input mb="0px" style={kanan} value={item.racikanke} />
-                </td>
-                <td width="100" style={{ paddingRight: "4px" }}>
+                </td> */}
+                {/* <td width="100" style={{ paddingRight: "4px" }}>
                     <_Input mb="0px" style={kanan} value={item.dosisracikan} />
-                </td>
-                <td width="400" style={{ paddingRight: "4px" }}>
+                </td> */}
+                <td width="600" style={{ paddingRight: "4px" }}>
                     <_Input mb="0px" style={kanan} value={item.produk} />
                 </td>
                 <td width="100">
@@ -67,9 +67,14 @@ function DataInputResep({ dataResep, LoadData }) {
                 <td width="200">
                     <_Input mb="0px" style={kanan} value={item.aturanpakai} />
                 </td>
+                <td width="200">
+                    <_Input mb="0px" style={kanan} value={item.caraminum} />
+                </td>
                 <td>
                     <_Input mb="0px" style={kanan} value={item.keterangan} />
                 </td>
+              
+               
                 <td width="100">
                     <_Number format mb="0px" style={kanan} value={item.hargasatuan} />
                 </td>

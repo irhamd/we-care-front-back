@@ -156,6 +156,19 @@ class ProdukController extends ApiController
 
         return $this->respond($result);
     }
+    public function getStokObat(Request $request){
+        $stok = \DB::table('stokproduk_t as st')
+            ->join("produk_m as pm","pm.id", "=", "st.produkfk")
+            ->join("satuan_m as sm","sm.id", "=", "pm.satuanfk")
+            ->join("ruangan_m as ru","ru.id", "=", "st.ruanganfk")
+            ->select('pm.produk' , 'sm.satuan', 'ru.ruangan'  , 'st.*')
+
+            ->where('pm.statusenabled', true)
+            ->where('st.statusenabled', true)
+            ->orderBy('pm.produk')
+            ->get();
+        return $this->respond($stok);
+    }
 
     public function enableDisableProduk(Request $request)
     {

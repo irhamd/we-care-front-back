@@ -77,6 +77,11 @@ class ApotikController extends ApiController
         if(isset($request['nama']) && $request['nama']!="" && $request['nama']!="undefined") {
             $data = $data->where('pr.produk', 'like', '%'. $request['nama'] .'%');
         };
+        if(isset($request['idruangan']) && $request['idruangan']!="" && $request['idruangan']!="undefined") {
+            $data = $data->where('sp.ruanganfk', $request['idruangan']);
+        };
+
+        // idruangan=19
 
         $data =$data->take(10);
         $data =$data->orderBy('pr.id');
@@ -145,7 +150,7 @@ class ApotikController extends ApiController
                 $RPD->tglpelayanan =  date('Y-m-d H:i:s');
                 $RPD->strukresepfk =  $norec_RP;
                 $RPD->antrianpasiendiperiksafk =  $request['norec_apd'];
-                $RPD->jeniskemasanfk =  $item['idjeniskemasan'];
+                // $RPD->jeniskemasanfk =  $item['idjeniskemasan'];
                 if (isset($item['racikanke']) && $item['racikanke']!="" && $item['racikanke']!="undefined"){
                     $RPD->racikanke = $item['racikanke'];
                 }

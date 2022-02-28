@@ -227,7 +227,14 @@ function RegistrasiPasien() {
     }
 
     const pushKartuPasien = () => {
-        histori.push("/KartuPasien")
+        if (!detailpasien) {
+            _Toastr.error("Silahkan pilih data ...")
+            return
+        } else {
+            // console.log(selected)
+            histori.push("/KartuPasien/" + selected.noregistrasi +"/"+selected.nocmfk)
+        }
+
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))
     }
 

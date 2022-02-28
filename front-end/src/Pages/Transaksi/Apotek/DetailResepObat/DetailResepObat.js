@@ -49,7 +49,7 @@ function DetailResepObat(pr) {
         //     ),
         // },
         {
-            title: 'No. RM',
+            title: 'Nama Obat',
             dataIndex: 'produk'
         },
         // {
@@ -135,6 +135,7 @@ function DetailResepObat(pr) {
                 <_Col>
                     <br />
                     <Table
+                    size='small'
                         // loading={Loading}
                         headStyle={{ textAlign: "center" }}
                         // rowClassName={(record, index) => record == selected && 'bg-orange'}

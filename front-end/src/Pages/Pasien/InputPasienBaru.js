@@ -91,6 +91,11 @@ function InputPasienBaru(pr) {
             },
             [field]: isMoment ? moment(e).format('YYYY-MM-DD') : e.target.value
         });
+        setbodyAlamat({
+            ...bodyAlamat,
+            "rt" : "0",
+            "rw" : "0",
+        });
     };
     const changeSwitch = (e) => {
         setwni(wni ? 1 : 2)
@@ -139,6 +144,7 @@ function InputPasienBaru(pr) {
             setloading(false)
             _Toastr.success(res.data.message)
             pr.onClose()
+            window.location.reload();
         }).catch(err => {
             _Toastr.error(err.response.data.error)
             setloading(false)
@@ -161,7 +167,6 @@ function InputPasienBaru(pr) {
                             <_Select option={jenispasien} label="Jenis Pasien" val="id" caption="jenispasien"
                                     onChange={changeSelect("id_jenispasien", jenispasien)}
                                 />
-
                         </Col>
                     </Row>
                     {/* <Row>

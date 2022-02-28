@@ -49,7 +49,7 @@ function DataPasienLama() {
         };
     };
     window.onload = function () {
-        initBeforeUnLoad(true);
+        // initBeforeUnLoad(true);
     };
 
     const cekHistory =  async (id) => {
@@ -127,6 +127,12 @@ function DataPasienLama() {
             width:200,
             dataIndex: 'noidentitas',
             sorter: (a, b) => a.noidentitas - b.noidentitas,
+        },
+        {
+            title: 'Pangkat',
+            width:200,
+            dataIndex: 'pangkat',
+            sorter: (a, b) => a.pangkat - b.pangkat,
         },
         {
             title: 'NIP',

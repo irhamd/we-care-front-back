@@ -47,7 +47,8 @@ class AnamnesaController extends ApiController
 
         try {
 
-           
+            AnAnamnesaHead::where("antrianpasiendiperiksafk", $anamnesaHead['norec_apd'])->update(["statusenabled" => false]);
+
             if($anamnesaHead['norec_anhead']==''){
 
                 $noanamnesa = $this->generateCodeBySeqTable(new AnAnamnesaHead, 'noanamnesa', 15, 'AN' . date('ym') . '');

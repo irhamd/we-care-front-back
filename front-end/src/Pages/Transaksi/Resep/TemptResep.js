@@ -45,13 +45,14 @@ function TemptResep(pr) {
                             <thead style={{ background: "#40a9ffb5" }}>
                                 <tr>
                                     <th width="10" style={{ textAlign: "center" }}>No</th>
-                                    <th style={{ textAlign: "center" }}>Jenis Kemasan</th>
-                                    <th>Racikan Ke</th>
-                                    <th>Dosis</th>
+                                    {/* <th style={{ textAlign: "center" }}>Jenis Kemasan</th>
+                                    <th>Racikan Ke</th> */}
+                                    {/* <th>Dosis</th> */}
                                     <th>Nama Obat</th>
                                     <th>Jumlah</th>
                                     <th>Signa</th>
                                     <th>Aturan Pakai</th>
+                                    <th>Cara Minum</th>
                                     <th>Keterangan</th>
                                     <th>Harga</th>
                                     <th>Total Harga</th>
@@ -66,7 +67,7 @@ function TemptResep(pr) {
                                         {/* <td> <_Input name={[name, 'key']} defaultValue={key} value={key} fieldKey={[fieldKey, 'key']}
                                             {...restField} />  </td> */}
                                         <td width="10" style={{ textAlign: "center" }}> {name + 1} </td>
-                                        <td width="170" style={{ paddingRight: "4px" }}>
+                                        {/* <td width="170" style={{ paddingRight: "4px" }}>
                                             <_Select option={pr.combobox.jeniskemasan}
                                                 name={[name, 'idjeniskemasan']} required val="id" caption="jeniskemasan" mb="-9px" style={kanan}
                                             />
@@ -75,13 +76,13 @@ function TemptResep(pr) {
                                             <_Input name={[name, 'racikanke']} mb="-10px" style={kanan}
                                                 fieldKey={[fieldKey, 'racikanke']}
                                                 {...restField} required />
-                                        </td>
-                                        <td width="50" style={{ paddingRight: "4px" }}>
+                                        </td> */}
+                                        {/* <td width="50" style={{ paddingRight: "4px" }}>
                                             <_Input name={[name, 'dosisracikan']} mb="-10px"
                                                 style={kanan}
                                                 fieldKey={[fieldKey, 'dosisracikan']}
-                                                {...restField} required />
-                                        </td>
+                                                {...restField} />
+                                        </td> */}
                                         <td width="400" style={{ paddingRight: "4px" }}>
                                             <_Autocomplete mb="-10px"
                                                 name={[name, 'idproduk']}
@@ -108,7 +109,7 @@ function TemptResep(pr) {
                                                 fieldKey={[fieldKey, 'signa']}
                                                 {...restField} required />
                                         </td>
-                                        <td width="200">
+                                        <td width="300">
                                             <_Select option={pr.combobox.aturanpakai}
                                                 name={[name, 'idaturanpakai']} required val="id" fieldKey={[fieldKey, 'signa']} {...restField} caption="aturanpakai" mb="0px"
                                                 style={kanan}
@@ -118,6 +119,12 @@ function TemptResep(pr) {
                                                 style={kanan}
                                                 fieldKey={[fieldKey, 'idaturanpakai']}
                                                 {...restField} required /> */}
+                                        </td>
+                                        <td>
+                                            <_Input name={[name, 'caraminum']} mb="-10px"
+                                                style={kanan}
+                                                fieldKey={[fieldKey, 'caraminum']}
+                                                {...restField} />
                                         </td>
                                         <td>
                                             <_Input name={[name, 'keterangan']} mb="-10px"

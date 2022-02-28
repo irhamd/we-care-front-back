@@ -6,6 +6,7 @@ import _Api from '../../../Services/Api/_Api';
 import { DivCol, _Button, _Date, _Select } from '../../../Services/Forms/Forms';
 import { _Row } from '../../../Services/Forms/LayoutBootstrap';
 import ExpandDetailBarang from './ExpandDetailBarang';
+import InputBarangMasuk from './InputBarangMasuk';
 
 function DataPenerimaanBarang(pr) {
     const [dataBarangMasuk, setdataBarangMasuk] = useState([])
@@ -82,6 +83,8 @@ function DataPenerimaanBarang(pr) {
                     dataSource={dataBarangMasuk}
                 />,
             </Card>
+
+          
 
         </div>
     )
