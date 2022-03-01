@@ -24,7 +24,6 @@ function TemptResep(pr) {
         // alert(detailProduk.hargasatuan)
         let data = pr.formRef.current
         var details = data.getFieldValue("detail")
-        console.log(details)
         var hargasatuan = detailProduk.hargasatuan
         details[ii] = {
             ...details[ii],

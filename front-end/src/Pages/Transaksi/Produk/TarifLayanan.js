@@ -87,7 +87,6 @@ function TarifLayanan() {
     const isiCombobox = (id, e) => {
         _Api.get("produk/get-combo-produk").then(res => {
             setcombo(res.data)
-            console.log(`combo`, res.data)
         })
     }
 

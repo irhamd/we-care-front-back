@@ -27,8 +27,6 @@ function InputPelayananDiLab(pr) {
 
     let data = JSON.parse(arr)
 
-    console.log('data', data)
-
     const [combobox, setcombobox] = useState({})
     const [produk, setProduk] = useState([])
     const [ruangan, setruangan] = useState([])
@@ -119,7 +117,6 @@ function InputPelayananDiLab(pr) {
     const onFinish = (values) => {
         // console.log(values);
         var gabung = { ...values, ...dataForm }
-        console.log(gabung)
         _Api.post("lab/save-pemeriksaan-lab", gabung).then(res => {
             LoadData()
             ulang()

@@ -73,7 +73,7 @@ function TempProsesResep(pr) {
                                     {/* <th>Dosis</th> */}
                                     <th>Nama Obat</th>
                                     <th>Jumlah</th>
-                                    <th>Signa</th>
+                                    <th>Signa / Cara Minum</th>
                                     <th>Aturan Pakai</th>
                                     <th>Keterangan</th>
                                     <th>Harga</th>
@@ -138,13 +138,13 @@ function TempProsesResep(pr) {
                                                 fieldKey={[fieldKey, 'jumlah']}
                                                 {...restField} required />
                                         </td>
-                                        <td width="100">
+                                        <td width="200">
                                             <_Input name={[name, 'signa']} mb="-10px"
                                                 style={kanan}
                                                 fieldKey={[fieldKey, 'signa']}
                                                 {...restField} required />
                                         </td>
-                                        <td width="200">
+                                        <td width="300">
                                             <_Select option={pr.combobox.aturanpakai}
                                                 name={[name, 'idaturanpakai']} required val="id" fieldKey={[fieldKey, 'signa']} {...restField} caption="aturanpakai" mb="0px"
                                                 style={kanan}
@@ -161,7 +161,7 @@ function TempProsesResep(pr) {
                                                 fieldKey={[fieldKey, 'keterangan']}
                                                 {...restField} />
                                         </td>
-                                        <td width="100">
+                                        <td width="200">
                                             <_Number name={[name, 'hargasatuan']} mb="-10px" disabled
                                                 style={kanan} format value={detailProduk.hargasatuan}
                                                 // fieldKey={[fieldKey, 'hargasatuan']}

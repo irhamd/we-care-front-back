@@ -34,7 +34,8 @@ function ProsesInputResep(pr) {
     const arr1 = ubahText(hash.split("/ProsesResep/")[1])
     var obatBaru = Cache.get('norec_rp')
 
-    let data = JSON.parse(obatBaru ? obatBaru : arr1)
+    let data = JSON.parse(arr1)
+
 
     const [combobox, setcombobox] = useState({})
     const [produk, setProduk] = useState([])
@@ -48,7 +49,7 @@ function ProsesInputResep(pr) {
             setcombobox(res.data)
             // setSpin(false)
         })
-        _Api.get(`apotik/get-produk-pelayanan-obat?idruangan=${obatBaru ? obatBaru.iddepo : data.iddepo}`).then(res => {
+        _Api.get(`apotik/get-produk-pelayanan-obat?idruangan=${ data.iddepo}`).then(res => {
             setProduk(res.data)
             // setSpin(false)
         })
@@ -69,7 +70,6 @@ function ProsesInputResep(pr) {
     const LoadData = () => {
         try {
             setSpin(true)
-            console.log(data)
             _Api.get(`apotik/get-detail-resep-bynores?norec_apd=${data.norec_apd}`).then(res => {
                 let row = res.data
                 setdataResep(res.data)
@@ -98,7 +98,6 @@ function ProsesInputResep(pr) {
 
     }, [])
     const onFinish = (values) => {
-        console.log(values);
         _Api.post("apotik/save-obat-pasien", values).then(res => {
             LoadData()
             ulang()
@@ -117,7 +116,7 @@ function ProsesInputResep(pr) {
                 <_Row stle={{ paddingTop: "-20px" }}>
                     <_Col sm={12}>
                         {/* <DetailPasienDaftar  nocm={data.nocm} /> */}
-                        <DetailPasienDaftar data={arr1} />
+                        <DetailPasienDaftar data={data} />
                     </_Col>
                     <_Col sm={12}>
                         {/* <p>{JSON.stringify(dataResep)}</p> */}

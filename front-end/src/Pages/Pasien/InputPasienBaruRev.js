@@ -41,7 +41,7 @@ function InputPasienBaru() {
 
     const comboBox = () => {
         _Api.get("pasien/compo-registrasi-pasien").then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             setpekerjaan(res.data.pekerjaan)
             setagama(res.data.agama)
             setpendidikan(res.data.pendidikan)
@@ -130,8 +130,8 @@ function InputPasienBaru() {
     };
 
     const handleChangeDate = field => (e, f) => {
-        console.log(e)
-        console.log(f)
+        // console.log(e)
+        // console.log(f)
         //   setbodyPasien({
         //     ...bodyPasien,
         //     [field]: tgl

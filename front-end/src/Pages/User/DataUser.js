@@ -21,7 +21,6 @@ function DataUser() {
     useEffect(() => {
         _Api.get("/listDataUser").then(res => {
             setListUser(res.data.data)
-            console.log(res.data.data);
         })
     }, [])
     return (

@@ -143,7 +143,6 @@ function ProsesResep(pr) {
                         return {
                             onClick: event => {
                                 setselected(rc)
-                                console.log(rc)
                             },
                             onDoubleClick: event => { prosesResep() }, // double click row
                         };

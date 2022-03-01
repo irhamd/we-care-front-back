@@ -14,7 +14,7 @@ class MasterController extends ApiController
     use Valet;
 	public function __construct()
     {
-        parent::__construct($skip_authentication=false);
+        parent::__construct($skip_authentication=true);
     }
 
   

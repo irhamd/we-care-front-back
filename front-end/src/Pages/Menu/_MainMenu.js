@@ -55,7 +55,7 @@ export default function _MainMenu(R) {
     };
 
     const onSelect = opt => {
-        console.log(opt)
+        // console.log(opt)
     };
 
     const handleChange = (value, opt) => {

@@ -102,7 +102,6 @@ function InputTindakan(pr) {
     }
 
     const pushTindakan = () => {
-        console.log(detailTindakan)
         setarrTindakan([...arrTindakan && arrTindakan, tempTindakan]);
         formInputTindakan.resetFields();
 

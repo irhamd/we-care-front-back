@@ -71,7 +71,6 @@ function DataProduk() {
     };
 
     const LoadData = (val) => {
-        console.log(`val`, val)
         setLoading(true)
         _Api.get("produk/get-daftar-produk", {
             params: val
@@ -100,7 +99,6 @@ function DataProduk() {
     const isiCombobox = (id, e) => {
         _Api.get("produk/get-combo-produk").then(res => {
             setcombo(res.data)
-            console.log(`combo`, res.data)
         })
     }
 

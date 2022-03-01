@@ -50,9 +50,9 @@ function MenuUtama(R) {
 
                 </SubMenu>
                 <SubMenu key="sub4" icon={<ShareAltOutlined />} title="Apotek">
-                    <Menu.Item key="4-1" icon={<MenuFoldOutlined />}><Link to={"/ProsesResep"}> Daftar Permintaan Resep  </Link></Menu.Item>
-                    <Menu.Item key="4-2" icon={<MenuFoldOutlined />}><Link to={"/ResepPasien"}> Daftar Obat Pasien  </Link></Menu.Item>
-                    <Menu.Item key="4-2" icon={<MenuFoldOutlined />}><Link to={"/StokObat"}> Stok Obat  </Link></Menu.Item>
+                    {/* <Menu.Item key="4-1" icon={<MenuFoldOutlined />}><Link to={"/ProsesResep"}> Daftar Permintaan Resep  </Link></Menu.Item> */}
+                    <Menu.Item key="4-2" icon={<MenuFoldOutlined />}><Link to={"/ResepPasien"}> List Resep Pasien  </Link></Menu.Item>
+                    <Menu.Item key="4-3" icon={<MenuFoldOutlined />}><Link to={"/StokObat"}> Stok Obat  </Link></Menu.Item>
                 </SubMenu>
 
                 <SubMenu key="sub5" icon={<ShoppingCartOutlined />} title="Penerimaan Barang">

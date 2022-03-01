@@ -121,8 +121,8 @@ class ApotikController extends ApiController
                 $ResepPas->antrianpasiendiperiksafk = $request['norec_apd'];
                 $ResepPas->noresep = $noresep;
                 $ResepPas->tglresep = date('Y-m-d H:i:s');
-                // $ResepPas->ruanganfk = $request['idruanganresep'];
-                // $ResepPas->pegawaifk = $request['idpegawai'];
+                $ResepPas->ruanganfk = $request['iddepo'];
+                $ResepPas->pegawaifk = $request['idpenulisresep'];
                 // if (isset($request['idasisten']) && $request['idasisten']!="" && $request['idasisten']!="undefined"){
                 //     $ResepPas->asistenfk = $request['idasisten'];
                 // }
@@ -361,7 +361,9 @@ class ApotikController extends ApiController
             ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
             ->join('pasien_m as ps','ps.id','=','pd.pasienfk')
             ->join('ruangan_m as ru', 'ru.id','=','pd.ruanganakhirfk')
-            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.tglregistrasi','pd.tglpulang','pd.noregistrasi','pd.norec as norec_pd','ru.ruangan as ruanganakhir','pd.noregistrasi')
+            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.tglregistrasi','pd.tglpulang',
+                'apd.norec as norec_apd',
+                'pd.noregistrasi','pd.norec as norec_pd','ru.ruangan as ruanganakhir','pd.noregistrasi')
             ->where('pd.noregistrasi',$request['noregistrasi'])
             ->first();
 
@@ -371,9 +373,13 @@ class ApotikController extends ApiController
             ->join('pelayananpasien_t as pp', 'pp.strukresepfk','=','sp.norec')
             ->join('produk_m as pr', 'pr.id','=','pp.produkfk')
             ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
+            ->leftjoin('aturanpakai_m as at', 'at.id','=','pp.aturanpakaifk')
+            ->leftjoin('satuan_m as st', 'st.id','=','pr.satuanfk')
             ->leftjoin('ruangan_m as ru2', 'ru2.id','=','sp.ruanganfk')
             ->leftjoin('pegawai_m as pg', 'pg.id','=','sp.penulisresepfk')
-            ->select('pp.norec as norec_pp','sp.noresep','pg.namalengkap as penulisresep','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','ru2.id as iddepo','ru2.ruangan as depo','pr.id as idproduk','pr.produk','pp.tglpelayanan','pp.jumlah','pp.hargasatuan','pp.jasa','pp.hargatotaljasa')
+            ->select('pp.norec as norec_pp','sp.noresep','pg.namalengkap as penulisresep','apd.norec as norec_apd','at.aturanpakai', 'st.satuan',
+                'ru.id as idruangan','ru.ruangan','ru2.id as iddepo','ru2.ruangan as depo','pr.id as idproduk','pp.signa',
+                'pr.produk','pp.tglpelayanan','pp.jumlah','pp.hargasatuan','pp.jasa','pp.hargatotaljasa')
             ->where('pd.noregistrasi',$request['noregistrasi'])
             ->get();
 
@@ -394,6 +400,7 @@ class ApotikController extends ApiController
             ->leftjoin('ruangan_m as ru2', 'ru2.id','=','rp.ruanganfk')
             ->leftjoin('pegawai_m as pg', 'pg.id','=','rp.pegawaifk')
             ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.noregistrasi','rp.noresep','pg.namalengkap as penulisresep',
+            'ps.nrp', 'ps.nip', 
             'pd.norec as norec_pd','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pd.noregistrasi','ru2.id as iddepo',
             'ru2.ruangan as depo','rp.norec as norec_rp')
             ->where('pd.statusenabled',1);

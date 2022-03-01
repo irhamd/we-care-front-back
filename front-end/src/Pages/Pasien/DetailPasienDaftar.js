@@ -8,7 +8,6 @@ function DetailPasienDaftar({ data }) {
     const [datas, setdata] = useState([])
     const LoadData = () => {
         // setLoading(true)
-        console.log(data)
         _Api.get(`registrasi/get-daftar-registrasi?noregistrasi=${data.noregistrasi}`).then(res => {
             setdata(res.data.daftar[0])
             // setLoading(false)

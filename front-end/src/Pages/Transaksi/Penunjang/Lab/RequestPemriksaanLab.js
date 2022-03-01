@@ -39,7 +39,6 @@ function RequestPemriksaanLab(pr) {
     var data = Cache.get('pasien_pd')
     try {
         data = JSON.parse(ubahText(data))
-        console.log(data)
     } catch (error) {
         histori.goBack()
     }
@@ -83,21 +82,21 @@ function RequestPemriksaanLab(pr) {
 
 
     const onChange = (list, direction, moveKeys) => {
-        console.log('targetKeys:', list);
-        console.log('direction:', direction);
-        console.log('moveKeys:', moveKeys);
+        // console.log('targetKeys:', list);
+        // console.log('direction:', direction);
+        // console.log('moveKeys:', moveKeys);
         setTargetKeys(list);
     };
 
     const onSelectChange = (sourceSelectedKeys, targetSelectedKeys) => {
-        console.log('sourceSelectedKeys:', sourceSelectedKeys);
-        console.log('targetSelectedKeys:', targetSelectedKeys);
+        // console.log('sourceSelectedKeys:', sourceSelectedKeys);
+        // console.log('targetSelectedKeys:', targetSelectedKeys);
         setSelectedKeys([...sourceSelectedKeys, ...targetSelectedKeys]);
     };
 
     const onScroll = (direction, e) => {
-        console.log('direction:', direction);
-        console.log('target:', e.target);
+        // console.log('direction:', direction);
+        // console.log('target:', e.target);
     };
     const onFinish = (val) => {
         var detail = []

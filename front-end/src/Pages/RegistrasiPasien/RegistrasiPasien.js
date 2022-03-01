@@ -36,7 +36,6 @@ function RegistrasiPasien() {
     })
 
     const LoadData = (val) => {
-        console.log('val', val)
         setLoading(true)
         _Api.get("registrasi/get-daftar-registrasi", {
             params: val ? { ...val, tglAwal: fDB(val.tglAwal), tglAkhir: fDB(val.tglAkhir) } : filterData
@@ -70,7 +69,8 @@ function RegistrasiPasien() {
             _Toastr.error("Silahkan pilih data ...")
             return
         }
-        histori.push("Resep/" + detailpasien)
+        // console.log('detailpasien', detailpasien)
+        histori.push("ProsesResep/" + detailpasien)
     }
     const detailTransaksi = () => {
         if (!detailpasien) {
@@ -78,7 +78,6 @@ function RegistrasiPasien() {
             return
         } else {
             histori.push("/DetailTransaksi/" + selected.noregistrasi)
-            console.log(`detailpasien`, detailpasien)
         }
     }
 
@@ -273,6 +272,7 @@ function RegistrasiPasien() {
                             onClick: event => {
                                 setselected(record)
                                 let aa = JSON.stringify(record)
+                                // console.log('aa', aa)
                                 setdetailpasien(acakText(aa))
                             }, // click row
                             // onDoubleClick: event => { alert(rowIndex) }, // double click row

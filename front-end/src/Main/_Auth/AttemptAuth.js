@@ -15,7 +15,7 @@ import { AppstoreOutlined, KeyOutlined, MailOutlined, PoweroffOutlined, UnlockOu
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { Notifikasi_Error } from '../../Services/Toastr/Notify/NotifyToastr'
-import { CacheHelper } from '../../Services/Cache'
+import { Cache, CacheHelper } from '../../Services/Cache'
 import { Link } from 'react-router-dom'
 
 import "../../_Assets/AssetLogin.css"
@@ -35,6 +35,7 @@ function AttemptAuth() {
     const [obj, setobj] = useState({})
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [profile, setprofile] = useState([])
 
 
 
@@ -44,10 +45,18 @@ function AttemptAuth() {
         })
     }
 
+    const GetProfile = () => {
+        _Api.post("/getMasterData", {"masterData":"profile_m" }).then(res => {
+            setprofile(res.data[0])
+            Cache.set("profile", JSON.stringify(res.data[0]))
+        }) 
+    }
+
 
 
     useEffect(() => {
         LogOut()
+        GetProfile()
     }, [])
 
     const attemptLogin = () => {
@@ -86,7 +95,7 @@ function AttemptAuth() {
             <h1 style={{ textAlign: "center", marginTop: "8%" }}></h1>
             <div style={{ textAlign: "center" }}>
                 <p><img width="300" src={logoLogin} alt="" /></p>
-                <p style={{ textAlign: "center", fontWeight: "bolder" }}> <span style={{ color: "#258fe6f7" }}> BALAI KESEHATAN </span> PANGKALAN TNI AL MATARAM </p>
+                <p style={{ textAlign: "center", fontWeight: "bolder" }}> <span style={{ color: "#258fe6f7" }}> {profile.jenispraktek}  </span> {profile.nama} </p>
 
                 {/* <b> Silahkan Login </b> */}
             </div>

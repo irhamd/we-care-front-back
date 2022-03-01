@@ -26,7 +26,6 @@ function DataInputResep({ dataResep, LoadData }) {
 
 
     const hapusObatResep = (item) => {
-        console.log(item)
         _Api.post("resep/delete-item-resep", { "nerec_items_rpd": [item.norec_rpd] }).then(res => {
             _Toastr.success(res.data.message)
             LoadData()

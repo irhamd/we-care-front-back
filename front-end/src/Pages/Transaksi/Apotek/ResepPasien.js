@@ -53,6 +53,10 @@ function ResepPasien(pr) {
         //     ),
         // },
         {
+            title: 'NRP', width: 100,
+            dataIndex: 'nrp'
+        },
+        {
             title: 'No. RM', width: 100,
             dataIndex: 'nocm'
         },
@@ -63,6 +67,10 @@ function ResepPasien(pr) {
         {
             title: 'Noregistrasi', width: 130,
             dataIndex: 'noregistrasi'
+        },
+        {
+            title: 'NIP', width: 130,
+            dataIndex: 'nip'
         },
 
         {
@@ -154,6 +162,7 @@ function ResepPasien(pr) {
                     headStyle={{ textAlign: "center" }}
                     rowClassName={(record, index) => record == selected && 'bg-orange'}
                     columns={columns}
+                    pagination={{ position: ["bottomCenter"], pageSize: 10 }}
                     rowKey="nokirim"
                     className="components-table-demo-nested"
                     dataSource={dataBarangMasuk}
@@ -167,7 +176,7 @@ function ResepPasien(pr) {
                         };
                     }}
                 />,
-                <_Button icon={<ScheduleFilled />} block sm={1} onClick={prosesResep} label="Proses" />
+                <_Button icon={<ScheduleFilled />} block sm={1} onClick={prosesResep} label="Input Resep" />
             </DivCol>
             <DetailResepObat dataDetail={dataDetail} noregistrasi={noregistrasi} loadData={loadData}
                 setshowDetail={setshowDetail} showDetail={showDetail} constShowDetail={constShowDetail} />

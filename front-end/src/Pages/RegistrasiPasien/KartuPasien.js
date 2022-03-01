@@ -43,7 +43,7 @@ function KartuPasien(pr) {
     const LoadData = () => {
         setLoading(true)
         _Api.get("kartupasien/get-kartu-pasien?nocmfk="+pr.match.params.nocmfk).then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             setData(res.data)
             setLoading(false)
         })
@@ -57,14 +57,14 @@ function KartuPasien(pr) {
 
     useEffect(() => {
 
-        console.log('pr', pr)
+        // console.log('pr', pr)
         LoadData();
         isiCombobox();
     }, [])
 
    
 
-    var stile = { fontSize: "17px", background: " white", padding: "10px", top: "0px" }
+    var stile = { fontSize: "17px",  margin: "10px", top: "0px" }
 
 
     const columns = [
@@ -84,9 +84,9 @@ function KartuPasien(pr) {
             render: row => <p style={stile}>
                 {row.keluhanutama} <br />
                 {row.keluhantambahan} /
-                <span> {row.diastole && "Tekanan Darah (TD) : " + row.diastole + " Hg"} </span>/
-                <span> {row.suhu && "Suhu : " + row.suhu + " °C"} </span>/
-                <span> {row.sistole && "Sistole : " + row.sistole + " mm"} </span>/
+                <span> {row.diastole && "Tekanan Darah (TD) : " + row.diastole + " Hg /"} </span>
+                <span> {row.suhu && "Suhu : " + row.suhu + " °C /"} </span>
+                <span> {row.sistole && "Sistole : " + row.sistole + " mm "} </span>
             </p>
         },
         {
@@ -113,9 +113,9 @@ function KartuPasien(pr) {
                 <div style={stile}>
                     <ul>
                         {
-                            row.resep.map((item, i) => {
+                            row.dataresep.map((item, i) => {
                                 return (
-                                    <li key={i}> {item.produk} / {item.jumlah} - {item.satuan} / {item.aturanpakai} </li>
+                                    <li key={i}> {item.produk}  ( {item.jumlah}  {item.satuan} )</li>
                                 )
                             })
                         }
@@ -133,7 +133,7 @@ function KartuPasien(pr) {
     }
 
     const handleAfterPrint = React.useCallback(() => {
-        console.log("`onAfterPrint` called");
+        // console.log("`onAfterPrint` called");
         setLoading( false )
 
       }, []);
@@ -150,7 +150,7 @@ function KartuPasien(pr) {
 
             <DetailPasienDaftar data={{ noregistrasi: pr.match.params.nocm }} />
 
-            <div style={{ background: "grey", padding: "10px 80px", fontSize: "14px" }}>
+            <div style={{ background: "grey", padding: "10px 130px", fontSize: "14px" }}>
                 <_Col style={{ background: "white" }}>
 
                     <ReactToPrint
@@ -159,7 +159,7 @@ function KartuPasien(pr) {
                         trigger={() => <div> <br /> <_Button icon={<PrinterOutlined />} label="Cetak" /> </div>}
                         content={() => printReff.current}
                     />
-                    <div ref={printReff} style={{ padding: "15px 110px" }}>
+                    <div ref={printReff} style={{ padding: "15px 50px" }}>
                         <Spin spinning={ loading }>
                         <_TitleBar title="KARTU PASIEN" align="center" />
                         <br />

@@ -52,7 +52,6 @@ function Anamnesa(pr) {
             _Toastr.success(res.data.message)
 
         }).catch(err => {
-            console.log(err);
             _Toastr.error(err.response.data.message + " ' " + err.response.data.error + " '")
 
         })

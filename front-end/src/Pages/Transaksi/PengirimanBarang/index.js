@@ -42,11 +42,7 @@ function PengirimanBarang() {
             ...val,
             namaproduk: detailProduk.produk,
         }
-        console.log(tempBarang)
-        console.log(obj)
-        console.log(obj)
-
-        settempBarang([...tempBarang, obj]);
+          settempBarang([...tempBarang, obj]);
         form.resetFields();
 
     }

@@ -13,7 +13,6 @@ function DataTIndakan(pr) {
 
 
     const onSelectChange = row => {
-        console.log(row.selectedRowKeys)
         setselectTindakan(row.selectedRowKeys)
     };
 

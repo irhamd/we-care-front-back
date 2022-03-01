@@ -52,7 +52,7 @@ class DiagnosaPasienController extends ApiController
         };
         
         $data = $data ->orderBy('dat.id');
-        // $data = $data ->take(10);
+        $data = $data ->take(10);
         $data = $data ->get();
 
         return $this->respond($data);
