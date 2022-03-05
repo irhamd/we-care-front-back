@@ -268,7 +268,7 @@ class RegistrasiPasienController extends ApiController
             ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->leftjoin('instalasi_m as ins', 'ins.id','=','ru.instalasifk')
             ->select('pd.norec as norec_pd','apd.norec as norec_apd','ps.nocm','ps.namapasien', 'ps.tgllahir','ps.tempatlahir','ps.foto','ps.nrp',
-                'ps.jeniskelamin','ps.noktp', 'ps.id as nocmfk','ps.namaayah','ps.nohp', 'pj.penjamin','ps.nopenjamin','ar.asalrujukan','pd.tglregistrasi',
+            'ps.jeniskelamin','ps.noktp', 'ps.id as nocmfk','ps.namaayah','ps.nohp', 'pj.penjamin','ps.nopenjamin','ar.asalrujukan','pd.tglregistrasi',
                 'pd.noregistrasi','pd.pjnama','pd.pjhubungan','pd.namaperujuk','ru.id as idruangan','ru.ruangan','ins.instalasi','ins.id as idinstalasi' 
             );
 
@@ -298,6 +298,14 @@ class RegistrasiPasienController extends ApiController
         $data = $data->where('pd.statusenabled',true);
         $data=$data->orderBy('pd.noregistrasi','asc');
         $data=$data->get();
+
+        foreach ($data as $key => $value) {
+            $jumlahkunjungan = Db::table("pasiendaftar_t")->where("pasienfk", $value->nocmfk)->where('statusenabled', true)->count();
+            $data[$key]->jumlah = $jumlahkunjungan;
+            // DB::raw("SELECT count(norec)  as jumlah  from pasiendaftar_t pt WHERE  pasienfk = ps.id");
+
+        }
+
         $result = array(
             'daftar' => $data,
         );

@@ -213,9 +213,14 @@ class KasirController extends ApiController
             ->join('produk_m as pr', 'pr.id','=','pp.produkfk')
             ->leftjoin('strukpelayanan_t as sp', 'sp.norec','=','pp.strukpelayananfk')
             ->leftjoin('strukresep_t as sr', 'sr.norec','=','pp.strukresepfk')
+            ->leftjoin('struklab_t as sl', 'sl.norec','=','pp.struklabfk')
+            ->leftjoin('ruangan_m as ru2', 'ru2.id','=','sl.ruanganfk')
             ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->leftjoin('pegawai_m as pg', 'pg.id','=','pp.pegawaipelaksanafk')
-            ->select('pp.norec as norec_pp','pg.namalengkap as pelaksana','apd.norec as norec_apd','ru.id as idruangan','ru.ruangan','pr.id as idproduk','pr.produk','pp.tglpelayanan','pp.jumlah','pp.hargasatuan','pp.jasa','pp.hargatotaljasa','sp.nostrukpelayanan','sr.norec as norec_sr')
+            ->select('pp.norec as norec_pp','pg.namalengkap as pelaksana','ru2.ruangan as ruanganpenunjang','sl.norec as norec_stlab',
+                DB::raw(' case when sl.norec is null then ru.ruangan else ru2.ruangan end as ruangan'),
+                'apd.norec as norec_apd','ru.id as idruangan','ru.ruangan as ruangan1','pr.id as idproduk','pr.produk','pp.tglpelayanan','pp.jumlah',
+                'pp.hargasatuan','pp.jasa','pp.hargatotaljasa','sp.nostrukpelayanan','sr.norec as norec_sr')
             ->where('pd.noregistrasi',$request['noregistrasi'])
             ->get();
 

@@ -72,8 +72,8 @@ function InputPasienBaru(pr) {
         let isMoment = e._isAMomentObject && e._isAMomentObject
         setbodyPasien({
             ...bodyPasien,
-            "rt" : "0",
-            "rw" : "0",
+            "rt": "0",
+            "rw": "0",
             "instansipekerjaan": "Rumah Sakit Kota Mataram",
             "idpasien": "",
             "statuskeluarga": {
@@ -93,8 +93,8 @@ function InputPasienBaru(pr) {
         });
         setbodyAlamat({
             ...bodyAlamat,
-            "rt" : "0",
-            "rw" : "0",
+            "rt": "0",
+            "rw": "0",
         });
     };
     const changeSwitch = (e) => {
@@ -109,7 +109,7 @@ function InputPasienBaru(pr) {
         });
     };
 
- 
+
 
     const changeSelect = (field, obj) => (e) => {
         setbodyPasien({
@@ -118,7 +118,7 @@ function InputPasienBaru(pr) {
         });
     };
 
- 
+
 
     const changeAutocompleteAlamat = (field, id, row) => (e, f) => {
         setbodyAlamat({
@@ -129,8 +129,8 @@ function InputPasienBaru(pr) {
         });
     };
 
- 
- 
+
+
 
     const savePasien = () => {
         setloading(true)
@@ -160,14 +160,20 @@ function InputPasienBaru(pr) {
                 <Col sm={6}>
                     <Row>
                         <Col sm>
-                            <_Search required onChange={handleChange('noidentitas')} label="NIK" />
+                            <_Search maxLength={16} required onChange={handleChange('noidentitas')} label="NIK" />
                         </Col>
                         <Col sm>
                             {/* <_Input label="Jenis Pasien" onChange={handleChange('id_jenispasien')} /> */}
                             <_Select option={jenispasien} label="Jenis Pasien" val="id" caption="jenispasien"
-                                    onChange={changeSelect("id_jenispasien", jenispasien)}
-                                />
+                                onChange={changeSelect("id_jenispasien", jenispasien)}
+                            />
                         </Col>
+                    </Row>
+                    <Row>
+                            <_Select option={pangkat} label="Pangkat" val="id" sm={5} caption="pangkat"
+                                onChange={changeSelect("pangkat", pangkat)}/>
+                            <_Input label="No. NRP" onChange={handleChange('nrp')} sm={7} />
+
                     </Row>
                     {/* <Row>
                         <Col>
@@ -184,9 +190,6 @@ function InputPasienBaru(pr) {
 
                     </Row> */}
                     <Row>
-                        <Col>
-                            <_Input label="No. NRP" onChange={handleChange('nrp')} />
-                        </Col>
                         <Col >
                             <_Input onChange={handleChange('tempatlahir')} required label="Tempat Lahir" />
                         </Col>
@@ -195,9 +198,18 @@ function InputPasienBaru(pr) {
                             {/* <MaskedInput mask="1111-11-11" placeholder="YYY" name="card" size="20"  /> */}
                         </Col>
                     </Row>
-                    <Col >
+                    <Col>
                         <_Input onChange={handleChange('namapasien')} label="Nama Lengkap" />
                     </Col>
+                    <Row>
+                        <Col>
+                            <_Select option={agama} label="Agama" val="id" caption="agama"
+                                onChange={changeSelect("agama", agama)}
+                            />
+                        </Col>
+
+                        <_Input maxLength={13} onChange={handleChange('nobpjs')} label="No. BPJS" sm={5}/>
+                    </Row>
 
                     <Row>
                         {/* <_Label label="Identitas Lainnya" /> */}
@@ -205,13 +217,8 @@ function InputPasienBaru(pr) {
                             <_Input onChange={handleChange('nocmlama')} label="No. RM Lama" />
                         </Col> */}
                         <Col sm={4}>
-                            <_Input onChange={handleChange('nohp')} label="Nomor HP" />
+                            <_Input onChange={handleChange('nohp')} label="Nomor HP" maxLength={13} />
                         </Col>
-                        <Col>
-                            <_Select option={pangkat} label="Pangkat" val="id" caption="pangkat"
-                                onChange={changeSelect("pangkat", pangkat)}
-                                />
-                            </Col>
 
                         <Col>
                             <_Input onChange={handleChange('nip')} label="NIP" />
@@ -273,11 +280,11 @@ function InputPasienBaru(pr) {
                             />
                         </Col>
 
- 
+
                         <Col sm={2}>
                             <_Switch label="WNI" defaultChecked onChange={changeSwitch} />
                         </Col>
-                        <Col sm={6} style={{ marginBottom:"200px" }}/>
+                        <Col sm={6} style={{ marginBottom: "200px" }} />
                         <_Button label="Simpan Ke Database" submit btnSave sm={6} block />
 
                         {/* <Col sm={7}>
@@ -314,11 +321,6 @@ function InputPasienBaru(pr) {
                                     onChange={changeSelect("pendidikan", pendidikan)}
                                 />
                             </Col>
-                            <Col>
-                                <_Select option={agama} label="Agama" val="id" caption="agama"
-                                    onChange={changeSelect("agama", agama)}
-                                />
-                            </Col>
                         </Col>
                         <Col >
                             <ShowWebcam setFoto={setFoto} />
@@ -326,8 +328,8 @@ function InputPasienBaru(pr) {
 
                     </Row>
                 </Col>
-                <br/>
-         
+                <br />
+
 
                 {/* <Col sm={6}>
                     <Col sm={12}>
@@ -380,7 +382,7 @@ function InputPasienBaru(pr) {
                 {/* <Button type="primary" htmlType="submit" style={{ marginTop: "23px", marginBottom: "150px", paddingTop: "0px" }} loading={loading} >
                     Simpan Data
                 </Button> &nbsp; */}
- 
+
             </Row>
         </Form>
     )

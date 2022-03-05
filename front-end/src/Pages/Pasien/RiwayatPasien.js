@@ -63,7 +63,8 @@ function RiwayatPasien(pr) {
     return (
         <Modal title={ pr.detail.length && pr.detail[0].namapasien} visible={pr.show}
             width={1000}
-            onOk={pr.close} >
+            onOk={pr.close}
+            onCancel={pr.close} >
             {/* <p>{JSON.stringify(pr.detail)}</p> */}
 
             <Table

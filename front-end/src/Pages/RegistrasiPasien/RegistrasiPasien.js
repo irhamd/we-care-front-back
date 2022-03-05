@@ -152,7 +152,7 @@ function RegistrasiPasien() {
             width: 70,
             render: (_, rc) =>
                 data.length >= 1 ? (
-                    <Badge count={1}>
+                    <Badge count={ rc.jumlah }>
                         <Image style={{ width: "100%", padding: "4px" }} src={rc.foto ? rc.foto : foto} />
                     </Badge>
 
@@ -160,9 +160,12 @@ function RegistrasiPasien() {
         },
         {
             title: 'Nama Pasien',
-            dataIndex: 'namapasien',
+            // dataIndex: 'namapasien',
             width: 250,
-            sorter: (a, b) => a.namapasien.length - b.namapasien.length,
+            render: row => (
+                <b> {row.namapasien.toUpperCase()} </b>
+            ),
+            // sorter: (a, b) => a.namapasien.length - b.namapasien.length,
         },
         {
             title: 'Umur',

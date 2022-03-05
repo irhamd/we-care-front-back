@@ -13,15 +13,19 @@ import { _Button, _Date, _Input, _Number, _Select, _Text } from '../../../../Ser
 function ExpandDaftarPasienPelayananLab(pr) {
     const [detail, setDetail] = useState()
     const [selected, setSelected] = useState([])
+    const [loading, setloading] = useState(false)
 
     // const header = css({ backgroundColor: 'rgb(100, 108, 140)', color: 'white', margin: '50px' });
     // const body = css({ backgroundColor: 'green' });
 
     const deletePemeriksaan = (norec_pp) => {
+        setloading(true)
         // lab/delete-pelayanan-lab
         _Api.post(`lab/delete-pelayanan-lab`, {
             "norec_item_pp": [norec_pp]
         }).then(res => {
+            setloading(false)
+
             // setdataBarangMasuk(res.data)
             // setLoading(false)
             loadData()
@@ -52,7 +56,11 @@ function ExpandDaftarPasienPelayananLab(pr) {
         {
             title: 'Act', width: 100,
             render: (row) => (
-                <_Button title="Hapus" danger icon={<FundViewOutlined />} onClick={()=>deletePemeriksaan(row.norec_pp)}   />
+
+                <Popconfirm placement="top" title={"Hapus Pemeriksaan .?"} onConfirm={()=>deletePemeriksaan(row.norec_pp)}   okText="Ya" cancelText="Batal">
+                <_Button title="Hapus" danger icon={<FundViewOutlined />}   />
+            </Popconfirm>
+            
             ),
         },
         // { title: '' },
@@ -68,6 +76,7 @@ function ExpandDaftarPasienPelayananLab(pr) {
         <div style={{ paddingLeft: "40px", background: "grey" }}>
             <Table
                 columns={columns}
+                loading={loading}
                 // rowSelection={rowSelection}
                 rowKey="norec_kb"
                 className="bg-red"

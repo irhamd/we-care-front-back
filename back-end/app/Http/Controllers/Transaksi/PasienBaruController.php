@@ -241,7 +241,7 @@ class PasienBaruController extends ApiController
                 //     ]
                 // );
 
-                $noCm = $this->generateCode(new Pasien, 'nocm', 9,'P');
+                $noCm = $this->generateCode(new Pasien, 'nocm', 9,'');
                 // return $noCm;
 
                 $dataPS = new Pasien();
@@ -268,7 +268,7 @@ class PasienBaruController extends ApiController
             $dataPS->noidentitas =  $request['pasien']['noidentitas'];
             // $dataPS->nokk =  $request['pasien']['nokk'];
             // $dataPS->noktp =  $request['pasien']['noktp'];
-            // $dataPS->nokartu =  $request['pasien']['nokartu'];
+            $dataPS->nobpjs =  $request['pasien']['nobpjs'];
             $dataPS->foto =  $request['fotoPasien'];
             // $dataPS->jeniskelamin =  $request['pasien']['jeniskelamin']['jeniskelamin'];
             $dataPS->jeniskelamin =  $request['pasien']['jeniskelamin'];

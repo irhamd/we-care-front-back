@@ -1,5 +1,5 @@
 import { DownloadOutlined, FileZipFilled, FundViewOutlined, MinusCircleTwoTone, PlusCircleTwoTone, ScheduleFilled } from '@ant-design/icons';
-import { Card, Drawer, Form, Table, Tag } from 'antd'
+import { Card, Drawer, Form, Popconfirm, Table, Tag } from 'antd'
 import moment from 'moment';
 import momenTagt from 'moment';
 import React, { useEffect, useState } from 'react'
@@ -67,14 +67,24 @@ function DaftarPasienPelayananLab(pr) {
             dataIndex: 'noregistrasi'
         },
         {
+            title: 'No. Blangko', width: 160,
+            dataIndex: 'nolab'
+        },
+        {
             title: 'Nama Pasien',
             dataIndex: 'namapasien'
         },
 
         {
-            title: 'Act', width: 100,
+            title: 'Act', width: 300,
             render: (row) => (
-                <_Button title="Input Pemeriksaan" icon={<FundViewOutlined />}    />
+                <_Row>
+                    <Popconfirm placement="top" title={"Hapus blangko pemeriksaan .?"}  okText="Ya" cancelText="Batal">
+                        <_Button title="Hapus Pemeriksaan" danger btnDel icon={<FundViewOutlined />} sm={5} />
+                    </Popconfirm>
+
+
+                </_Row>
             ),
         },
 
@@ -89,6 +99,35 @@ function DaftarPasienPelayananLab(pr) {
         //         <_Button title="Lihat Obat" icon={<FundViewOutlined />} color="orange" onClick={() => constShowDetail(row)} />
         //     ),
         // },
+    ];
+
+    const columnsMenunggu = [
+        {
+            title: 'No', width: 50,
+            render: (text, row, index) => (
+                < div style={{ textAlign: "center" }}> {index + 1} </div>
+            ),
+        },
+        {
+            title: 'Ruangan Lab', width: 200,
+            dataIndex: 'ruanganlab'
+        },
+        {
+            title: 'No. RM', width: 100,
+            dataIndex: 'nocm'
+        },
+        {
+            title: 'Noregistrasi', width: 160,
+            dataIndex: 'noregistrasi'
+        },
+        {
+            title: 'No. Blangko', width: 160,
+            dataIndex: 'nolab'
+        },
+        {
+            title: 'Nama Pasien',
+            dataIndex: 'namapasien'
+        },
     ];
 
     const handeleFilter = (field) => (e) => {
@@ -199,7 +238,7 @@ function DaftarPasienPelayananLab(pr) {
                         getContainer={false}
                         style={{ position: 'absolute' }}
                     >
-                        <Form layout={"vertical"} onFinish={loadDataPasienMenunggu} autoComplete={false}
+                        <Form layout={"vertical"} onFinish={loadDataPasienMenunggu} onLoadStart={loadDataPasienMenunggu} autoComplete={false}
                             initialValues={{ tAwal: moment(tglAwal), tAkhir: moment(tglAkhir) }}
                         >
                             <_Row >
@@ -220,7 +259,7 @@ function DaftarPasienPelayananLab(pr) {
                         <Table
                             loading={Loading}
                             rowClassName={(record, index) => record == selected && 'bg-orange'}
-                            columns={columns}
+                            columns={columnsMenunggu}
                             pagination={false}
                             rowKey="norec_blankolab"
                             dataSource={PasienMenunggu}

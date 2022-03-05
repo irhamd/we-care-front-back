@@ -21,6 +21,7 @@ import moment from 'moment';
 import { fitrah } from '../../Services/Text/GlobalText';
 import foto from "../../_Assets/foto/users.png"
 import RiwayatPasien from './RiwayatPasien';
+import DetailPasien from './DetailPasien';
 
 
 
@@ -66,6 +67,7 @@ function DataPasienLama() {
             title: 'No',
             width: 50,
             align: "center",
+            fixed: 'left',
             render: (text, row, index) => (
                 <> {index + 1} </>
             ),
@@ -73,6 +75,7 @@ function DataPasienLama() {
         {
             width: "70px",
             width: 70,
+            fixed: 'left',
             render: (_, rc) =>
                 data.length >= 1 ? (
                     <Image preview={false} style={{ width: "100%" }} width={40} src={!rc.foto ? foto : rc.foto} />
@@ -82,11 +85,12 @@ function DataPasienLama() {
         {
             title: 'No. NRP',
             width:200,
+            fixed: 'left',
             // dataIndex: 'nrp',
             sorter: (a, b) => a.nrp.length - b.nrp.length,
             render: row => (
                 <>
-                    <Tag  color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", textAlign: "center", fontWeight :"bold" }}>
+                    <Tag  color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", fontWeight :"bold" }}>
                         { row.nrp }
                     </Tag>
                 </>
@@ -167,15 +171,16 @@ function DataPasienLama() {
             sorter: (a, b) => a.jeniskelamin - b.jeniskelamin,
         },
         {
-            title: 'Alergi',
-            width:200,
-            dataIndex: 'alergi',
-        },
-        {
             title: 'Alamat',
             width:300,
             dataIndex: 'alamat',
         },
+        {
+            title: 'Alergi',
+            width:200,
+            dataIndex: 'alergi',
+        },
+      
         {
             width:200,
             title: 'Desa / Kelurahan',
@@ -245,6 +250,19 @@ function DataPasienLama() {
             >
                 <InputPasienBaru onClose={onClose} />
             </Drawer>
+
+            {/* <Drawer
+                placement="left"
+                width={600}
+                onClose={onClose}
+                bodyStyle={{ background: "#e3e7ec" }}
+                visible={true}
+            >
+                <DetailPasien norm={"000002"} />
+            </Drawer> */}
+
+
+
 
             <LayoutAnt  >
                 <_TitleBar title="DATA PASIEN" align="center" />

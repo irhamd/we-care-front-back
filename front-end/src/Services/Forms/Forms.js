@@ -207,7 +207,7 @@ export const _Search = (r) => {
             <Form.Item name={r.name} label={r.label ? r.label : " "} style={{ marginBottom: "10px" }}
                 rules={[{ required: r.required, message: r.message ? r.message : errMessage }]}
             >
-                <Search placeholder={r.placeholder} onChange={r.onChange} onSearch={r.onSearch} enterButton loading={r.loading} />
+                <Search placeholder={r.placeholder} maxLength={r.maxLength} onChange={r.onChange} onSearch={r.onSearch} enterButton loading={r.loading} />
             </Form.Item>
         </ColB>
     )

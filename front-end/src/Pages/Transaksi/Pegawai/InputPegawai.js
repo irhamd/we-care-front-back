@@ -105,7 +105,7 @@ function InputPegawai() {
                                     <_Input sm={6} name="nip" label="NIP" />
                                 </_Row>
 
-                                <_Input sm={11} required name="namalengkap" label="Nama Pasien" />
+                                <_Input sm={11} required name="namalengkap" label="Nama Pegawai" />
                                 <_Row>
                                     <_Input sm={6} name="tempatlahir" label="Tempat Lahir" />
                                     <_Date sm={5} required format="DD-MM-YYYY" label="Tanggal Lahir (dd-mm-yyyy)" />
