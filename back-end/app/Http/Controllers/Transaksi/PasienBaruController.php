@@ -592,5 +592,15 @@ class PasienBaruController extends ApiController
 
         return $this->respond($result);
     }
+
+    public function getDataPasienSingle($pasienfk)
+    {
+        $pasien = Pasien::where("id",$pasienfk)->first();
+        if( $pasien ){
+            return $this->respond($pasien);
+        }
+        else return [];
+
+    }
 	
 }

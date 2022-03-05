@@ -45,6 +45,7 @@ Route::group(['prefix' => 'pasien'], function () {
     Route::get("/get-detail-pasien","Transaksi\PasienBaruController@getDetailPasien");
     Route::get("/get-riwayat-pendaftaran-pasien","Transaksi\PasienBaruController@getRiwayatPendaftaranPasien");
     Route::get("/get-detail-riwayat-pendaftaran","Transaksi\PasienBaruController@getDetailRiwayatPendaftaran");
+    Route::get("/get-data-pasien/{pasienfk}","Transaksi\PasienBaruController@getDataPasienSingle");
 });
 
 Route::group(['prefix' => 'registrasi'], function () {

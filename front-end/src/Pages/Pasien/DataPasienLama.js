@@ -7,7 +7,7 @@ import { WarningOutlined, CloseCircleOutlined, DownloadOutlined, FormOutlined, R
 import { _Message } from '../../Services/Toastr/Notify/NotifyToastr';
 import _Api from '../../Services/Api/_Api';
 import '../../_Assets/react-notifications-component.css'
-import { Boot, Grid_, Row_, _grid, _row } from '../../Services/Forms/LayoutBootstrap';
+import { Boot, Grid_, Row_, _Col, _grid, _Row, _row } from '../../Services/Forms/LayoutBootstrap';
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
 import { acakText, ubahText } from '../../Services/Crypto';
 import InputPasienBaru from './InputPasienBaru';
@@ -22,6 +22,7 @@ import { fitrah } from '../../Services/Text/GlobalText';
 import foto from "../../_Assets/foto/users.png"
 import RiwayatPasien from './RiwayatPasien';
 import DetailPasien from './DetailPasien';
+import EditDataPasien from './EditDataPasien';
 
 
 
@@ -34,7 +35,7 @@ function DataPasienLama() {
     const [showRiwayat, setshowRiwayat] = useState(false)
     const [idpasien, setidpasien] = useState("")
     const histori = useHistory()
-    const [selected, setselected] = useState()
+    const [selected, setselected] = useState(null)
     const [detail, setdetail] = useState([])
 
     const initBeforeUnLoad = (showExitPrompt) => {
@@ -53,7 +54,13 @@ function DataPasienLama() {
         // initBeforeUnLoad(true);
     };
 
-    const cekHistory =  async (id) => {
+    const cekHistory = async (id) => {
+
+        console.log('selected', selected)
+        if( selected == null ) {
+            _Toastr.error("Silahkan pilih pasien !")
+            return            
+        }
         setshowRiwayat(true)
         await _Api.get("pasien/get-riwayat-pendaftaran-pasien?nocmfk=" + idpasien).then(res => {
             setdetail(res.data)
@@ -84,14 +91,14 @@ function DataPasienLama() {
 
         {
             title: 'No. NRP',
-            width:200,
+            width: 200,
             fixed: 'left',
             // dataIndex: 'nrp',
             sorter: (a, b) => a.nrp.length - b.nrp.length,
             render: row => (
                 <>
-                    <Tag  color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", fontWeight :"bold" }}>
-                        { row.nrp }
+                    <Tag color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", fontWeight: "bold" }}>
+                        {row.nrp}
                     </Tag>
                 </>
             ),
@@ -100,12 +107,12 @@ function DataPasienLama() {
 
         {
             title: 'No. RM',
-            width:100,
+            width: 100,
             // dataIndex: 'nocm',
             render: row => (
                 <>
                     <b>
-                        { row.nocm }
+                        {row.nocm}
                     </b>
                 </>
             ),
@@ -115,12 +122,12 @@ function DataPasienLama() {
         },
         {
             title: 'Nama Pasien',
-            width:300,
+            width: 300,
             // dataIndex: 'namapasien',
             render: row => (
                 <>
                     <b>
-                        {  row.namapasien.toUpperCase() }
+                        {row.namapasien.toUpperCase()}
                     </b>
                 </>
             ),
@@ -128,88 +135,63 @@ function DataPasienLama() {
         },
         {
             title: 'NIK',
-            width:200,
+            width: 200,
             dataIndex: 'noidentitas',
             sorter: (a, b) => a.noidentitas - b.noidentitas,
         },
         {
             title: 'Pangkat',
-            width:200,
+            width: 200,
             dataIndex: 'pangkat',
             sorter: (a, b) => a.pangkat - b.pangkat,
         },
         {
             title: 'NIP',
-            width:200,
+            width: 200,
             dataIndex: 'nip',
             sorter: (a, b) => a.nip - b.nip,
         },
         {
             title: 'Tempat Lahir',
-            width:200,
+            width: 200,
             dataIndex: 'tempatlahir',
             sorter: (a, b) => a.tempatlahir - b.tempatlahir,
         },
         {
             title: 'Tgl Lahir',
-            width:200,
+            width: 200,
             sorter: (a, b) => a.tgllahir.length - b.tgllahir.length,
             render: (_, rc) =>
                 <div> {moment(rc.tgllahir).format('DD-MM-YYYY')} </div>
         },
         {
             title: 'Umur',
-            width:100,
+            width: 100,
 
             render: (_, rc) =>
                 <div> {fitrah.getUmur(rc.tgllahir)} </div>
         },
         {
             title: 'Jenis Kelamin',
-            width:100,
+            width: 100,
             dataIndex: 'jeniskelamin',
             sorter: (a, b) => a.jeniskelamin - b.jeniskelamin,
         },
         {
             title: 'Alamat',
-            width:300,
+            width: 300,
             dataIndex: 'alamat',
         },
         {
             title: 'Alergi',
-            width:200,
+            width: 200,
             dataIndex: 'alergi',
         },
-      
+
         {
-            width:200,
+            width: 200,
             title: 'Desa / Kelurahan',
             dataIndex: 'desakelurahan',
-        },
-        {
-            width:100,
-            title: 'Action',
-            width: "150px",
-            render: (_, rc) =>
-                data.length >= 1 ? (
-                    <div>
-                        {/* <Popconfirm title="Hapus Data ?" okText="Hapus" cancelText="Batal" onConfirm={() => _Toastr.success(rc.nocm)}>
-                            <Tooltip placement="bottom" title={"Hapus"}>
-                                <Button type="primary" danger size="small" icon={<CloseCircleOutlined style={{ paddingTop: "-10px" }} />} />
-                            </Tooltip>
-                        </Popconfirm> */}
-
-                        <Tooltip placement="bottom" title={"Update"}>
-                            <Button type="primary" style={{ background: "orange", borderColor: "orange" }} warning size="small"
-                                onClick={() =>
-                                    cekHistory(rc.nocmfk)
-                                }
-                                icon={<FieldTimeOutlined />}> Riwayat
-                            </Button>
-                        </Tooltip>
-
-                    </div >
-                ) : null,
         },
 
 
@@ -248,7 +230,8 @@ function DataPasienLama() {
                 bodyStyle={{ background: "#e3e7ec" }}
                 visible={visible}
             >
-                <InputPasienBaru onClose={onClose} />
+                {/* <InputPasienBaru onClose={onClose} /> */}
+                <EditDataPasien onClose={onClose} />
             </Drawer>
 
             {/* <Drawer
@@ -274,10 +257,10 @@ function DataPasienLama() {
                             <_grid sm={2}><_Input label="Nama Pasien" name='namapasien' style={{ marginRight: "-15px" }} /> </_grid>
                             <_grid sm={1}><_Input label="NIP" name='nip' style={{ marginRight: "-15px" }} /> </_grid>
                             <_grid sm={3}>
-                                <Button type="primary"  htmlType="submit" style={{ marginTop: "23px", fontWeight :"bold" }} icon={<RedoOutlined />}>
+                                <Button type="primary" htmlType="submit" style={{ marginTop: "23px", fontWeight: "bold" }} icon={<RedoOutlined />}>
                                     Filter
                                 </Button> &nbsp;
-                                <Button type="primary" icon={<CloudUploadOutlined />} style={{ marginTop: "23px", fontWeight :"bold" }} onClick={showDrawer}>
+                                <Button type="primary" icon={<CloudUploadOutlined />} style={{ marginTop: "23px", fontWeight: "bold" }} onClick={showDrawer}>
                                     Input Pasien Baru
                                 </Button> &nbsp;
                             </_grid>
@@ -316,6 +299,22 @@ function DataPasienLama() {
                             };
                         }}
                     />
+
+                    <_Row>
+                        <_Col sm={2} >
+                            <Tooltip placement="bottom" title={"Update"}>
+                                 <_Button label="Riwayat"  icon={<FieldTimeOutlined />}  onClick={() =>
+                                        cekHistory(selected.nocmfk)
+                                    } block disabled= {selected ? false : true} />
+                            </Tooltip>
+                        </_Col>
+                        <_Button sm={2} label="Edit Pasien" btnEdit  color="orange" onClick={() =>
+                            cekHistory(selected.nocmfk)
+                        } block disabled={selected ? false : true} />
+
+                       
+                    </_Row >
+
                 </DivCol>
                 <RiwayatPasien detail={detail} show={showRiwayat} close={() => setshowRiwayat(false)} />
             </LayoutAnt>
