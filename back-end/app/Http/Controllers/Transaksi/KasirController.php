@@ -228,6 +228,21 @@ class KasirController extends ApiController
 
         return $this->respond($head);
      }
+    public function hapusPelayananPasien(Request $request)
+     {
+        $hapus = PelayananPasien::where("norec", $request['norec_pp'])->delete();
+        if( $hapus){
+            $status = 1;
+            $message = "Sukses ..!";
+        } else{
+            $status = 0;
+            $message = "Gagal hapus pelayanan .!";
+        }
+        return $this->respond([
+            "status" => $status,
+            "message"=>$message
+        ]);
+     }
 
      public function savePembayaranPasien(Request $request)
     {

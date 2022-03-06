@@ -8,6 +8,7 @@ import _Api from '../../../Services/Api/_Api';
 import { DivCol, _Button, _TitleBar } from '../../../Services/Forms/Forms';
 import { _Col } from '../../../Services/Forms/LayoutBootstrap';
 import { fitrah, formatNumber, formatTgl, formatTglWaktu } from '../../../Services/Text/GlobalText';
+import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr';
 import LayoutAnt from '../../Layout/LayoutAnt';
 import DetailPasien from '../../Pasien/DetailPasien';
 import DetailPasienDaftar from '../../Pasien/DetailPasienDaftar';
@@ -105,7 +106,7 @@ function DetailTransaksi(pr) {
             width: "150px",
             render: (text, row, index) => (
                 <div>
-                    <Popconfirm title="Hapus ... ?" okText="Hapus" cancelText="Batal"  >
+                    <Popconfirm title="Hapus ... ?" okText="Hapus" onConfirm={()=>HapusPelayanan(row.norec_pp)} cancelText="Batal"  >
                         <_Button danger title="Hapus" icon={<CloseCircleOutlined />} />
 
                     </Popconfirm>
@@ -115,6 +116,19 @@ function DetailTransaksi(pr) {
         },
 
     ];
+
+    const HapusPelayanan = (norec_pp) => { 
+        _Api.delete("kasir/hapus-pelayanan?norec_pp="+norec_pp).then(res=>{
+            var rr = res.data
+            if( rr.status == 1 ){
+                _Toastr.success(rr.message)
+                loadData()
+            } else{
+                _Toastr.error(rr.message)
+            }
+            // if( res.data )
+        })
+     }
 
 
     useEffect(() => {

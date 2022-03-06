@@ -35,11 +35,11 @@ class RegistrasiPasienController extends ApiController
             ->orderBy('dat.id')
             ->get();
 
-        $dataRujukan = \DB::table('asalrujukan_m as dat')
-            ->select('dat.id', 'dat.asalrujukan')
-            ->where('dat.statusenabled', true)
-            ->orderBy('dat.id')
-            ->get();
+        // $dataRujukan = \DB::table('asalrujukan_m as dat')
+        //     ->select('dat.id', 'dat.asalrujukan')
+        //     ->where('dat.statusenabled', true)
+        //     ->orderBy('dat.id')
+        //     ->get();
 
         $dataInstalasi = \DB::table('instalasi_m as dat')
             ->select('dat.id', 'dat.instalasi')
@@ -59,19 +59,21 @@ class RegistrasiPasienController extends ApiController
             ->orderBy('dat.id')
             ->get();
 
-        $dataHubKeluarga = \DB::table('statuskeluarga_m as dat')
-            ->select('dat.id', 'dat.statuskeluarga')
-            ->where('dat.statusenabled', true)
-            ->orderBy('dat.id')
-            ->get();
+        // $dataHubKeluarga = \DB::table('statuskeluarga_m as dat')
+        //     ->select('dat.id', 'dat.statuskeluarga')
+        //     ->where('dat.statusenabled', true)
+        //     ->orderBy('dat.id')
+        //     ->get();
 
         $result = array(
             'penjamin' => $dataPenjamin,
-            'asalrujukan' => $dataRujukan,
+            'asalrujukan' => [],
+            // 'asalrujukan' => $dataRujukan,
             'instalasi' => $dataInstalasi,
             'ruangan' => $dataRuangan,
             'kelas' => $dataKelas,
-            'statuskeluarga' =>$dataHubKeluarga
+            'statuskeluarga' =>[]
+            // 'statuskeluarga' =>$dataHubKeluarga
         );
 
         return $this->respond($result);
@@ -268,6 +270,7 @@ class RegistrasiPasienController extends ApiController
             ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
             ->leftjoin('instalasi_m as ins', 'ins.id','=','ru.instalasifk')
             ->select('pd.norec as norec_pd','apd.norec as norec_apd','ps.nocm','ps.namapasien', 'ps.tgllahir','ps.tempatlahir','ps.foto','ps.nrp',
+                DB::raw( "case when apd.tgldipanggilsuster is null then 'Menunggu' else 'Dipanggil' end as panggil" ),
             'ps.jeniskelamin','ps.noktp', 'ps.id as nocmfk','ps.namaayah','ps.nohp', 'pj.penjamin','ps.nopenjamin','ar.asalrujukan','pd.tglregistrasi',
                 'pd.noregistrasi','pd.pjnama','pd.pjhubungan','pd.namaperujuk','ru.id as idruangan','ru.ruangan','ins.instalasi','ins.id as idinstalasi' 
             );
@@ -399,6 +402,37 @@ class RegistrasiPasienController extends ApiController
         $data = $data->whereNull('pd.tglpulang');
         $data=$data->orderBy('pd.noregistrasi','asc');
         $data=$data->get();
+        $result = array(
+            'daftar' => $data,
+        );
+        return $this->respond($result);
+    }
+
+    public function batalRegistrasiPasien( Request $request) {
+        $data = \DB::table('antrianpasiendiperiksa_t as apd')
+            ->join('pasiendaftar_t as pd','pd.norec','=','apd.pasiendaftarfk')
+            ->join('pasien_m as ps','ps.id','=','pd.pasienfk')
+            ->leftjoin('alamatpasien_m as al','al.pasienfk','=','ps.id')
+            ->leftjoin('asalrujukan_m as ar','ar.id','=','pd.asalrujukanfk')
+            ->leftjoin('ruangan_m as ru', 'ru.id','=','pd.ruanganakhirfk')
+            ->leftjoin('instalasi_m as ins', 'ins.id','=','ru.instalasifk')
+            ->select('pd.norec as norec_pd','apd.norec as norec_apd','ps.nocm','ps.namapasien', 'ps.tgllahir','ps.tempatlahir',
+                'ps.jeniskelamin','ps.noktp', 'ps.id as nocmfk','ps.namaayah','ps.nohp', 'pd.penjamin','ps.nopenjamin','ar.asalrujukan','pd.tglregistrasi',
+                'pd.noregistrasi','pd.pjnama','pd.pjhubungan','pd.namaperujuk','ru.id as idruangan','ru.ruangan','ins.instalasi','ins.id as idinstalasi' 
+            );
+
+        
+        $result = array(
+            'daftar' => $data,
+        );
+        return $this->respond($result);
+    }
+
+    public function panggilRegistrasi( Request $request) {
+        $data =  AntrianPasienDiperiksa::where("norec", $request['norec_apd'])->update([
+            "tgldipanggilsuster"=> date('Y-m-d H:i:s')
+        ]);
+        
         $result = array(
             'daftar' => $data,
         );

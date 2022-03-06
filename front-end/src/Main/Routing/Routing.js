@@ -41,6 +41,7 @@ import KartuPasien from '../../Pages/RegistrasiPasien/KartuPasien'
 import StokObat from '../../Pages/Transaksi/Apotek/StokObat'
 import { Print } from '../../Pages/Test/Print'
 import Kasir from '../../Pages/Kasir/Kasir'
+import Coding from '../../Pages/RekamMedis/Coding'
 // import InputPengaduanPasien from '../../MPP/InputPengaduanPasien'
 
 
@@ -111,7 +112,10 @@ function Routing() {
                 <ProtectedRoute path="/Laporan/Dashboard" exact component={Test} />
 
                 {/* KASIR */}
-                <ProtectedRoute path="/Kasir" exact component={Kasir} />
+                <ProtectedRoute path="/Kasir" component={Kasir} />
+
+                {/* REKAM MEDIS */}
+                <ProtectedRoute path="/Coding"  component={Coding} />
 
 
 

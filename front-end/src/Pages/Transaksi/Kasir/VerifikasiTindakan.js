@@ -92,7 +92,7 @@ function VerifikasiTindakan(pr) {
 
     const verifTindakan = (val) => {
         if (!totalB || totalB == 0) {
-            alert('silahkan pilihh ')
+            _Toastr.error('Silahkan pilih data .! ')
             return
         }
         var rout = pr.match.params

@@ -4,7 +4,7 @@ import { _grid, _Row, _row } from '../../Services/Forms/LayoutBootstrap'
 import LayoutAnt from '../Layout/LayoutAnt'
 import { Table, Radio, Divider, Input, Button, Form, Avatar, Drawer, Space, DatePicker, Spin, Popconfirm, Tooltip, Badge, Tag, Progress, Image, Rate } from 'antd';
 import moment from 'moment';
-import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined, NotificationOutlined, IdcardOutlined, SoundOutlined } from '@ant-design/icons';
 
 import { useHistory } from 'react-router-dom';
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
@@ -104,9 +104,15 @@ function RegistrasiPasien() {
             width: 150,
             render: row => (
                 <>
-                    <Tag icon={<SyncOutlined spin />} color="error" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", textAlign: "center" }}>
-                        Menunggu
+                {
+                    row.panggil == 'Dipanggil' ?
+                    <Tag icon={< SoundOutlined  />} color="green"  style={{ fontSize: "13px",  width: "100%", fontWeight :"bold", textAlign: "center" }}>
+                        {row.panggil}
+                    </Tag> :
+                    <Tag icon={<SyncOutlined  spin/>} color="error" style={{ fontSize: "13px",  width: "100%", fontWeight :"bold", textAlign: "center" }}>
+                        {row.panggil}
                     </Tag>
+                }
                 </>
             ),
         },
@@ -122,7 +128,7 @@ function RegistrasiPasien() {
             width: 200,
             render: row => (
                 <>
-                    <Tag color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", textAlign: "center" }}>
+                    <Tag color="blue" style={{ fontSize: "13px",  width: "100%", textAlign: "center" }}>
                         {row.instalasi}
                     </Tag>
                 </>
@@ -179,7 +185,7 @@ function RegistrasiPasien() {
             sorter: (a, b) => a.ruangan.length - b.ruangan.length,
             render: row => (
                 <>
-                    <Tag color="blue" style={{ fontSize: "13px", paddingBottom: "3px", width: "100%", textAlign: "center" }}>
+                    <Tag color="blue" style={{ fontSize: "13px",  width: "100%", textAlign: "center" }}>
                         {row.ruangan}
                     </Tag>
                 </>
@@ -213,14 +219,14 @@ function RegistrasiPasien() {
         //     title: 'Asal Rujukan',
         //     dataIndex: 'asalrujukan',
         // },
-        {
-            width: 70,
-            title: 'Lunas',
-            render: (_, rc) =>
-                <div>
-                    <Rate disabled value={0} count={1} />
-                </div>
-        },
+        // {
+        //     width: 70,
+        //     title: 'Lunas',
+        //     render: (_, rc) =>
+        //         <div>
+        //             <Rate disabled value={0} count={1} />
+        //         </div>
+        // },
     ];
 
     const pushLab = () => {
@@ -237,6 +243,29 @@ function RegistrasiPasien() {
             histori.push("/KartuPasien/" + selected.noregistrasi +"/"+selected.nocmfk)
         }
 
+        // Cache.set("pasien_pd",  JSON.stringify("ffff"))
+    }
+
+    const batalRegistrasi = () => {
+        if (!selected) {
+            _Toastr.error("Silahkan pilih data ...")
+            return
+        } 
+        
+    
+        // Cache.set("pasien_pd",  JSON.stringify("ffff"))
+    }
+
+    const panggilRegistrasi = () => {
+        if (!selected) {
+            _Toastr.error("Silahkan pilih data ...")
+            return
+        } 
+        _Api.get("registrasi/panggil-registrasi-pasien?norec_apd="+selected.norec_apd).then(res => {
+            LoadData()
+        })
+
+    
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))
     }
 
@@ -298,8 +327,9 @@ function RegistrasiPasien() {
 
                     {/* <_Button sm={2} icon={<FileSearchOutlined />} primary title="Blanko Lab" onClick={pushLab} block /> */}
 
-                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={pushLab} block />
-                    <_Button sm={2} icon={<FileSearchOutlined />} primary  title="Kartu Pasien" onClick={pushKartuPasien} block />
+                    <_Button sm={2} icon={<FileSearchOutlined />} primary danger title="Batal Registrasi" onClick={batalRegistrasi} block />
+                    <_Button sm={2} icon={<IdcardOutlined />} primary  title="Kartu Pasien" onClick={pushKartuPasien} block />
+                    <_Button sm={2} icon={<SoundOutlined />} primary  title="Panggil"  onClick={panggilRegistrasi} block />
 
                 </_Row>
             </DivCol>

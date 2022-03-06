@@ -55,6 +55,8 @@ Route::group(['prefix' => 'registrasi'], function () {
     Route::get("/get-daftar-registrasi","Transaksi\RegistrasiPasienController@getDaftarRegistrasi");
     Route::get("/get-daftar-registrasi-rajal","Transaksi\RegistrasiPasienController@getDaftarRegistrasiRajal");
     Route::get("/get-daftar-registrasi-ranap","Transaksi\RegistrasiPasienController@getDaftarRegistrasiRanap");
+    Route::get("/batal-registrasi-pasien","Transaksi\RegistrasiPasienController@batalRegistrasiPasien");
+    Route::get("/panggil-registrasi-pasien","Transaksi\RegistrasiPasienController@panggilRegistrasi");
 
 });
 
@@ -160,6 +162,7 @@ Route::group(['prefix' => 'kasir'], function () {
     Route::get("/get-daftar-verifikasi-pelayanan","Transaksi\KasirController@getDaftarVerifikasiLayanan");
     Route::post("/delete-pembayaran-pasien","Transaksi\KasirController@batalPembayaranPasien");
     Route::get("/get-daftar-pasien-bayar","Transaksi\KasirController@getDaftarPasienBayar");
+    Route::delete("/hapus-pelayanan","Transaksi\KasirController@hapusPelayananPasien");
 
 });
 
