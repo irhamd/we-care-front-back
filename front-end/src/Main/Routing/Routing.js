@@ -40,6 +40,7 @@ import TestFirebase from '../../Pages/Test/Test-Firebase'
 import KartuPasien from '../../Pages/RegistrasiPasien/KartuPasien'
 import StokObat from '../../Pages/Transaksi/Apotek/StokObat'
 import { Print } from '../../Pages/Test/Print'
+import Kasir from '../../Pages/Kasir/Kasir'
 // import InputPengaduanPasien from '../../MPP/InputPengaduanPasien'
 
 
@@ -108,6 +109,9 @@ function Routing() {
 
                 {/* LAPORAN */}
                 <ProtectedRoute path="/Laporan/Dashboard" exact component={Test} />
+
+                {/* KASIR */}
+                <ProtectedRoute path="/Kasir" exact component={Kasir} />
 
 
 

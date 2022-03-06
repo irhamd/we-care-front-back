@@ -314,7 +314,7 @@ function DataPasienLama() {
 
                 </DivCol>
                 <RiwayatPasien detail={detail} show={showRiwayat} close={() => setshowRiwayat(false)} />
-                <EditDataPasien  show={editPasien} pasienfk={selected.id} close={() => setEditPasien(false)} />
+                {/* <EditDataPasien  show={editPasien} pasienfk={selected.id} close={() => setEditPasien(false)} /> */}
             </LayoutAnt>
         </div>
     )

@@ -38,7 +38,7 @@ function DetailTransaksi(pr) {
             title: 'No',
             width: 50,
             render: (text, row, index) => (
-                <> {index + 1} </>
+                <p style={{ textAlign:"center" }}> {index + 1}. </p>
             ),
         },
         {
@@ -132,6 +132,7 @@ function DetailTransaksi(pr) {
                     rowKey="nocmfk"
                     pagination={false}
                     columns={columns}
+                    size="small"
                     rowClassName={(record, index) => record == st.selected && 'bg-orange'}
                     loading={loading}
                     scroll={{ x: 800, y: 800 }}

@@ -68,7 +68,7 @@ function RiwayatKunjungan(pr) {
         },
         {
             title: 'Status Penyakit',
-            width: 200,
+            width: 70,
             dataIndex: 'statuskasuspenyakit',
             // sorter: (a, b) => a.statuskasuspenyakit.length - b.statuskasuspenyakit.length,
         },
@@ -129,10 +129,10 @@ function RiwayatKunjungan(pr) {
             ),
         },
         {
-            title: 'Jenis Kemasan',
+            title: 'No. Resep',
             width: 200,
-            dataIndex: 'jeniskemasan',
-            sorter: (a, b) => a.jeniskemasan.length - b.jeniskemasan.length,
+            dataIndex: 'noresep',
+            sorter: (a, b) => a.noresep.length - b.noresep.length,
         },
         {
             title: 'Aturan Pakai',
@@ -149,12 +149,13 @@ function RiwayatKunjungan(pr) {
         {
             title: 'Jumlah',
             width: 300,
-            dataIndex: 'jumlah',
-            sorter: (a, b) => a.jumlah.length - b.jumlah.length,
+            render: (text, row, index) => (
+                <> {row.jumlah } {row.satuan} </>
+            ),
         },
 
         {
-            title: 'Signa',
+            title: 'Signa / Cara Makan',
             width: 100,
             dataIndex: 'signa',
             sorter: (a, b) => a.signa.length - b.signa.length,
@@ -289,14 +290,12 @@ function RiwayatKunjungan(pr) {
                         />
                     </TabPane>
                     <TabPane tab="Resep / Obat" key="2">
-                        {dataResep.length ? dataResep.map((item, idx) => {
-                            return (
-                                <div key={idx}>
-                                    <_Row>
+                        {dataResep ? <div>
+                            <_Row>
                                         <_Col sm={1} />
                                         <_Col sm={{ span: 11 }}>
                                             <_Row>
-                                                <_Text sm={3} label="No. Resep" mb="1px" align="right" />
+                                                {/* <_Text sm={3} label="No. Resep" mb="1px" align="right" />
                                                 <_Input disabled mb="0px" sm={9} defaultValue={item.noresep} />
 
                                                 <_Text sm={3} label="Penulis Resep" mb="1px" align="right" />
@@ -312,25 +311,23 @@ function RiwayatKunjungan(pr) {
                                                 <_Input disabled mb="0px" sm={9} defaultValue={item.depo} />
 
                                                 <_Text sm={3} label="Alergi Obat" mb="1px" align="right" />
-                                                <_Input disabled mb="0px" sm={9} defaultValue={item.alergiobat} />
+                                                <_Input disabled mb="0px" sm={9} defaultValue={item.alergiobat} /> */}
 
                                             </_Row>
                                         </_Col>
                                         <_Col>
-                                            <p> Data Obat </p>
                                             <Table
                                                 size="small"
                                                 rowKey="norec_rpd"
                                                 pagination={{ position: ['bottomCenter'], pageSize: "5" }}
                                                 columns={columnsResep}
                                                 scroll={{ x: 800, y: 800 }}
-                                                dataSource={item.detail}
+                                                dataSource={dataResep.detail}
                                             />
                                         </_Col>
                                     </_Row>
-                                </div>
-                            )
-                        }) : <Empty description={"tidak ada resep ..."} />}
+                        </div>
+                         : <Empty description={"tidak ada resep ..."} />}
 
                     </TabPane>
                 </Tabs>

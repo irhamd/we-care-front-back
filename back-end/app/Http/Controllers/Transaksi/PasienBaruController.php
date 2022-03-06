@@ -475,31 +475,60 @@ class PasienBaruController extends ApiController
             ->orderBy('dp.tgldiagnosa','asc')
             ->get();
 
+        // $headresep = \DB::table('pasiendaftar_t as pd')
+        //     ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
+        //     ->join('reseppasien_t as rp','rp.antrianpasiendiperiksafk','=','apd.norec')
+        //     ->leftjoin('pegawai_m as pg','pg.id','=','rp.pegawaifk')
+        //     ->leftjoin('ruangan_m as ru', 'ru.id','=','rp.ruanganfk')
+        //     ->select('pg.namalengkap as penulisresep','pg.id as idpenulisresep', 'apd.norec as norec_apd', 'rp.norec as norec_rp', 'rp.alergiobat','rp.statusprioritas', 'rp.noresep','rp.tglresep','ru.id as iddepo','ru.ruangan as depo'
+        //     )
+        //     ->where('pd.noregistrasi', '=',$request['noregistrasi'])
+        //     ->get();
+
+        // foreach ($headresep as $key => $item) {
+        //     $resep = \DB::table('pasiendaftar_t as pd')
+        //         ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
+        //         ->join('reseppasien_t as rp','rp.antrianpasiendiperiksafk','=','apd.norec')
+        //         ->join('reseppasiendetail_t as rpd','rpd.reseppasienfk','=','rp.norec')
+        //         ->join('produk_m as pr','pr.id','=','rpd.produkfk')
+        //         ->leftjoin('aturanpakai_m as ap','ap.id','=','rpd.aturanpakaifk')
+        //         ->leftjoin('jeniskemasan_m as jk','jk.id','=','rpd.jeniskemasanfk')
+        //         ->select('rpd.norec as norec_rpd', 'rpd.jeniskemasanfk as idjeniskemasan','rpd.racikanke','rpd.dosisracikan', 'pr.id as idproduk','pr.produk','rpd.jumlah','rpd.signa','jk.jeniskemasan','ap.id as idaturanpakai','ap.aturanpakai' , 'rpd.keterangan','rpd.hargasatuan','rpd.hargatotal','rpd.jasa','rpd.hargatotaljasa'
+        //         )
+        //         ->where('rp.norec', '=', $item->norec_rp)
+        //         ->get();
+
+        //     $headresep[$key]->detail = $resep;
+        // }
+
         $headresep = \DB::table('pasiendaftar_t as pd')
             ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
-            ->join('reseppasien_t as rp','rp.antrianpasiendiperiksafk','=','apd.norec')
-            ->leftjoin('pegawai_m as pg','pg.id','=','rp.pegawaifk')
-            ->leftjoin('ruangan_m as ru', 'ru.id','=','rp.ruanganfk')
-            ->select('pg.namalengkap as penulisresep','pg.id as idpenulisresep', 'apd.norec as norec_apd', 'rp.norec as norec_rp', 'rp.alergiobat','rp.statusprioritas', 'rp.noresep','rp.tglresep','ru.id as iddepo','ru.ruangan as depo'
-            )
-            ->where('pd.noregistrasi', '=',$request['noregistrasi'])
+            ->join('pasien_m as ps','ps.id','=','pd.pasienfk')
+            ->join('ruangan_m as ru', 'ru.id','=','pd.ruanganakhirfk')
+            ->select('ps.id as nocmfk','ps.namapasien','ps.nocm','pd.tglregistrasi','pd.tglpulang',
+                'apd.norec as norec_apd',
+                'pd.noregistrasi','pd.norec as norec_pd','ru.ruangan as ruanganakhir','pd.noregistrasi')
+            ->where('pd.noregistrasi',$request['noregistrasi'])
+            ->first();
+
+        $data = \DB::table('pasiendaftar_t as pd')
+            ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
+            ->join('strukresep_t as sp', 'sp.antrianpasiendiperiksafk','=','apd.norec')
+            ->join('pelayananpasien_t as pp', 'pp.strukresepfk','=','sp.norec')
+            ->join('produk_m as pr', 'pr.id','=','pp.produkfk')
+            ->leftjoin('ruangan_m as ru', 'ru.id','=','apd.ruanganfk')
+            ->leftjoin('aturanpakai_m as at', 'at.id','=','pp.aturanpakaifk')
+            ->leftjoin('satuan_m as st', 'st.id','=','pr.satuanfk')
+            ->leftjoin('ruangan_m as ru2', 'ru2.id','=','sp.ruanganfk')
+            ->leftjoin('pegawai_m as pg', 'pg.id','=','sp.penulisresepfk')
+            ->select('pp.norec as norec_pp','sp.noresep','pg.namalengkap as penulisresep','apd.norec as norec_apd','at.aturanpakai', 'st.satuan',
+                'ru.id as idruangan','ru.ruangan','ru2.id as iddepo','ru2.ruangan as depo','pr.id as idproduk','pp.signa',
+                'pr.produk','pp.tglpelayanan','pp.jumlah','pp.hargasatuan','pp.jasa','pp.hargatotaljasa')
+            ->where('pd.noregistrasi',$request['noregistrasi'])
             ->get();
 
-        foreach ($headresep as $key => $item) {
-            $resep = \DB::table('pasiendaftar_t as pd')
-                ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')
-                ->join('reseppasien_t as rp','rp.antrianpasiendiperiksafk','=','apd.norec')
-                ->join('reseppasiendetail_t as rpd','rpd.reseppasienfk','=','rp.norec')
-                ->join('produk_m as pr','pr.id','=','rpd.produkfk')
-                ->leftjoin('aturanpakai_m as ap','ap.id','=','rpd.aturanpakaifk')
-                ->leftjoin('jeniskemasan_m as jk','jk.id','=','rpd.jeniskemasanfk')
-                ->select('rpd.norec as norec_rpd', 'rpd.jeniskemasanfk as idjeniskemasan','rpd.racikanke','rpd.dosisracikan', 'pr.id as idproduk','pr.produk','rpd.jumlah','rpd.signa','jk.jeniskemasan','ap.id as idaturanpakai','ap.aturanpakai' , 'rpd.keterangan','rpd.hargasatuan','rpd.hargatotal','rpd.jasa','rpd.hargatotaljasa'
-                )
-                ->where('rp.norec', '=', $item->norec_rp)
-                ->get();
-
-            $headresep[$key]->detail = $resep;
-        }
+        $headresep->detail= $data;
+        
 
         $headanamnesa = \DB::table('pasiendaftar_t as pd')
             ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','=','pd.norec')

@@ -29,7 +29,7 @@ function PengkajianMedis(pr) {
     let data = JSON.parse(arr)
 
     const pushResep = () => {
-        histori.push("/Resep/" + hash)
+        histori.push("/ProsesResep/" + hash)
     }
     const pushLab = () => {
         histori.push("/RequestPemriksaanLab")

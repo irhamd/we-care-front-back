@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 // import LayoutAnt from '../Layout/LayoutAnt'
 import { Table, Radio, Divider, Input, Button, Form, Avatar, Drawer, Space, DatePicker, Spin, Popconfirm, Tooltip, Badge, Tag, Progress, Image, Rate } from 'antd';
 import moment from 'moment';
-import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined, StopOutlined, IssuesCloseOutlined } from '@ant-design/icons';
 import { useHistory } from 'react-router-dom';
 
 import { DivCol, _Button, _Date, _Input, _Select, _Switch, _TitleBar } from '../../../Services/Forms/Forms';
@@ -15,6 +15,7 @@ import { acakText } from '../../../Services/Crypto';
 import LayoutAnt from '../../Layout/LayoutAnt';
 import { fitrah } from '../../../Services/Text/GlobalText';
 import { Row } from 'react-bootstrap';
+import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr';
 
 
 
@@ -83,8 +84,22 @@ function DaftarPasienPulang() {
     // };
 
     const verifikasiTindakan = () => {
+        if (!selected) {
+            _Toastr.error("Silahkan pilih data ...")
+            return
+        } 
         histori.push("/VerifikasiTindakan/" + selected.noregistrasi + "/" + selected.norec_pd + "/" + selected.idpenjamin)
     }
+
+    const detailTransaksi = () => {
+        if (!selected) {
+            _Toastr.error("Silahkan pilih data ...")
+            return
+        } else {
+            histori.push("/DetailTransaksi/" + selected.noregistrasi)
+        }
+    }
+
     const columns = [
         {
             title: 'No',
@@ -214,8 +229,8 @@ function DaftarPasienPulang() {
                     <Row >
                         <_Date sm={2} onChange={handeleFilter('tglAwal')} showTime label="Tanggal" defaultValue={moment(tglAwal)} />
                         <_Date sm={2} onChange={handeleFilter('tglAkhir')} label=" " showTime defaultValue={moment(tglAkhir)} />
-                        <_Select sm={2} option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" />
-                        <_Select sm={2} option={combo.ruangan} label="Ruangan" val="id" caption="ruangan" />
+                        {/* <_Select sm={2} option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" /> */}
+                        <_Select sm={3} option={combo.ruangan} label="Ruangan" val="id" caption="ruangan" />
                         <_Input sm={1} label="No. RM" onChange={handeleFilter('nocm')} />
                         <_Input sm={1} label="Nama Pasien" onChange={handeleFilter('namapasien')} />
                         <_Input sm={1} label="No. Registrasi" onChange={handeleFilter('noregistrasi')} />
@@ -249,6 +264,16 @@ function DaftarPasienPulang() {
                 <Row>
                     <_Button sm={2} icon={<BranchesOutlined />} color="orange"
                         primary onClick={verifikasiTindakan} title="Verifikasi Tindakan" block />
+                    
+                    <_Button sm={2} icon={<AppstoreAddOutlined />} primary onClick={detailTransaksi}
+                        title="Detail Tagihan" block />
+
+                    <_Button sm={2} icon={<AppstoreAddOutlined />} primary
+                        title="Riwayat Registrasi" block />
+
+                    <_Button sm={2} icon={<StopOutlined />} primary danger title="Closing" block />
+                    <_Button sm={2} icon={<IssuesCloseOutlined />} primary  title="Open Billing" block />
+                    
 
                     {/* <_Button sm={2} icon={<AppstoreAddOutlined />} primary onClick={() => detailTransaksi(selected.noregistrasi)}
                         title="Detail Tagihan" block />

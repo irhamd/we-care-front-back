@@ -258,6 +258,13 @@ class KasirController extends ApiController
                     );
             }
 
+            PasienDaftar::where('norec', $request['norec_pd'])
+            ->update([
+                'isclosing' =>'1',
+                'tglclosing' =>date('Y-m-d H:i:s'),
+            ]);
+
+
             $transStatus = 'true';
         } catch (\Exception $e) {
             $transStatus = 'false';

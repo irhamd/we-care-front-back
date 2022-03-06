@@ -208,7 +208,7 @@ function DataPembayaran() {
                     <Row >
                         <_Date sm={2} onChange={handeleFilter('tglAwal')} showTime label="Tanggal" defaultValue={moment(tglAwal)} />
                         <_Date sm={2} onChange={handeleFilter('tglAkhir')} label=" " showTime defaultValue={moment(tglAkhir)} />
-                        <_Select sm={2} option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" />
+                        {/* <_Select sm={2} option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" /> */}
                         <_Select sm={2} option={combo.ruangan} label="Ruangan" val="id" caption="ruangan" />
                         <_Input sm={1} label="No. RM" onChange={handeleFilter('nocm')} />
                         <_Input sm={1} label="Nama Pasien" onChange={handeleFilter('namapasien')} />
