@@ -127,7 +127,7 @@ function AttemptAuth() {
                 </Content>
             </Layout>
             <br />
-            <p style={{ textAlign: "center" }}> Copyright ©2021 FHDev@team.com All Rights Reserved </p>
+            <p style={{ textAlign: "center" }}> Copyright ©2021 FHDev@team.online All Rights Reserved </p>
 
         </div>
 

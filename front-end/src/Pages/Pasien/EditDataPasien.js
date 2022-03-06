@@ -67,7 +67,7 @@ function EditDataPasien(pr) {
 
     // =================================================================================================================================================
     const loadDataPasien = () => {
-        _Api.get("pasien/get-data-pasien/3").then(res => {
+        _Api.get("pasien/get-data-pasien/"+pr.pasienfk).then(res => {
             formPasien.setFieldsValue({
                 ...res.data,
                 tgllahir: moment(res.data.tgllahir)

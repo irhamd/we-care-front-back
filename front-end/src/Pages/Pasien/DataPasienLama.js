@@ -33,6 +33,7 @@ function DataPasienLama() {
     const [detailpasien, setdetailpasien] = useState("")
     const [cariPasien, setcariPasien] = useState({})
     const [showRiwayat, setshowRiwayat] = useState(false)
+    const [editPasien, setEditPasien] = useState(false)
     const [idpasien, setidpasien] = useState("")
     const histori = useHistory()
     const [selected, setselected] = useState(null)
@@ -68,6 +69,16 @@ function DataPasienLama() {
         setidpasien(id)
 
     };
+
+    // const doeditPasien = async (id) => {
+    //     if( !selected ) {
+    //         _Toastr.error("Silahkan pilih pasien !")
+    //         return            
+    //     }
+    //     setEditPasien(true)
+    //     setidpasien(id)
+
+    // };
 
     const columns = [
         {
@@ -230,23 +241,9 @@ function DataPasienLama() {
                 bodyStyle={{ background: "#e3e7ec" }}
                 visible={visible}
             >
-                {/* <InputPasienBaru onClose={onClose} /> */}
-                <EditDataPasien onClose={onClose} />
+                <InputPasienBaru onClose={onClose} />
+                {/* <EditDataPasien onClose={onClose} /> */}
             </Drawer>
-
-            {/* <Drawer
-                placement="left"
-                width={600}
-                onClose={onClose}
-                bodyStyle={{ background: "#e3e7ec" }}
-                visible={true}
-            >
-                <DetailPasien norm={"000002"} />
-            </Drawer> */}
-
-
-
-
             <LayoutAnt  >
                 <_TitleBar title="DATA PASIEN" align="center" />
                 <DivCol pl="15px" pr="40px">
@@ -309,7 +306,7 @@ function DataPasienLama() {
                             </Tooltip>
                         </_Col>
                         <_Button sm={2} label="Edit Pasien" btnEdit  color="orange" onClick={() =>
-                            cekHistory(selected.nocmfk)
+                            setEditPasien(true)
                         } block disabled={selected ? false : true} />
 
                        
@@ -317,6 +314,7 @@ function DataPasienLama() {
 
                 </DivCol>
                 <RiwayatPasien detail={detail} show={showRiwayat} close={() => setshowRiwayat(false)} />
+                <EditDataPasien  show={editPasien} pasienfk={selected.id} close={() => setEditPasien(false)} />
             </LayoutAnt>
         </div>
     )
