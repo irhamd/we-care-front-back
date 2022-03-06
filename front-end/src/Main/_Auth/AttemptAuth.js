@@ -24,6 +24,8 @@ import Layout, { Content, Footer, Header } from 'antd/lib/layout/layout'
 import logoLogin from '../../_Assets/logos/logo-hitam.png'
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr'
 import { globalText } from '../../Services/Text/GlobalText'
+import moment from 'moment'
+import cookies from 'react-cookies'
 // import LinearProgress from '@smui/linear-progress';
 // import {LinearProgress} from '@smui/linear-progress';
 
@@ -72,8 +74,12 @@ function AttemptAuth() {
                 sessionStorage.setItem(globalText.x_auth_resu, acakText(user))
                 sessionStorage.setItem(globalText.x_auth_user, user)
                 sessionStorage.setItem(globalText.y_auth_fhdev, token)
+                sessionStorage.setItem(globalText.x_auth_iawagep, acakText(moment().format('H:mm:ss')))
                 sessionStorage.setItem("Authorization", acakText(token))
                 sessionStorage.setItem(globalText.x_auth_pegawai, res.data.tokenx)
+
+                cookies.save(globalText.x_auth_pegawai, acakText(user), { path: '/' })
+
                 window.location.href = "/home";
             } else {
                 _Toastr.error("Akses di tolak ...")

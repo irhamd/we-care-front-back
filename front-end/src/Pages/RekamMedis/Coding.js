@@ -39,9 +39,11 @@ function Coding() {
         const row = await form.validateFields();
         const newData = [...data];
         const index = newData.findIndex((item) => key === item.key);
-  
+
+        
         if (index > -1) {
           const item = newData[index];
+          console.log('item', item)
           newData.splice(index, 1, { ...item, ...row });
           setData(newData);
           setEditingKey('');

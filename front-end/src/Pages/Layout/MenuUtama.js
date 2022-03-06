@@ -4,7 +4,7 @@ import { Content } from 'antd/lib/layout/layout';
 import {
     UserOutlined, LaptopOutlined, PlayCircleOutlined, NotificationOutlined, DownloadOutlined, SyncOutlined, UserSwitchOutlined,
     LogoutOutlined, BarChartOutlined, DribbbleSquareOutlined, SendOutlined, ShareAltOutlined, ThunderboltOutlined, TransactionOutlined,
-    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined, MenuFoldOutlined
+    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined, MenuFoldOutlined, BookOutlined
 }
     from '@ant-design/icons';
 import _Api from '../../Services/Api/_Api';
@@ -76,6 +76,11 @@ function MenuUtama(R) {
                     <Menu.Item key="91-2" icon={<DeploymentUnitOutlined />}> <Link to={"/Kasir/DataPembayaran"}> Data Pembayaran  </Link></Menu.Item>
                     {/* <Menu.Item key="92-2" icon={<LoginOutlined />}> <Link to={"/login"}>   Rujukan Internal </Link></Menu.Item> */}
                 </SubMenu>
+
+                <SubMenu key="sub13" icon={<BookOutlined />} title="Rekam Medis">
+                    <Menu.Item key="13-1" icon={<DeploymentUnitOutlined />}> <Link to={"/RM/Coding"}> Coding  </Link></Menu.Item>
+                </SubMenu>
+
 
                 <SubMenu key="sub10" icon={<UsergroupAddOutlined />} title="Pegawai">
                     <Menu.Item key="10-1" icon={<DeploymentUnitOutlined />}> <Link to={"/DataPegawai"}> Data Pegawai  </Link></Menu.Item>

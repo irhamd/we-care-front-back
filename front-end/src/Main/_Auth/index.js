@@ -1,3 +1,6 @@
+import cookies  from "react-cookies";
+import { globalText } from "../../Services/Text/GlobalText";
+
 export const LogOut = () =>{
     sessionStorage.removeItem('x-auth-user');
     sessionStorage.removeItem('y-auth-fhdev0012');
@@ -5,6 +8,8 @@ export const LogOut = () =>{
     sessionStorage.removeItem('x-auth-iawagep');
     sessionStorage.removeItem('x-auth-pegawai');
     sessionStorage.removeItem('Authorization');
+    cookies.remove(globalText.x_auth_pegawai)
+
 }
 
 export const cekSession = () =>{

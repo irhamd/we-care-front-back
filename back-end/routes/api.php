@@ -175,6 +175,10 @@ Route::group(['prefix' => 'kartupasien'], function () {
     Route::get("/get-kartu-pasien","Transaksi\KartuPasienController@getKartuPasien");
 });
 
+Route::group(['prefix' => 'rekammedis'], function () {
+    Route::get("/coding","Transaksi\KartuPasienController@getKartuPasien");
+});
+
 
 
 Route::get("/sign-in","Auth\LoginUserController@loginUser");

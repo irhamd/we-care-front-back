@@ -115,7 +115,7 @@ function Routing() {
                 <ProtectedRoute path="/Kasir" component={Kasir} />
 
                 {/* REKAM MEDIS */}
-                <ProtectedRoute path="/Coding"  component={Coding} />
+                <ProtectedRoute path="/RM/Coding"  component={Coding} />
 
 
 
