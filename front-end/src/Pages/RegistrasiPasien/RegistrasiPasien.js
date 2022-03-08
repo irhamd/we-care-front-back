@@ -181,7 +181,7 @@ function RegistrasiPasien() {
         },
         {
             title: 'Nama Ruangan',
-            width: 300,
+            width: 200,
             sorter: (a, b) => a.ruangan.length - b.ruangan.length,
             render: row => (
                 <>
@@ -280,7 +280,7 @@ function RegistrasiPasien() {
                         {/* <_Select sm={2} name="instalasi" option={combo.instalasi} label="Instalasi" val="id" caption="instalasi" /> */}
                         <_Select sm={2} option={combo.ruangan} label="Ruangan" val="id" name="idruangan" caption="ruangan" />
                         <_Input sm={1} label="No. RM" name="nocm" />
-                        <_Input sm={1} label="Nama Pasien" name="namapasien" />
+                        <_Input sm={2} label="Nama Pasien" name="namapasien" />
                         <_Input sm={1} label="No. Registrasi" name="noregistrasi" />
                         <_Button sm={1} icon={<DownloadOutlined />} block primary submit style={{ marginTop: "23px" }} title="Refresh" />
                     </_Row>

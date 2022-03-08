@@ -118,7 +118,7 @@ function DataPasienLama() {
 
         {
             title: 'No. RM',
-            width: 100,
+            width: 130,
             // dataIndex: 'nocm',
             render: row => (
                 <>

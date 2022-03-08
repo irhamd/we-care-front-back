@@ -1968,7 +1968,8 @@ img {
 
 svg {
   overflow: hidden;
-  vertical-align: middle; }
+  /* vertical-align: middle;  */
+}
 
 table {
   border-collapse: collapse; }
@@ -2311,8 +2312,9 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  /* padding-right: 15px;
+  padding-left: 15px; */
+ }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -5557,15 +5559,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none; }
 
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem; }
-  .nav-link:hover, .nav-link:focus {
-    text-decoration: none; }
-  .nav-link.disabled {
-    color: #6c757d;
-    pointer-events: none;
-    cursor: default; }
+ 
 
 .nav-tabs {
   border-bottom: 1px solid #ebedf2; }
@@ -10264,7 +10258,8 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   a:not(.btn) {
-    text-decoration: underline; }
+    /* text-decoration: underline;  */
+  }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
   pre {
@@ -10512,7 +10507,9 @@ textarea:focus,
 textarea:hover,
 textarea:visited {
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  text-decoration: none;
+  box-shadow: none; 
+}
 
 .btn.active.focus, .fc button.active.focus, .ajax-upload-dragdrop .active.focus.ajax-file-upload,
 .btn.active:focus,
@@ -14333,11 +14330,13 @@ ul,
 ol,
 dl {
   padding-left: 1rem;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+ }
   ul li,
   ol li,
   dl li {
-    line-height: 1.8; }
+    /* line-height: 1.8; */
+   }
 
 .list-ticked,
 .list-arrow,

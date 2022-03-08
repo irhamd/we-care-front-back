@@ -233,7 +233,7 @@ function Anamnesa(pr) {
 
                                         <_Text align="right" sm={4}> Keluhan Tambahan </_Text>
 
-                                        <_Mentions required sm={8} name={['anamnesa', 'keluhantambahan']} list={listKeluhan}
+                                        <_Mentions  sm={8} name={['anamnesa', 'keluhantambahan']} list={listKeluhan}
                                             placeholder="Tambahkan tanda koma {,} untuk mengaktifkan autocomplete ." />
                                     </_Row>
                                 </_Col>
@@ -250,7 +250,7 @@ function Anamnesa(pr) {
                             </_Row>
                         </Card>
                         <PemeriksaanFisik getIMT={getIMT} aturField={aturField} cekSkalaNyeri={cekSkalaNyeri} />
-                        {/* <Lainnya /> */}
+                        <Lainnya />
                         <hr />
                         <_Row>
                             <_Button block btnSave submit title="Simpan" style={{ marginBottom: "50px" }} size="large" sm={{ span: 3, offset: 9 }} />
