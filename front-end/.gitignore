@@ -10,6 +10,7 @@
 
 # production
 /build
+/db
 
 # Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 # misc

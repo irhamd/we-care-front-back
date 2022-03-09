@@ -13305,13 +13305,14 @@ select.tt-hint {
         padding-right: 25px; }
       .table thead th i {
         margin-left: 0.325rem; }
-  .table th,
+  .table,
   .table td {
-    vertical-align: middle;
+    /* vertical-align: middle;
     font-size: 0.875rem;
     line-height: 1;
-    white-space: nowrap;
-    padding: 14px 0 14px 25px; }
+    white-space: nowrap; */
+    padding-bottom: -14px; 
+  }
     .table th img,
     .table td img {
       width: 30px;

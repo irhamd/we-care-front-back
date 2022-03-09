@@ -85,7 +85,7 @@ function TempProsesResep(pr) {
                             <tbody>
                                 {/* <DataInputResep LoadData={pr.LoadData} dataResep={pr.dataResep} /> */}
                                 {fields.map(({ key, name, fieldKey, ...restField }) => (
-                                    <tr>
+                                    <tr style={{ marginBottom :"-10px" }}> 
 
 
                                         <td width="10" style={{ textAlign: "center" }}>
@@ -132,14 +132,14 @@ function TempProsesResep(pr) {
                                         </td>
 
                                         <td width="100">
-                                            <_Number name={[name, 'jumlah']} mb="-10px"
+                                            <_Number name={[name, 'jumlah']} mb="0px"
                                                 style={kanan} format
                                                 onChange={(e) => getHarga(name, restField, e)}
                                                 fieldKey={[fieldKey, 'jumlah']}
                                                 {...restField} required />
                                         </td>
                                         <td width="200">
-                                            <_Input name={[name, 'signa']} mb="-10px"
+                                            <_Input name={[name, 'signa']} mb="0px"
                                                 style={kanan}
                                                 fieldKey={[fieldKey, 'signa']}
                                                 {...restField} required />
@@ -156,7 +156,7 @@ function TempProsesResep(pr) {
                                                 {...restField} required /> */}
                                         </td>
                                         <td>
-                                            <_Input name={[name, 'keterangan']} mb="-10px"
+                                            <_Input name={[name, 'keterangan']} mb="0px"
                                                 style={kanan}
                                                 fieldKey={[fieldKey, 'keterangan']}
                                                 {...restField} />
@@ -186,9 +186,10 @@ function TempProsesResep(pr) {
                                 ))}
                             </tbody>
                             <Form.Item>
+                                <_Button type="primary" onClick={() => add()} label="Tambah" color="green"
+                                    icon={<PlusOutlined />}>  Tambah </_Button>
                                 <br />
-                                <Button type="primary" onClick={() => add()}
-                                    icon={<PlusOutlined />}>  Tambah </Button>
+                                <br />
                             </Form.Item>
                         </>
                     )}
