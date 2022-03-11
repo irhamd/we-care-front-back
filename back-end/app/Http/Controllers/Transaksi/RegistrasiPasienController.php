@@ -408,7 +408,7 @@ class RegistrasiPasienController extends ApiController
         return $this->respond($result);
     }
 
-    public function batalRegistrasiPasien( Request $request) {
+    public function dataBatalRegistrasiPasien( Request $request) {
         $data = \DB::table('antrianpasiendiperiksa_t as apd')
             ->join('pasiendaftar_t as pd','pd.norec','=','apd.pasiendaftarfk')
             ->join('pasien_m as ps','ps.id','=','pd.pasienfk')
@@ -427,6 +427,40 @@ class RegistrasiPasienController extends ApiController
         );
         return $this->respond($result);
     }
+
+    public function batalRegistrasiPasien( Request $request) {
+        $cekadatindakan = DB::table("pasiendaftar_t as pd")
+            ->join('antrianpasiendiperiksa_t as apd','apd.pasiendaftarfk','pd.norec')
+            ->join('pelayananpasien_t as pp', 'apd.norec','pp.antrianpasiendiperiksafk')
+            ->where('apd.statusenabled', true)
+            ->where('pd.statusenabled', true)
+            ->where('pp.statusenabled', true)
+            ->where('pd.norec', $request['pasiendaftarfk'])
+            ->count();
+
+        if ($cekadatindakan == 0){
+            $batal = PasienDaftar::where('norec', $request['pasiendaftarfk'] )->update([
+                "statusenabled" =>false,
+                "lbatal" =>true,
+                "isclosing" =>true,
+                "alasanbatal" =>"Batal registrasi",
+            ]);
+            $code = $batal ? 200 : 201;
+            $msg = $batal ? 'Suksess .!' : 'Gagal batal antrian .!' ;
+        } else{
+            $code = 201;
+            $msg = 'Pasien sudah mendapatkan pelayanan atau resep, silahkan hapus tindakan dan resep .!';
+        }
+        
+        $result = array(
+            'code' => $code,
+            'cekadatindakan'=> $cekadatindakan,
+            'msg' => $msg,
+        );
+        return $this->respond($result);
+    }
+
+
 
     public function panggilRegistrasi( Request $request) {
         $data =  AntrianPasienDiperiksa::where("norec", $request['norec_apd'])->update([

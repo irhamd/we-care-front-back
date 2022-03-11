@@ -252,6 +252,11 @@ function RegistrasiPasien() {
             return
         } 
         
+        _Api.get("registrasi/batal-registrasi-pasien?pasiendaftarfk="+selected.norec_pd).then(res => {
+           _Toastr.autoMsg( res.data.code, res.data.msg  )
+            
+        })
+        
     
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))
     }
@@ -264,6 +269,7 @@ function RegistrasiPasien() {
         _Api.get("registrasi/panggil-registrasi-pasien?norec_apd="+selected.norec_apd).then(res => {
             LoadData()
         })
+
 
     
         // Cache.set("pasien_pd",  JSON.stringify("ffff"))

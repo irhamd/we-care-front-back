@@ -25,4 +25,20 @@ export const _Toastr = {
     info(msg){
         toastr.info(`${msg} `);
     },
+    autoMsg(code, msg){
+        switch (code) {
+            case 200:
+                toastr.success(`${msg} `);
+                break;
+
+            case 201:
+                toastr.error(`${msg} `);
+                break;
+
+            case 202:
+                toastr.warning(`${msg} `);
+                break;
+
+      }  
+    }
  };

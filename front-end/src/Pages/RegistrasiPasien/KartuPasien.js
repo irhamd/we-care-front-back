@@ -18,12 +18,14 @@ import { Cache } from '../../Services/Cache';
 import DetailPasien from '../Pasien/DetailPasien';
 import DetailPasienDaftar from '../Pasien/DetailPasienDaftar';
 import ReactToPrint from 'react-to-print';
+import RiwayatKunjunganKartuPasien from '../Transaksi/Riwayat/RiwayatKunjunganKartuPasien';
 
 
 
 function KartuPasien(pr) {
     const [data, setData] = useState([])
     const [selected, setselected] = useState()
+    const [ininoregistrasi, setininoregistrasi] = useState(null)
     const [loading, setLoading] = useState(true)
     const [detailpasien, setdetailpasien] = useState("")
     // const [selected, selected] = useState("")
@@ -55,6 +57,10 @@ function KartuPasien(pr) {
         })
     }
 
+    const munculDetail = (noreg) => {
+        setininoregistrasi( noreg )
+    }
+
     useEffect(() => {
 
         // console.log('pr', pr)
@@ -76,7 +82,7 @@ function KartuPasien(pr) {
             render: row =>
                 <div style={{ textAlign: "center" }}>
                     <a style={stile}>{moment(row.tglregistrasi).format("DD/MM yyyy")}</a>
-                    <div style={{ marginTop: "-10px" }}>  <_Button size="small" label="Detail" btnFind /> </div>
+                    <div style={{ marginTop: "-10px" }}>  <_Button size="small" label="Detail" btnFind onClick={()=>munculDetail(row.noregistrasi)} /> </div>
                 </div>
         },
         {
@@ -146,13 +152,11 @@ function KartuPasien(pr) {
 
     return (
         <LayoutAnt>
-           
-
+            <RiwayatKunjunganKartuPasien ininoregistrasi={ininoregistrasi} onClose={() => setininoregistrasi(null)} /> 
             <DetailPasienDaftar data={{ noregistrasi: pr.match.params.nocm }} />
 
             <div style={{ background: "grey", padding: "10px 130px", fontSize: "14px" }}>
                 <_Col style={{ background: "white" }}>
-
                     <ReactToPrint
                         onAfterPrint={handleAfterPrint}
                         onBeforePrint={handleBeforePrint}
