@@ -285,7 +285,7 @@ function InputPasienBaru(pr) {
                             <_Switch label="WNI" defaultChecked onChange={changeSwitch} />
                         </Col>
                         <Col sm={6} style={{ marginBottom: "200px" }} />
-                        <_Button label="Simpan Ke Database" submit btnSave sm={6} block />
+                        <_Button label="Simpan Ke Database" loading={ loading} submit btnSave sm={6} block />
 
                         {/* <Col sm={7}>
                             <_Input onChange={handleChange('namaayah')} label="Nama Ayah" />

@@ -42,10 +42,10 @@ function MenuUtama(R) {
                 style={{ background: "#001529" }}
             >
                 {/* <Menu.Item icon={<AppstoreOutlined />} key="2"> <Link to={"/InputPasienBaru"}> Input Pasien Baru </Link></Menu.Item> */}
-                <Menu.Item icon={< BarChartOutlined />} key="1">  <Link to={"/DataPasienLama"}> Data Pasien </Link></Menu.Item>
+                <Menu.Item icon={<UsergroupAddOutlined />} key="1">  <Link to={"/DataPasienLama"}> Data Pasien </Link></Menu.Item>
                 <Menu.Item icon={<BarChartOutlined />} key="2"> <Link to={"/RegistrasiPasien"}> Daftar Registrasi Pasien </Link></Menu.Item>
                 {/* <Menu.Item icon={<BarChartOutlined />} key="2"> <Link to={"/RegistrasiPasien"}> Daftar Registrasi Pasien </Link></Menu.Item> */}
-                <SubMenu key="sub2" icon={<BarChartOutlined />} title="Penunjang">
+                <SubMenu key="sub2" icon={<AppstoreAddOutlined />} title="Penunjang">
                     <Menu.Item icon={<AppstoreOutlined />} key="5"><Link to={"/DaftarPasienPelayananLab"}> Daftar Pasien Lab </Link></Menu.Item>
 
                 </SubMenu>

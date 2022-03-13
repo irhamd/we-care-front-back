@@ -229,27 +229,12 @@ class PasienBaruController extends ApiController
         try{
             if($request['pasien']['idpasien'] == '') {
                 $newId = Pasien::max('id') + 1;
-
-                // $runningNumber = RunningNumber::where('id',1745)->first();
-                // $extension = $runningNumber->extention;
-                // $noCmTerakhir = $runningNumber->nomer_terbaru +1;
-                // $noCm = $extension.$noCmTerakhir;
-
-                // $updateRN= RunningNumber::where('id', 1745)
-                // ->update([
-                //         'nomer_terbaru' => $noCmTerakhir
-                //     ]
-                // );
-
-                $noCm = $this->generateCode(new Pasien, 'nocm', 9,'');
-                // return $noCm;
+                $noCm = Pasien::max('nocm') + 1;
 
                 $dataPS = new Pasien();
                 $dataPS->id = $newId;
-                $dataPS->kdprofile = 0;
+                $dataPS->nocm = $noCm;
                 $dataPS->statusenabled = true;
-                $dataPS->kodeexternal = $newId;
-                $dataPS->norec =  $dataPS->generateNewId();
 
             }else{
                 $dataPS = Pasien::where('id',$request['pasien']['idpasien'])->first();

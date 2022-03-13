@@ -4,7 +4,7 @@ import { _grid, _Row, _row } from '../../Services/Forms/LayoutBootstrap'
 import LayoutAnt from '../Layout/LayoutAnt'
 import { Table, Radio, Divider, Input, Button, Form, Avatar, Drawer, Space, DatePicker, Spin, Popconfirm, Tooltip, Badge, Tag, Progress, Image, Rate } from 'antd';
 import moment from 'moment';
-import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined, NotificationOutlined, IdcardOutlined, SoundOutlined } from '@ant-design/icons';
+import { AppstoreAddOutlined, BranchesOutlined, SyncOutlined, DownloadOutlined, DeploymentUnitOutlined, UserOutlined, AntDesignOutlined, FileSearchOutlined, NotificationOutlined, IdcardOutlined, SoundOutlined, LockOutlined } from '@ant-design/icons';
 
 import { useHistory } from 'react-router-dom';
 import { _Toastr } from '../../Services/Toastr/Notify/_Toastr';
@@ -94,7 +94,7 @@ function RegistrasiPasien() {
         {
             title: 'Tanggal Registrasi',
             render: (_, rc) =>
-                <div> {moment(rc.tglregistrasi).format("DD-MM-YYYY HH:mm")}
+                <div> <LockOutlined style={{ color :"red"}} /> &nbsp; {moment(rc.tglregistrasi).format("DD-MM-YYYY HH:mm")}
                 </div>,
             // fixed: 'left',
             width: 150
@@ -140,9 +140,10 @@ function RegistrasiPasien() {
             render: (_, rc) =>
                 <div style={{ textAlign: "center" }}>
                     <Avatar.Group>
-                        <Avatar style={{ backgroundColor: '#156dbf' }}>T</Avatar>
-                        <Avatar>D</Avatar>
-                        <Avatar>R</Avatar>
+                        <Avatar style={{ backgroundColor: '#156dbf' }}> <b> T </b></Avatar>
+                        <Avatar><b> D </b></Avatar>
+                        <Avatar><b> R </b></Avatar>
+                        {/* <Avatar style={{ backgroundColor: 'red' }}> <LockOutlined  /> </Avatar> */}
                     </Avatar.Group>
                     {/* <Progress percent={100} steps={3} /> */}
                 </div>

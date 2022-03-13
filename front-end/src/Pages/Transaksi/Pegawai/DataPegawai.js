@@ -1,5 +1,5 @@
 import { ScheduleFilled, SisternodeOutlined, SubnodeOutlined, SyncOutlined, UserAddOutlined } from '@ant-design/icons'
-import { Drawer, Table, Tag, Form } from 'antd'
+import { Drawer, Table, Tag, Form, Image } from 'antd'
 // import Form from 'antd/lib/form/Form'
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -8,6 +8,7 @@ import { DivCol, _Button, _Date, _Input, _Select, _Space, _TitleBar } from '../.
 import { _Row } from '../../../Services/Forms/LayoutBootstrap'
 import { _Toastr } from '../../../Services/Toastr/Notify/_Toastr'
 import LayoutAnt from '../../Layout/LayoutAnt'
+import foto from "./../../../_Assets/foto/users.png"
 
 function DataPegawai() {
 
@@ -63,6 +64,12 @@ function DataPegawai() {
 
     const columns = [
         {
+            width: "70px",
+            width: 70,
+            render: (_, rc) =>
+                    <Image preview={false} style={{ width: "100%" }} width={40} src={!rc.foto ? foto : rc.foto} />
+        },
+        {
             title: 'No', width: 50,
             render: (text, row, index) => (
                 < div style={{ textAlign: "center" }}> {index + 1} </div>
@@ -75,7 +82,9 @@ function DataPegawai() {
         },
         {
             title: 'Nama Pegawai',
-            dataIndex: 'namapegawai'
+            render: (text, row, index) => (
+               <b> { row.namapegawai } </b>
+            ),
         },
 
 
@@ -127,7 +136,7 @@ function DataPegawai() {
 
                     </_Row>
                 </Form>
-                <div className="site-drawer-render-in-current-wrapper">
+                <div className="site-drawer-render-in-current-wrapper" style={{ height:"75vh" }}>
                     <Drawer
                         title={" * Update User [ " + selected.lenght && selected.namapegawai  + " ]" }
                         placement="top"
@@ -161,6 +170,7 @@ function DataPegawai() {
                         rowClassName={(record, index) => record == selected && 'bg-orange'}
                         columns={columns}
                         rowKey="nip"
+                        pagination={{ position :["bottomCenter"] } }
                         dataSource={datapegawai}
                         onRow={(rc, i) => {
                             return {

@@ -256,7 +256,7 @@ export const _TitleBar = ({ title, align, sm, label, color }) => {
 
 export const DivCol = (r) => {
     return (
-        <div style={{
+        <div ref={r.ref} style={{
             ...r.style, margin: "10px 13px 5px 25px", width:"100%",
             paddingLeft: r.pl,
             paddingRight: r.pr,

@@ -3,7 +3,9 @@ import { Descriptions, Popconfirm, Table, Tag } from 'antd';
 import Text from 'antd/lib/typography/Text';
 import { Button, Tooltip } from 'bootstrap';
 import React, { useEffect, useState } from 'react'
+import { useRef } from 'react';
 import { withRouter } from 'react-router-dom';
+import ReactToPrint from 'react-to-print';
 import _Api from '../../../Services/Api/_Api';
 import { DivCol, _Button, _TitleBar } from '../../../Services/Forms/Forms';
 import { _Col } from '../../../Services/Forms/LayoutBootstrap';
@@ -14,7 +16,7 @@ import DetailPasien from '../../Pasien/DetailPasien';
 import DetailPasienDaftar from '../../Pasien/DetailPasienDaftar';
 
 function DetailTransaksi(pr) {
-
+    const printReff = useRef();
     const [loading, setLoading] = useState(true)
     const [st, setState] = useState({
         data: {},
@@ -139,6 +141,7 @@ function DetailTransaksi(pr) {
         <LayoutAnt pl="10px" >
             <_TitleBar label="DETAIL TRANSAKSI" align="center" />
             <DivCol pl="13px">
+                <div ref={printReff} >
                 {/* <p> {JSON.stringify(st.data)} </p> */}
                 <DetailPasienDaftar data={{ noregistrasi: pr.match.params.noregistrasi }} />
                 <br />
@@ -192,12 +195,20 @@ function DetailTransaksi(pr) {
                     <Descriptions.Item label="Sisa Tagihan : ">{"Rp, 0"}</Descriptions.Item>
                     <Descriptions.Item label="Total Bayar :">{"Rp, 0"}</Descriptions.Item>
 
-                </Descriptions>
-                <br />
-                <_Col>
-                    <_Button icon={<PrinterOutlined />} title="Cetak Billing" />
-                </_Col>
+                    </Descriptions>
+                    <br />
+                    <_Col>
+                        <_Button icon={<PrinterOutlined />} title="Cetak Billing" />
+                    </_Col>
 
+                    <ReactToPrint
+                        onAfterPrint={handleAfterPrint}
+                        onBeforePrint={handleBeforePrint}
+                        trigger={() => <div> <br /> <_Button icon={<PrinterOutlined />} label="Cetak" /> </div>}
+                        content={() => printReff.current}
+                    />
+
+                </div>
             </DivCol>
         </LayoutAnt>
     )

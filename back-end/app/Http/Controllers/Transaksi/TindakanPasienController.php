@@ -53,9 +53,8 @@ class TindakanPasienController extends ApiController
             $data = $data->where('dat.produk', 'like', '%'. $request['nama'] .'%');
         };
         
-        $data = $data ->orderBy('dat.id');
-        $data = $data ->take(10);
-        $data = $data ->get();
+        // $data = $data ->orderBy('dat.id');
+        $data = $data ->take(10)->get();
 
         return $this->respond($data);
     }

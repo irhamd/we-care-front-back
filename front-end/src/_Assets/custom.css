@@ -48,6 +48,12 @@ thead {
     line-height: 50px;
 }
 
+thead[class*="ant-table-thead"] th{
+    /* background-color: yellow !important; */
+    font-weight: bold;
+  }
+  
+
 .blink {
     font-size: 25px;
     /* font-family: cursive; */
