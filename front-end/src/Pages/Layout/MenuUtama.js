@@ -4,7 +4,7 @@ import { Content } from 'antd/lib/layout/layout';
 import {
     UserOutlined, LaptopOutlined, PlayCircleOutlined, NotificationOutlined, DownloadOutlined, SyncOutlined, UserSwitchOutlined,
     LogoutOutlined, BarChartOutlined, DribbbleSquareOutlined, SendOutlined, ShareAltOutlined, ThunderboltOutlined, TransactionOutlined,
-    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined, MenuFoldOutlined, BookOutlined
+    MenuUnfoldOutlined, PieChartOutlined, DesktopOutlined, ContainerOutlined, MailOutlined, AppstoreOutlined, SettingOutlined, AppstoreAddOutlined, ShoppingCartOutlined, ApiOutlined, LoginOutlined, MoneyCollectOutlined, DeploymentUnitOutlined, UsergroupAddOutlined, DollarCircleOutlined, FileProtectOutlined, DiffOutlined, InfoCircleOutlined, MenuFoldOutlined, BookOutlined, UserAddOutlined, TranslationOutlined
 }
     from '@ant-design/icons';
 import _Api from '../../Services/Api/_Api';
@@ -83,7 +83,8 @@ function MenuUtama(R) {
 
 
                 <SubMenu key="sub10" icon={<UsergroupAddOutlined />} title="Pegawai">
-                    <Menu.Item key="10-1" icon={<DeploymentUnitOutlined />}> <Link to={"/DataPegawai"}> Data Pegawai  </Link></Menu.Item>
+                    <Menu.Item key="10-1" icon={<TranslationOutlined />}> <Link to={"/DataPegawai"}> Data Pegawai  </Link></Menu.Item>
+                    <Menu.Item key="10-2" icon={<UserAddOutlined />}> <Link to={"/DataPegawai/InputPegawai"}> Input Pegawai Baru  </Link></Menu.Item>
                     {/* <Menu.Item key="92-2" icon={<LoginOutlined />}> <Link to={"/login"}>   Rujukan Internal </Link></Menu.Item> */}
                 </SubMenu>
 

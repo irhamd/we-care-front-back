@@ -271,6 +271,7 @@ class RegistrasiPasienController extends ApiController
             ->leftjoin('instalasi_m as ins', 'ins.id','=','ru.instalasifk')
             ->select('pd.norec as norec_pd','apd.norec as norec_apd','ps.nocm','ps.namapasien', 'ps.tgllahir','ps.tempatlahir','ps.foto','ps.nrp',
                 DB::raw( "case when apd.tgldipanggilsuster is null then 'Menunggu' else 'Dipanggil' end as panggil" ),
+                'pd.isclosing',
             'ps.jeniskelamin','ps.noktp', 'ps.id as nocmfk','ps.namaayah','ps.nohp', 'pj.penjamin','ps.nopenjamin','ar.asalrujukan','pd.tglregistrasi',
                 'pd.noregistrasi','pd.pjnama','pd.pjhubungan','pd.namaperujuk','ru.id as idruangan','ru.ruangan','ins.instalasi','ins.id as idinstalasi' 
             );

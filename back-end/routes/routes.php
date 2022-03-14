@@ -3,16 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
 Route::group(['prefix' => 'pegawai'], function () {
     Route::post("/save-pegawai","Transaksi\PegawaiController@savePegawai");
     Route::get("/get-data-combo-pegawai","Transaksi\PegawaiController@getDataComboPegawai");
@@ -38,6 +28,7 @@ Route::group(['prefix' => 'pasien'], function () {
     Route::get("/compo-registrasi-pasien","Transaksi\PasienBaruController@getDataCombo");
     Route::get("/get-pasien-lama","Transaksi\PasienBaruController@getDaftarPasien");
     Route::post("/save-pasien-baru","Transaksi\PasienBaruController@savePasien");
+    Route::post("/save-pasien-baru-rev","Transaksi\PasienBaruController@savePasienRev");
     Route::get("/get-propinsi","Transaksi\PasienBaruController@getPropinsi");
     Route::get("/get-kotakabupaten","Transaksi\PasienBaruController@getKotaKab");
     Route::get("/get-kecamatan","Transaksi\PasienBaruController@getKecamatan");

@@ -94,7 +94,7 @@ function RegistrasiPasien() {
         {
             title: 'Tanggal Registrasi',
             render: (_, rc) =>
-                <div> <LockOutlined style={{ color :"red"}} /> &nbsp; {moment(rc.tglregistrasi).format("DD-MM-YYYY HH:mm")}
+                <div>  { rc.isclosing &&  <LockOutlined style={{ color :"red"}} /> } &nbsp; {moment(rc.tglregistrasi).format("DD-MM-YYYY HH:mm")}
                 </div>,
             // fixed: 'left',
             width: 150

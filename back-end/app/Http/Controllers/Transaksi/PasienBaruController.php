@@ -192,9 +192,9 @@ class PasienBaruController extends ApiController
         $data = \DB::table('pasien_m as ps')
             ->leftjoin('alamatpasien_m as al','al.pasienfk','=','ps.id')
             ->leftjoin('pangkat_m as pt','pt.id','=','ps.pangkatfk')
-            ->select('ps.nocm','ps.namapasien','ps.tgldaftar', 'ps.tgllahir','ps.foto','ps.nrp','ps.nip','pt.pangkat',
+            ->select('ps.nocm','ps.namapasien','ps.tgldaftar','ps.id as id_pasien', 'ps.tgllahir','ps.foto','ps.nrp','ps.nip','pt.pangkat',
                 'ps.jeniskelamin','ps.noidentitas', 'ps.id as nocmfk','ps.namaayah','ps.notelepon','ps.nohp',
-                'ps.tglmeninggal','ps.alergi','ps.isriwayatmenular','al.alamat','al.desakelurahan', 'ps.tempatlahir'
+                'ps.tglmeninggal','ps.alergi','ps.isriwayatmenular','al.alamat','al.desakelurahan', 'ps.tempatlahir', 'ps.*'
             );
 
         if(isset($request['nocm']) && $request['nocm']!="" && $request['nocm']!="undefined") {
@@ -392,6 +392,201 @@ class PasienBaruController extends ApiController
             $dataDOM->rt =  $request['domisili']['rt'];
             $dataDOM->rw =  $request['domisili']['rw'];
             $dataDOM->save();
+
+            $transStatus = 'true';
+        } catch (\Exception $e) {
+            $error = $e->getMessage();
+            $transStatus = 'false';
+        }
+
+        if ($transStatus == 'true') {
+            $transMessage = "Sukses";
+            DB::commit();
+            $result = array(
+                'status' => 201,
+                'message' => $transMessage,
+                'data' => $dataPS,
+            );
+        } else {
+            $transMessage = "Simpan Gagal";
+            DB::rollBack();
+            $result = array(
+                'status' => 400,
+                'message'  => $transStatus,
+                'error' => $error
+            );
+        }
+        return $this->setStatusCode($result['status'])->respond($result, $transMessage);
+    }
+    // {
+    //     "noidentitas": "NIK",
+    //     "id_jenispasien": 3,
+    //     "pangkatfk": 2,
+    //     "nrp": " No. NRP",
+    //     "tempatlahir": "Tempat Lahir",
+    //     "tgllahir": "1998-02-14",
+    //     "namapasien": "Nama Lengkap",
+    //     "agama": 1,
+    //     "nobpjs": " No. BPJS",
+    //     "nohp": "Nomor HP",
+    //     "nip": "NIP",
+    //     "jeniskelamin": 2,
+    //     "golongandarah": 5,
+    //     "statusperkawinan": 2,
+    //     "pendidikan": 5
+    // }
+
+    public function savePasienRev(Request $request) {
+        $detLogin =$request->all();
+        DB::beginTransaction();
+        $rPasien = $request['pasien'];
+        try{
+            if( $rPasien['id_pasien'] == '') {
+                $newId = Pasien::max('id') + 1;
+                $noCm = Pasien::max('nocm') + 1;
+
+                $dataPS = new Pasien();
+                $dataPS->id = $newId;
+                $dataPS->nocm = $noCm;
+                $dataPS->statusenabled = true;
+
+            }else{
+                $dataPS = Pasien::where('id', $rPasien['id_pasien'])->first();
+                // $noCm = $dataPS->nocm;
+                $newId = $dataPS->id;
+            }
+
+            // $dt = date('Y-m-d',strtotime($rPasien['tgllahir']));
+
+            $dataPS->namaexternal =  $rPasien['namapasien'];
+            $dataPS->namapasien =  $rPasien['namapasien'];
+            $dataPS->reportdisplay =  $rPasien['namapasien'];
+            $dataPS->noidentitas =  $rPasien['noidentitas'];
+            $dataPS->nobpjs =  $rPasien['nobpjs'];
+            $dataPS->foto =  $request['fotoPasien'];
+            $dataPS->jeniskelamin =  $rPasien['jeniskelamin'];
+            $dataPS->tgllahir =  $rPasien['tgllahir'];
+            $dataPS->tempatlahir =  $rPasien['tempatlahir'];
+            $dataPS->golongandarah =  $rPasien['golongandarah'];
+            $dataPS->nip =  $rPasien['nip'];
+          
+   
+            $dataPS->nohp =  $rPasien['nohp'];
+            // $dataPS->pekerjaan =  $rPasien['pekerjaan']['pekerjaan'];
+            // $dataPS->pekerjaanfk =  $rPasien['pekerjaan']['id'];
+
+            // if (isset( $rPasien['instansipekerjaan']) &&  $rPasien['instansipekerjaan']!="" &&  $rPasien['instansipekerjaan']!="undefined"){
+            //     $dataPS->instansipekerjaan =  $rPasien['instansipekerjaan'];
+            // }
+
+            $dataPS->agama =  $rPasien['agama'];
+            // $dataPS->agamafk =  $rPasien['agama']['id'];
+            $dataPS->pendidikan =  $rPasien['pendidikan'];
+            // $dataPS->pendidikanfk =  $rPasien['pendidikan']['id'];
+            $dataPS->statusperkawinan =  $rPasien['statusperkawinan'];
+            // $dataPS->statusperkawinanfk =  $rPasien['statusperkawinan']['id'];
+            // $dataPS->statuskeluarga =  $rPasien['statuskeluarga']['statuskeluarga'];
+            // $dataPS->statuskeluargafk =  $rPasien['statuskeluarga']['id'];
+            $dataPS->pangkatfk =  $rPasien['pangkatfk'];
+            // $dataPS->kebangsaan =  $rPasien['kebangsaan'];
+            // $dataPS->kebangsaanfk =  $rPasien['kebangsaan']['id'];
+            $dataPS->nrp =  $rPasien['nrp'];
+            // if (isset( $rPasien['nrp']) &&  $rPasien['nrp']!="" &&  $rPasien['nrp']!="undefined"){
+            // }
+            // if (isset( $rPasien['namaayah']) &&  $rPasien['namaayah']!="" &&  $rPasien['namaayah']!="undefined"){
+            //     $dataPS->namaayah =  $rPasien['namaayah'];
+            // }
+            // if (isset( $rPasien['namaibu']) &&  $rPasien['namaibu']!="" &&  $rPasien['namaibu']!="undefined"){
+            //     $dataPS->namaibu =  $rPasien['namaibu'];
+            // }
+            $dataPS->id_jenispasien =  $rPasien['id_jenispasien'];
+            // if (isset( $rPasien['id_jenispasien']) &&  $rPasien['id_jenispasien']!="" &&  $rPasien['id_jenispasien']!="undefined"){
+            // }
+            // $dataPS->tgldaftar =  date('Y-m-d H:i:s');
+            // $dataPS->nocm = $noCm;
+            $dataPS->save();
+
+            // $dataNoCMFk =$dataPS->id;
+
+
+
+            // if($rPasien['id_pasien'] == '') {
+
+            //     $idAlamat = AlamatPasien::max('id') + 1;
+            //     $dataAL = new AlamatPasien();
+            //     $dataAL->id = $idAlamat;
+            //     $dataAL->kdprofile = 0;
+            //     $dataAL->statusenabled = true;
+            //     $dataAL->kodeexternal = $idAlamat;
+            //     $dataAL->norec = $dataAL->generateNewId();
+            //     $dataAL->pasienfk = $dataNoCMFk;
+            // }else{
+            //     $dataAL = AlamatPasien::where('pasienfk', $rPasien['id_pasien'])->first();
+            //     if(empty($dataAL)){
+            //         $idAlamat = AlamatPasien::max('id') + 1;
+            //         $dataAL = new AlamatPasien();
+            //         $dataAL->id = $idAlamat;
+            //         $dataAL->kdprofile = 0;
+            //         $dataAL->statusenabled = true;
+            //         $dataAL->kodeexternal = $idAlamat;
+            //         $dataAL->norec = $dataAL->generateNewId(); 
+            //         $idAlamat = $dataAL->id;
+            //         $dataAL->pasienfk = $dataNoCMFk;
+            //     }           
+            // }
+
+            // $dataAL->propinsi =  $request['alamat']['propinsi']['propinsi'];
+            // $dataAL->propinsifk =  $request['alamat']['propinsi']['id'];
+            // $dataAL->kotakabupaten =  $request['alamat']['kotakabupaten']['kotakabupaten'];
+            // $dataAL->kotakabupatenfk =  $request['alamat']['kotakabupaten']['id'];
+            // $dataAL->kecamatan =  $request['alamat']['kecamatan']['kecamatan'];
+            // $dataAL->kecamatanfk =  $request['alamat']['kecamatan']['id'];
+            // $dataAL->desakelurahan =  $request['alamat']['desakelurahan']['desakelurahan'];
+            // $dataAL->desakelurahanfk =  $request['alamat']['desakelurahan']['id'];
+            // if (isset( $request['alamat']['dusun']) &&  $request['alamat']['dusun']!="" &&  $request['alamat']['dusun']!="undefined"){
+            //     $dataPS->dusun =  $request['alamat']['dusun'];
+            // }
+            // $dataAL->alamat =  $request['alamat']['alamat'];
+            // $dataAL->rt =  $request['alamat']['rt'] ? $request['alamat']['rt'] :"0";
+            // $dataAL->rw =  $request['alamat']['rw'] ? $request['alamat']['rw'] :"0";
+            // $dataAL->save();
+
+            // if($rPasien['idpasien'] == '') {
+
+            //     $newIDDomain = DomisiliPasien::max('id') + 1;
+            //     $dataDOM = new DomisiliPasien();
+            //     $dataDOM->id = $newIDDomain;
+            //     $dataDOM->kdprofile = 0;
+            //     $dataDOM->statusenabled = true;
+            //     $dataDOM->kodeexternal = $newIDDomain;
+            //     $dataDOM->norec = $dataDOM->generateNewId();
+            //     $dataDOM->pasienfk = $dataNoCMFk;
+            // }else{
+            //     $dataDOM = DomisiliPasien::where('pasienfk', $rPasien['idpasien'])->first();
+            //     if(empty($dataDOM)){
+            //         $newIDDomain = DomisiliPasien::max('id') + 1;
+            //         $dataDOM->id = $newIDDomain;
+            //         $dataDOM->kdprofile = 0;
+            //         $dataDOM->statusenabled = true;
+            //         $dataDOM->kodeexternal = $newIDDomain;
+            //         $dataDOM->norec = $dataDOM->generateNewId();
+            //         $dataDOM->pasienfk = $dataNoCMFk;
+            //     }          
+            // }
+
+            // $dataDOM->propinsi =  $request['domisili']['propinsi']['propinsi'];
+            // $dataDOM->propinsifk =  $request['domisili']['propinsi']['id'];
+            // $dataDOM->kotakabupaten =  $request['domisili']['kotakabupaten']['kotakabupaten'];
+            // $dataDOM->kotakabupatenfk =  $request['domisili']['kotakabupaten']['id'];
+            // $dataAL->kecamatan =  $request['alamat']['kecamatan']['kecamatan'];
+            // $dataAL->kecamatanfk =  $request['alamat']['kecamatan']['id'];
+            // $dataDOM->desakelurahan =  $request['domisili']['desakelurahan']['desakelurahan'];
+            // $dataDOM->desakelurahanfk =  $request['domisili']['desakelurahan']['id'];
+            // $dataDOM->dusun =  $request['domisili']['dusun'];
+            // $dataDOM->domisili =  $request['domisili']['alamat'];
+            // $dataDOM->rt =  $request['domisili']['rt'];
+            // $dataDOM->rw =  $request['domisili']['rw'];
+            // $dataDOM->save();
 
             $transStatus = 'true';
         } catch (\Exception $e) {

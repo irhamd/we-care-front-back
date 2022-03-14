@@ -202,8 +202,8 @@ function DetailTransaksi(pr) {
                     </_Col>
 
                     <ReactToPrint
-                        onAfterPrint={handleAfterPrint}
-                        onBeforePrint={handleBeforePrint}
+                        // onAfterPrint={handleAfterPrint}
+                        // onBeforePrint={handleBeforePrint}
                         trigger={() => <div> <br /> <_Button icon={<PrinterOutlined />} label="Cetak" /> </div>}
                         content={() => printReff.current}
                     />

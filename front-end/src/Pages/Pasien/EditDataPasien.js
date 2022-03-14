@@ -40,11 +40,11 @@ function EditDataPasien(pr) {
 
     const [jeniskelamin] = useState([
         {
-            "id": 1,
+            "id": "L",
             "jeniskelamin": "L"
         },
         {
-            "id": 2,
+            "id": "P",
             "jeniskelamin": "P"
         },
     ])
@@ -67,18 +67,20 @@ function EditDataPasien(pr) {
 
     // =================================================================================================================================================
     const loadDataPasien = () => {
-        _Api.get("pasien/get-data-pasien/"+pr.pasienfk).then(res => {
-            formPasien.setFieldsValue({
-                ...res.data,
-                tgllahir: moment(res.data.tgllahir)
+        if (pr.datapasien){
+            _Api.get("pasien/get-data-pasien/"+pr.datapasien.nocmfk).then(res => {
+                formPasien.setFieldsValue({
+                    ...res.data,
+                    tgllahir: moment(res.data.tgllahir)
+                })
             })
-        })
+        }
     }
 
-    useEffect(async () => {
+    useEffect(() => {
         loadDataPasien()
         comboBox()
-    }, [])
+    }, [pr.datapasien])
 
     // =================================================================================================================================================
 
@@ -91,57 +93,39 @@ function EditDataPasien(pr) {
     const changeSwitch = (e) => {
         setwni(wni ? 1 : 2)
     };
-
-    const handleChangeAlamat = (field) => (e) => {
-        let isMoment = e._isAMomentObject && e._isAMomentObject
-        setbodyAlamat({
-            ...bodyAlamat,
-            [field]: isMoment ? moment(e).format('YYYY-MM-DD') : e.target.value
-        });
-    };
-
-
  
-
-
-
-    const changeAutocompleteAlamat = (field, id, row) => (e, f) => {
-        setbodyAlamat({
-            ...bodyAlamat,
-            [field]: {
-                [id]: f && f.value, [row]: f && f.children
-            }
-        });
-    };
 
 
 
 
     const savePasien = () => {
-        formAlamat.submit()
-        formPasien.submit()
-        var alamat = formAlamat.getFieldsValue()
+        // formAlamat.submit()
+        formPasien.submit() 
+        // var alamat = formAlamat.getFieldsValue()
         var pasien = formPasien.getFieldsValue()
-        console.log('alamat', alamat)
+        // console.log('alamat', alamat)
         console.log('pasien', pasien)
        
 
-
-        return
         setloading(true)
         const object = {
-            "pasien": bodyPasien,
-            "alamat": bodyAlamat,
-            "domisili": bodyAlamat,
-            "fotoPasien": fotoPasien
+            "pasien": { id_pasien : '', ...pasien, tgllahir : moment(pasien.tgllahir).format('YYYY-MM-DD')},
+            // "alamat": alamat
+            // "domisili": alamat,
+            // "fotoPasien": fotoPasien
         }
-        _Api.post("/pasien/save-pasien-baru", object).then(res => {
+
+        console.log(object)
+        _Api.post("/pasien/save-pasien-baru-rev", object).then(res => {
             setloading(false)
             _Toastr.success(res.data.message)
             pr.onClose()
-            window.location.reload();
+            pr.loadData()
+            formPasien.resetFields() 
+
+            // window.location.reload();
         }).catch(err => {
-            _Toastr.error(err.response.data.error)
+            // _Toastr.error(err.response.data.error)
             setloading(false)
 
         })
@@ -169,7 +153,7 @@ function EditDataPasien(pr) {
                         </_Row>
                         <_Input name="namapasien" label="Nama Lengkap" />
                         <_Row>
-                            <_Select option={agama} label="Agama" val="id" caption="agama" name="agama" sm={7} />
+                            <_Select option={agama} label="Agama" val="agama" caption="agama" name="agama" sm={7} />
                             <_Input maxLength={13} name='nobpjs' label="No. BPJS" sm={5} />
                         </_Row>
                         <_Row>
@@ -177,10 +161,10 @@ function EditDataPasien(pr) {
                             <_Input name='nip' label="NIP" sm={6} />
                         </_Row>
                         <_Row>
-                            <_Select option={jeniskelamin} label="Jenis Kelamin" val="id" caption="jeniskelamin" name="jeniskelamin" sm={3} />
-                            <_Select option={golongandarah} label="Golongan Darah" val="id" caption="golongandarah" name="golongandarah" sm={3} />
-                            <_Select option={statusperkawinan} label="Status Perkawinan" val="id" caption="statusperkawinan" name="statusperkawinan" sm={3} />
-                            <_Select option={pendidikan} label="Pendidikan" val="id" caption="pendidikan" name="pendidikan" sm={3} />
+                            <_Select option={jeniskelamin} label="Jenis Kelamin" val="jeniskelamin" caption="jeniskelamin" name="jeniskelamin" sm={3} />
+                            <_Select option={golongandarah} label="Golongan Darah" val="golongandarah" caption="golongandarah" name="golongandarah" sm={3} />
+                            <_Select option={statusperkawinan} label="Status Perkawinan" val="statusperkawinan" caption="statusperkawinan" name="statusperkawinan" sm={3} />
+                            <_Select option={pendidikan} label="Pendidikan" val="pendidikan" caption="pendidikan" name="pendidikan" sm={3} />
                         </_Row>
                     </_Col>
                     <_Col sm={4}>
@@ -201,7 +185,7 @@ function EditDataPasien(pr) {
                             <_Input label="RT *"  name='rt'   defaultValue="0" />
                         </Col>
                         <Col sm={2}>
-                            <_Input label="RW" name='rw' defaultValue="0" required />
+                            <_Input label="RW" name='rw' defaultValue="0"  />
                         </Col>
                         <Col sm={4}>
                         <_AutocompleteRev

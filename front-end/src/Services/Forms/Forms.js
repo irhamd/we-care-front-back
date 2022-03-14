@@ -242,7 +242,7 @@ export const _TitleBar = ({ title, align, sm, label, color }) => {
             <Row>
                 <Col style={{ background: color ? color : "rgb(95 116 134 / 61%)", padding: "5px 10px 0px 10px", fontWeight: "bold", textAlign: align }} span={24}>
                     {title ?
-                        <h5> <b> {title} </b> </h5> :
+                        <h5> <b> {title.toUpperCase()} </b> </h5> :
                         <div style={{ fontSize: "14px", fontWeight: "bold", paddingLeft: "17px", paddingBottom: "5px" }}>
                             {label}
                         </div>

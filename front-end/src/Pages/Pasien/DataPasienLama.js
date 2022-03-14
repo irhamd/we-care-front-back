@@ -222,13 +222,19 @@ function DataPasienLama() {
     }, [])
 
     const [visible, setVisible] = useState(false);
+    const [visibleUpdate, setvisibleUpdate] = useState(false);
 
     const showDrawer = () => {
         setVisible(true);
     };
 
+    // const showDrawerUpdate = () => {
+    //     setvisibleUpdate(true);
+    // };
+
     const onClose = () => {
         setVisible(false);
+        setvisibleUpdate(false);
     };
     return (
         <div>
@@ -241,8 +247,20 @@ function DataPasienLama() {
                 bodyStyle={{ background: "#e3e7ec" }}
                 visible={visible}
             >
-                <InputPasienBaru onClose={onClose} />
-                {/* <EditDataPasien onClose={onClose} /> */}
+                {/* <InputPasienBaru onClose={onClose} /> */}
+                <EditDataPasien onClose={onClose} loadData={ ()=>LoadData()} />
+            </Drawer>
+
+            <Drawer
+                title="UPDATE PASIEN BARU"
+                placement="top"
+                height={950}
+                headerStyle={{ background: "#096dd9", color: "white" }}
+                onClose={onClose}
+                bodyStyle={{ background: "#e3e7ec" }}
+                visible={visibleUpdate}
+            >
+                <EditDataPasien datapasien={selected && selected} onClose={onClose} />
             </Drawer>
             <LayoutAnt  >
                 <_TitleBar title="DATA PASIEN" align="center" />
@@ -272,7 +290,7 @@ function DataPasienLama() {
                 <br />
                 <DivCol pl="0px">
                     <Table
-                        rowKey="nocmfk"
+                        rowKey="id"
                         // rowSelection={{
                         //     type: "radio",
                         //     ...rowSelection,
@@ -306,7 +324,7 @@ function DataPasienLama() {
                             </Tooltip>
                         </_Col>
                         <_Button sm={2} label="Edit Pasien" btnEdit  color="orange" onClick={() =>
-                            setEditPasien(true)
+                            setvisibleUpdate(true)
                         } block disabled={selected ? false : true} />
 
                        
